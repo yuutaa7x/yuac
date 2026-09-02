@@ -35,7 +35,7 @@ Script Roblox tangguh untuk mengustomisasi avatar secara bebas (Headless, Korblo
 Pencet ikon *Copy* (Salin) di pojok kanan atas kotak kode di bawah ini, lalu jalankan di dalam *executor* Roblox milikmu:
 
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/yuutaa7x/yuac/main/yuac_obfuscated.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yuutaa7x/yuac/main/yuac.lua"))()
 ```
 
 ### 🌟 Fitur Utama
