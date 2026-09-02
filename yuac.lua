@@ -1,1 +1,1152 @@
-local obf_stringchar=string.char;local obf_stringbyte=string.byte;local obf_stringsub=string.sub;local obf_bitlib=bit32 or bit ;local obf_XOR=obf_bitlib.bxor;local obf_tableconcat=table.concat;local obf_tableinsert=table.insert;local function LUAOBFUSACTOR_DECRYPT_STR_0(LUAOBFUSACTOR_STR,LUAOBFUSACTOR_KEY) local result={};for i=1, #LUAOBFUSACTOR_STR do obf_tableinsert(result,obf_stringchar(obf_XOR(obf_stringbyte(obf_stringsub(LUAOBFUSACTOR_STR,i,i + 1 )),obf_stringbyte(obf_stringsub(LUAOBFUSACTOR_KEY,1 + (i% #LUAOBFUSACTOR_KEY) ,1 + (i% #LUAOBFUSACTOR_KEY) + 1 )))%256 ));end return obf_tableconcat(result);end local obf_stringmatch=string.match;local obf_tonumber=tonumber;local obf_pcall=pcall;local function obf_adjnqwidqwjhdpoq() local function obf_wrapperfunc(obf_arg) if obf_arg then local CoreGui=game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\113\44\253\7\225\45\62","\87\50\67\143\98\166\88"));local TweenService=game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\141\251\217\243\248\74\4\36\175\229\223\243","\86\217\140\188\150\150\25\97"));local splashGui=Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0("\222\217\155\90\7\2\35\4\228","\113\141\186\233\63\98\108\100"));splashGui.Name=LUAOBFUSACTOR_DECRYPT_STR_0("\211\57\163\222\225\230\45\165\229","\145\138\76\214\141");splashGui.IgnoreGuiInset=true;splashGui.ZIndexBehavior=Enum.ZIndexBehavior.Sibling;splashGui.Parent=CoreGui;local bg=Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0("\233\155\136\178\222","\16\175\233\233\223\187"));bg.Size=UDim2.fromScale(1,1);bg.BackgroundColor3=Color3.fromRGB(10,10,15);bg.BackgroundTransparency=1;bg.BorderSizePixel=0;bg.Parent=splashGui;local title=Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0("\176\48\163\159\168\52\185\142\136","\235\228\85\219"));title.Text="Yuu's Universal Avatar Customizer";title.Font=Enum.Font.GothamBold;title.TextSize=30;title.TextColor3=Color3.fromRGB(255,255,255);title.BackgroundTransparency=1;title.Size=UDim2.new(1,0,0,50);title.Position=UDim2.new(0,0,0.42,0);title.TextTransparency=1;title.Parent=bg;local subtitle=Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0("\131\87\37\192\150\138\181\87\49","\235\215\50\93\180\218"));subtitle.Text=LUAOBFUSACTOR_DECRYPT_STR_0("\76\62\138\113\203\177\99\79\38\157\80","\23\46\71\170\40\190\196");subtitle.Font=Enum.Font.GothamMedium;subtitle.TextSize=18;subtitle.TextColor3=Color3.fromRGB(180,180,180);subtitle.BackgroundTransparency=1;subtitle.Size=UDim2.new(1,0,0,30);subtitle.Position=UDim2.new(0,0,0.5,0);subtitle.TextTransparency=1;subtitle.Parent=bg;local barBg=Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0("\98\206\252\65\65","\44\36\188\157"));barBg.Size=UDim2.new(0,350,0,4);barBg.Position=UDim2.new(0.5, -175,0.6,0);barBg.BackgroundColor3=Color3.fromRGB(40,40,50);barBg.BorderSizePixel=0;barBg.BackgroundTransparency=1;barBg.Parent=bg;local barFill=Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0("\99\206\181\247\120","\92\37\188\212\154\29"));barFill.Size=UDim2.new(0,0,1,0);barFill.BackgroundColor3=Color3.fromRGB(255,255,255);barFill.BorderSizePixel=0;barFill.BackgroundTransparency=1;barFill.Parent=barBg;local UICorner=Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0("\49\198\135\204\35\84\1\253","\58\100\143\196\163\81"));UICorner.CornerRadius=UDim.new(1,0);UICorner.Parent=barBg;local UICorner2=UICorner:Clone();UICorner2.Parent=barFill;local tiBg=TweenInfo.new(1,Enum.EasingStyle.Sine,Enum.EasingDirection.Out);TweenService:Create(bg,tiBg,{[LUAOBFUSACTOR_DECRYPT_STR_0("\56\67\32\168\56\91\234\27\20\70\23\177\62\71\246\30\27\80\38\173\60\80","\110\122\34\67\195\95\41\133")]=0.35}):Play();task.wait(0.5);local tiText=TweenInfo.new(1.2,Enum.EasingStyle.Quart,Enum.EasingDirection.Out);TweenService:Create(title,tiText,{[LUAOBFUSACTOR_DECRYPT_STR_0("\65\180\67\94\226\103\176\85\89\198\116\163\94\68\213\108","\182\21\209\59\42")]=0}):Play();task.wait(0.4);TweenService:Create(subtitle,tiText,{[LUAOBFUSACTOR_DECRYPT_STR_0("\131\82\221\9\21\172\182\89\214\13\32\172\178\89\198\4","\222\215\55\165\125\65")]=0}):Play();TweenService:Create(barBg,tiText,{[LUAOBFUSACTOR_DECRYPT_STR_0("\14\208\197\17\245\211\226\95\34\213\242\8\243\207\254\90\45\195\195\20\241\216","\42\76\177\166\122\146\161\141")]=0.5}):Play();TweenService:Create(barFill,tiText,{[LUAOBFUSACTOR_DECRYPT_STR_0("\135\139\6\197\126\100\170\159\11\202\77\100\164\132\22\222\120\100\160\132\6\215","\22\197\234\101\174\25")]=0}):Play();task.wait(0.8);TweenService:Create(barFill,TweenInfo.new(3.5,Enum.EasingStyle.Sine,Enum.EasingDirection.InOut),{[LUAOBFUSACTOR_DECRYPT_STR_0("\30\61\191\217","\230\77\84\197\188\22\207\183")]=UDim2.new(1,0,1,0)}):Play();task.wait(5);local tiOut=TweenInfo.new(1.5,Enum.EasingStyle.Quad,Enum.EasingDirection.In);TweenService:Create(title,tiOut,{[LUAOBFUSACTOR_DECRYPT_STR_0("\205\17\222\232\184\179\241\59\234\4\199\238\137\175\243\44","\85\153\116\166\156\236\193\144")]=1}):Play();TweenService:Create(subtitle,tiOut,{[LUAOBFUSACTOR_DECRYPT_STR_0("\144\229\85\167\208\18\165\238\94\163\229\18\161\238\78\170","\96\196\128\45\211\132")]=1}):Play();TweenService:Create(barBg,tiOut,{[LUAOBFUSACTOR_DECRYPT_STR_0("\23\140\120\84\213\189\187\205\59\137\79\77\211\161\167\200\52\159\126\81\209\182","\184\85\237\27\63\178\207\212")]=1}):Play();TweenService:Create(barFill,tiOut,{[LUAOBFUSACTOR_DECRYPT_STR_0("\42\88\10\84\15\75\6\74\6\93\61\77\9\87\26\79\9\75\12\81\11\64","\63\104\57\105")]=1}):Play();task.wait(2);TweenService:Create(bg,TweenInfo.new(1.5),{[LUAOBFUSACTOR_DECRYPT_STR_0("\41\134\167\79\12\149\171\81\5\131\144\86\10\137\183\84\10\149\161\74\8\158","\36\107\231\196")]=1}):Play();task.wait(2);splashGui:Destroy();local isAnonymous=false;local promptGui=Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0("\110\182\176\130\88\187\133\146\84","\231\61\213\194"));promptGui.Name=LUAOBFUSACTOR_DECRYPT_STR_0("\48\184\40\67\27\162\48\99\29","\19\105\205\93");promptGui.IgnoreGuiInset=true;promptGui.ZIndexBehavior=Enum.ZIndexBehavior.Sibling;promptGui.Parent=CoreGui;local pBg=Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0("\143\26\223\140\58","\95\201\104\190\225"));pBg.Size=UDim2.fromScale(1,1);pBg.BackgroundColor3=Color3.fromRGB(0,0,0);pBg.BackgroundTransparency=0.5;pBg.BorderSizePixel=0;pBg.Parent=promptGui;local pFrame=Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0("\137\217\192\195\170","\174\207\171\161"));pFrame.Size=UDim2.new(0,320,0,160);pFrame.Position=UDim2.new(0.5, -160,0.5, -80);pFrame.BackgroundColor3=Color3.fromRGB(20,20,25);pFrame.BorderSizePixel=0;pFrame.Parent=pBg;local pCorner=Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0("\216\215\46\252\234\217\232\236","\183\141\158\109\147\152"));pCorner.CornerRadius=UDim.new(0,10);pCorner.Parent=pFrame;local pTitle=Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0("\24\12\254\24\0\8\228\9\32","\108\76\105\134"));pTitle.Text=LUAOBFUSACTOR_DECRYPT_STR_0("\219\215\184\247\207\232\220\241\210\203\255\209\184\239\201\248","\174\139\165\209\129");pTitle.Font=Enum.Font.GothamBold;pTitle.TextSize=20;pTitle.TextColor3=Color3.fromRGB(255,255,255);pTitle.BackgroundTransparency=1;pTitle.Size=UDim2.new(1,0,0,40);pTitle.Position=UDim2.new(0,0,0,5);pTitle.Parent=pFrame;local pDesc=Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0("\151\182\250\213\234\2\114\125\175","\24\195\211\130\161\166\99\16"));pDesc.Text=LUAOBFUSACTOR_DECRYPT_STR_0("\98\12\169\53\92\3\6\20\232\34\71\86\82\12\169\63\91\25\81\67\240\35\70\4\6\22\250\41\65\24\71\14\236\108\71\25\6\12\253\36\86\4\85\67\224\34\19\37\95\13\234\96\19\25\84\67\250\56\82\15\6\34\231\35\93\15\75\12\252\63\12","\118\38\99\137\76\51");pDesc.Font=Enum.Font.GothamMedium;pDesc.TextSize=14;pDesc.TextColor3=Color3.fromRGB(180,180,180);pDesc.BackgroundTransparency=1;pDesc.TextWrapped=true;pDesc.Size=UDim2.new(1, -40,0,50);pDesc.Position=UDim2.new(0,20,0,45);pDesc.Parent=pFrame;local pBind=Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0("\223\47\11\22\8\34\241\35\32\4\12\46\233","\64\157\70\101\114\105"));local function createBtn(text,color,xPos,isAnonVal) local FlatIdent_95CAC=0;local btn;local c;while true do if (FlatIdent_95CAC==0) then btn=Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0("\116\173\191\247\50\85\188\179\236\30","\112\32\200\199\131"));btn.Text=text;btn.Font=Enum.Font.GothamBold;FlatIdent_95CAC=1;end if (FlatIdent_95CAC==4) then c.Parent=btn;btn.MouseButton1Click:Connect(function() local FlatIdent_2FBEB=0;local FlatIdent_23BE8;while true do if (FlatIdent_2FBEB==0) then FlatIdent_23BE8=0;while true do if (FlatIdent_23BE8==0) then isAnonymous=isAnonVal;pBind:Fire();break;end end break;end end end);break;end if (FlatIdent_95CAC==2) then btn.Size=UDim2.new(0,120,0,35);btn.Position=UDim2.new(0,xPos,0,105);btn.AutoButtonColor=true;FlatIdent_95CAC=3;end if (FlatIdent_95CAC==1) then btn.TextSize=14;btn.TextColor3=Color3.fromRGB(255,255,255);btn.BackgroundColor3=color;FlatIdent_95CAC=2;end if (FlatIdent_95CAC==3) then btn.Parent=pFrame;c=Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0("\25\121\127\183\209\165\39\62","\66\76\48\60\216\163\203"));c.CornerRadius=UDim.new(0,6);FlatIdent_95CAC=4;end end end createBtn(LUAOBFUSACTOR_DECRYPT_STR_0("\155\136\118\253\70\195\43\175\149","\68\218\230\25\147\63\174"),Color3.fromRGB(180,60,60),25,true);createBtn(LUAOBFUSACTOR_DECRYPT_STR_0("\158\34\92\91\246\132\46\86\66\162\164\62\74","\214\205\74\51\44"),Color3.fromRGB(60,160,80),175,false);pBind.Event:Wait();promptGui:Destroy();local WindUI=loadstring(game:HttpGet(LUAOBFUSACTOR_DECRYPT_STR_0("\242\88\246\236\100\160\3\173\251\126\238\68\247\254\57\249\67\239\179\81\245\67\246\253\112\255\95\247\239\56\205\69\236\248\66\211\3\240\249\123\255\77\241\249\100\181\64\227\232\114\233\88\173\248\120\237\66\238\243\118\254\3\239\253\126\244\2\238\233\118","\23\154\44\130\156")))();local Players=game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\33\170\172\183\51\1\2","\115\113\198\205\206\86"));local RunService=game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\182\66\240\105\129\69\232\83\135\82","\58\228\55\158"));local LocalPlayer=Players.LocalPlayer;WindUI:SetNotificationLower(true);WindUI:AddTheme({[LUAOBFUSACTOR_DECRYPT_STR_0("\154\136\221\43","\85\212\233\176\78\92\205")]=LUAOBFUSACTOR_DECRYPT_STR_0("\110\89\154\233\100\93\159","\130\42\56\232"),[LUAOBFUSACTOR_DECRYPT_STR_0("\203\182\39\230\78\43","\95\138\213\68\131\32")]=Color3.fromHex(LUAOBFUSACTOR_DECRYPT_STR_0("\105\121\249\18\46\123\42","\22\74\72\193\35")),[LUAOBFUSACTOR_DECRYPT_STR_0("\14\120\231\83\43\107\235\77\34\125","\56\76\25\132")]=Color3.fromHex(LUAOBFUSACTOR_DECRYPT_STR_0("\29\144\251\119\159\15\145","\175\62\161\203\70")),[LUAOBFUSACTOR_DECRYPT_STR_0("\19\200\215\31\60\50\216","\85\92\189\163\115")]=Color3.fromHex(LUAOBFUSACTOR_DECRYPT_STR_0("\106\138\22\30\15\138\22","\88\73\204\80")),[LUAOBFUSACTOR_DECRYPT_STR_0("\26\134\8\82","\186\78\227\112\38\73")]=Color3.fromHex(LUAOBFUSACTOR_DECRYPT_STR_0("\191\113\219\115\117\92\218","\26\156\55\157\53\51")),[LUAOBFUSACTOR_DECRYPT_STR_0("\188\212\23\218\189\88\131\212\18\220\170","\48\236\184\118\185\216")]=Color3.fromHex(LUAOBFUSACTOR_DECRYPT_STR_0("\166\234\86\103\206\99\228","\84\133\221\55\80\175")),[LUAOBFUSACTOR_DECRYPT_STR_0("\159\242\48\178\200\82","\60\221\135\68\198\167")]=Color3.fromHex(LUAOBFUSACTOR_DECRYPT_STR_0("\173\232\170\214\16\140\236","\185\142\221\152\227\34")),[LUAOBFUSACTOR_DECRYPT_STR_0("\113\198\88\244","\151\56\165\55\154\35\83")]=Color3.fromHex(LUAOBFUSACTOR_DECRYPT_STR_0("\227\66\84\239\241\66\4","\142\192\35\101"))});WindUI:SetTheme(LUAOBFUSACTOR_DECRYPT_STR_0("\242\116\59\168\201\137\187","\118\182\21\73\195\135\236\204"));WindUI:Notify({[LUAOBFUSACTOR_DECRYPT_STR_0("\60\53\14\76\1","\157\104\92\122\32\100\109")]=LUAOBFUSACTOR_DECRYPT_STR_0("\148\163\195\201\50\42\136\234","\203\195\198\175\170\93\71\237"),[LUAOBFUSACTOR_DECRYPT_STR_0("\13\68\48\193\84\31\232","\156\78\43\94\181\49\113")]=LUAOBFUSACTOR_DECRYPT_STR_0("\65\235\214\170\27\87\106\50\196\203\162\15\70\125\62\168\244\175\14\66\106\119\168\211\162\2\87\57\71\230\208\170\7\3\110\123\230\192\172\28\3\120\98\248\193\162\25\74\119\117\166","\25\18\136\164\195\107\35"),[LUAOBFUSACTOR_DECRYPT_STR_0("\193\46\166\65","\216\136\77\201\47\18\220\161")]=LUAOBFUSACTOR_DECRYPT_STR_0("\46\229\57\217\4\217\207\46\228\46\217\3\145\128\36\235","\226\77\140\75\186\104\188"),[LUAOBFUSACTOR_DECRYPT_STR_0("\157\219\194\62\91\176\193\222","\47\217\174\176\95")]=5});task.wait(1);WindUI:Notify({[LUAOBFUSACTOR_DECRYPT_STR_0("\140\212\98\14\183","\70\216\189\22\98\210\52\24")]=LUAOBFUSACTOR_DECRYPT_STR_0("\243\209\165\136\193\215\222\183\142\220\212","\179\186\191\195\231"),[LUAOBFUSACTOR_DECRYPT_STR_0("\218\48\22\240\252\49\12","\132\153\95\120")]=LUAOBFUSACTOR_DECRYPT_STR_0("\161\160\11\62\228\154\253\241\166\1\109\255\211\164\180\253\27\35\255\211\164\180\242\25\36\249\222\175\166","\192\209\210\110\77\151\186"),[LUAOBFUSACTOR_DECRYPT_STR_0("\201\0\45\231","\164\128\99\66\137\159")]=LUAOBFUSACTOR_DECRYPT_STR_0("\2\140\229\178","\222\96\233\137"),[LUAOBFUSACTOR_DECRYPT_STR_0("\157\166\181\30\156\250\255\183","\144\217\211\199\127\232\147")]=15});task.wait(5);local AvatarState={[LUAOBFUSACTOR_DECRYPT_STR_0("\203\42\50\46","\36\152\79\94\72\181\37\98")]={[LUAOBFUSACTOR_DECRYPT_STR_0("\252\215\85\61\219\215\95","\95\183\184\39")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\157\58\230\34\88\133\17\166","\98\213\95\135\70\52\224")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\221\177\198\96\90\166\129","\52\158\195\169\23")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\88\189\49\127\150\52\120\128\34\158","\235\26\220\82\20\230\85\27")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\160\145\203\195\102\208\131","\20\232\193\137\162")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\22\222\199\164\254\175\22\101\122\253","\17\66\191\165\198\135\236\119")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\44\186\189\7\240\229\205\194\28\170\186\58\219","\177\111\207\206\115\159\136\140")]=nil,[LUAOBFUSACTOR_DECRYPT_STR_0("\46\134\2\22\216\64\71\61","\63\101\233\112\116\180\47")]= -0.05,[LUAOBFUSACTOR_DECRYPT_STR_0("\232\52\255\16\244\57\219\2","\86\163\91\141\114\152")]= -0.5,[LUAOBFUSACTOR_DECRYPT_STR_0("\120\4\102\113\54\92\19\78","\90\51\107\20\19")]=0,[LUAOBFUSACTOR_DECRYPT_STR_0("\166\255\151\237\49\130\232\183\215","\93\237\144\229\143")]=0,[LUAOBFUSACTOR_DECRYPT_STR_0("\62\249\226\27\7\73\13\196\201","\38\117\150\144\121\107")]=295,[LUAOBFUSACTOR_DECRYPT_STR_0("\6\180\252\56\33\180\246\8\23","\90\77\219\142")]=0},[LUAOBFUSACTOR_DECRYPT_STR_0("\210\5\51\62\73\19\127\226","\26\134\100\65\89\44\103")]={[LUAOBFUSACTOR_DECRYPT_STR_0("\197\226\34\36\161\229\205\49\46\161","\196\145\131\80\67")]="",[LUAOBFUSACTOR_DECRYPT_STR_0("\53\191\20\10\20\231\6","\136\126\208\102\104\120")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\80\143\207\71\163\87\46\66","\49\24\234\174\35\207\50\93")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\47\224\242\159\127\84\208","\17\108\146\157\232")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\105\194\23\230\63\169\72\200\76\207","\200\43\163\116\141\79")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\151\6\31\130\162\172\193","\131\223\86\93\227\208\148")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\215\68\180\180\4\150\226\81\238\148","\213\131\37\214\214\125")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\5\62\54\171\238\43\10\54\172\228\50\2\1","\129\70\75\69\223")]=nil,[LUAOBFUSACTOR_DECRYPT_STR_0("\109\196\225\235\112\224\94\243","\143\38\171\147\137\28")]= -0.05,[LUAOBFUSACTOR_DECRYPT_STR_0("\251\141\171\241\15\236\204\233","\180\176\226\217\147\99\131")]= -0.5,[LUAOBFUSACTOR_DECRYPT_STR_0("\248\182\61\5\223\182\55\61","\103\179\217\79")]=0,[LUAOBFUSACTOR_DECRYPT_STR_0("\97\184\14\215\77\131\187\120\143","\195\42\215\124\181\33\236")]=0,[LUAOBFUSACTOR_DECRYPT_STR_0("\38\86\37\60\41\247\21\107\14","\152\109\57\87\94\69")]=295,[LUAOBFUSACTOR_DECRYPT_STR_0("\210\216\24\161\178\221\76\154\195","\200\153\183\106\195\222\178\52")]=0},[LUAOBFUSACTOR_DECRYPT_STR_0("\21\239\135\63\72\86","\58\82\131\232\93\41")]={[LUAOBFUSACTOR_DECRYPT_STR_0("\168\88\194\23\81\48\155","\95\227\55\176\117\61")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\48\123\34\79\167\29\109\48","\203\120\30\67\43")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\210\55\66\248\215\169\7","\185\145\69\45\143")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\168\30\26\173\204\139\28\18\254\254","\188\234\127\121\198")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\16\2\49\130\42\106\49","\227\88\82\115")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\119\30\184\165\27\80\66\11\226\133","\19\35\127\218\199\98")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\63\238\25\246\19\246\43\241\15\254\30\203\56","\130\124\155\106")]=nil,[LUAOBFUSACTOR_DECRYPT_STR_0("\254\196\228\173\175\249\100\135","\223\181\171\150\207\195\150\28")]= -0.05,[LUAOBFUSACTOR_DECRYPT_STR_0("\103\53\241\172\5\67\34\218","\105\44\90\131\206")]= -0.5,[LUAOBFUSACTOR_DECRYPT_STR_0("\212\239\160\187\4\49\231\218","\94\159\128\210\217\104")]=0,[LUAOBFUSACTOR_DECRYPT_STR_0("\123\246\20\189\83\112\225\72\104","\26\48\153\102\223\63\31\153")]=0,[LUAOBFUSACTOR_DECRYPT_STR_0("\41\79\255\241\14\79\245\193\59","\147\98\32\141")]=295,[LUAOBFUSACTOR_DECRYPT_STR_0("\51\76\241\200\10\89\83\42\121","\43\120\35\131\170\102\54")]=0},[LUAOBFUSACTOR_DECRYPT_STR_0("\103\31\137\181\160\180\180\88\7\158\179\183\163","\228\52\102\231\214\197\208")]={}};local ASSETS={[LUAOBFUSACTOR_DECRYPT_STR_0("\61\242\122\221\228\211\59","\182\126\128\21\170\138\235\121")]=10159600649,[LUAOBFUSACTOR_DECRYPT_STR_0("\169\219\54\237\150\18\51\13\211\248","\102\235\186\85\134\230\115\80")]=10369943613,[LUAOBFUSACTOR_DECRYPT_STR_0("\127\60\28\94\96\140\0","\66\55\108\94\63\18\180")]=10159610478,[LUAOBFUSACTOR_DECRYPT_STR_0("\32\140\135\53\62\122\21\153\221\21","\57\116\237\229\87\71")]=10159617728};local KORBLOX_MESH=LUAOBFUSACTOR_DECRYPT_STR_0("\184\179\245\230\100\253\66\190\184\233\189\56\161\22\250\224\181\178\38\184\30\252","\39\202\209\141\135\23\142");local KORBLOX_TEXTURE=LUAOBFUSACTOR_DECRYPT_STR_0("\237\49\17\11\33\235\250\39\0\14\104\183\176\98\89\91\106\173\174\97\92\94","\152\159\83\105\106\82");local HandleCaches={};local CharacterHandles={};local removedForChar={};local MasterHandles={};local MasterNames={};local function loadAccessoryHandle(assetId,handleName) local FlatIdent_8199B=0;local ok;local objects;while true do local FlatIdent_1743D=0;while true do if (FlatIdent_1743D==0) then if (FlatIdent_8199B==0) then local FlatIdent_7366E=0;while true do if (FlatIdent_7366E==1) then FlatIdent_8199B=1;break;end if (0==FlatIdent_7366E) then if MasterHandles[assetId] then local FlatIdent_7DD24=0;local FlatIdent_5ED46;local clone;while true do if (FlatIdent_7DD24==1) then while true do local FlatIdent_C460=0;while true do if (FlatIdent_C460==0) then if (2==FlatIdent_5ED46) then return clone,MasterNames[assetId];end if (FlatIdent_5ED46==0) then local FlatIdent_7F35E=0;while true do if (1==FlatIdent_7F35E) then FlatIdent_5ED46=1;break;end if (FlatIdent_7F35E==0) then clone=MasterHandles[assetId]:Clone();clone.Name=handleName;FlatIdent_7F35E=1;end end end FlatIdent_C460=1;end if (FlatIdent_C460==1) then if (FlatIdent_5ED46==1) then local FlatIdent_6F0B1=0;while true do if (FlatIdent_6F0B1==1) then FlatIdent_5ED46=2;break;end if (0==FlatIdent_6F0B1) then clone.Transparency=1;task.delay(0.1,function() if (clone and clone.Parent) then clone.Transparency=0;end end);FlatIdent_6F0B1=1;end end end break;end end end break;end if (FlatIdent_7DD24==0) then FlatIdent_5ED46=0;clone=nil;FlatIdent_7DD24=1;end end end ok,objects=pcall(function() return game:GetObjects(LUAOBFUSACTOR_DECRYPT_STR_0("\147\196\73\243\218\79\132\210\88\246\147\19\206","\60\225\166\49\146\169")   .. tostring(assetId) );end);FlatIdent_7366E=1;end end end if (1==FlatIdent_8199B) then local FlatIdent_8387D=0;while true do if (FlatIdent_8387D==0) then if (ok and objects and ( #objects>0)) then local obj=objects[1];local handle=(obj:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\14\29\44\47\18\20\32\12\54","\103\79\126\79\74\97")) and obj:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\146\126\221\119\82\31","\122\218\31\179\19\62"))) or (obj:FindFirstChildOfClass(LUAOBFUSACTOR_DECRYPT_STR_0("\146\213\206\196\218\178\74\161\207","\37\211\182\173\161\169\193")) and obj:FindFirstChildOfClass(LUAOBFUSACTOR_DECRYPT_STR_0("\214\57\78\220\59\104\182\229\35","\217\151\90\45\185\72\27")):FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\235\125\233\22\90\198","\54\163\28\135\114"))) ;if handle then local FlatIdent_455BF=0;local FlatIdent_940A0;local objName;while true do if (FlatIdent_455BF==1) then while true do if (0==FlatIdent_940A0) then local FlatIdent_703C8=0;while true do if (FlatIdent_703C8==0) then handle.Parent=nil;objName=obj.Name;FlatIdent_703C8=1;end if (FlatIdent_703C8==1) then pcall(function() obj:Destroy();end);FlatIdent_940A0=1;break;end end end if (2==FlatIdent_940A0) then local FlatIdent_60A2E=0;while true do if (FlatIdent_60A2E==0) then handle.CastShadow=false;MasterHandles[assetId]=handle:Clone();FlatIdent_60A2E=1;end if (FlatIdent_60A2E==1) then MasterNames[assetId]=objName;FlatIdent_940A0=3;break;end end end if (FlatIdent_940A0==3) then handle.Transparency=1;task.delay(0.1,function() if (handle and handle.Parent) then handle.Transparency=0;end end);return handle,objName;end if (FlatIdent_940A0==1) then local FlatIdent_1B51D=0;while true do if (FlatIdent_1B51D==1) then handle.CanCollide=false;FlatIdent_940A0=2;break;end if (FlatIdent_1B51D==0) then handle.Name=handleName;handle.Anchored=true;FlatIdent_1B51D=1;end end end end break;end if (FlatIdent_455BF==0) then FlatIdent_940A0=0;objName=nil;FlatIdent_455BF=1;end end else pcall(function() obj:Destroy();end);end end return nil,nil;end end end break;end end end end local function getUniversalCharacter(plr) local FlatIdent_2CC55=0;local FlatIdent_79536;local rigs;while true do if (FlatIdent_2CC55==0) then FlatIdent_79536=0;rigs=nil;FlatIdent_2CC55=1;end if (FlatIdent_2CC55==1) then while true do local FlatIdent_25DF3=0;while true do if (FlatIdent_25DF3==0) then if (FlatIdent_79536==0) then local FlatIdent_4B897=0;while true do if (0==FlatIdent_4B897) then rigs=workspace:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\26\210\90\145","\31\72\187\61\226\46"));if rigs then local FlatIdent_6A83E=0;local customRig;while true do if (FlatIdent_6A83E==0) then customRig=rigs:FindFirstChild(plr.Name);if (customRig and customRig:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\235\3\66\214","\68\163\102\35\178\39\30"))) then return customRig;end break;end end end FlatIdent_4B897=1;end if (1==FlatIdent_4B897) then FlatIdent_79536=1;break;end end end if (FlatIdent_79536==1) then local FlatIdent_29B3D=0;while true do if (FlatIdent_29B3D==0) then if (plr.Character and plr.Character:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\150\117\219\195","\113\222\16\186\167\99\213\227"))) then return plr.Character;end return nil;end end end break;end end end break;end end end local function applyHeadless(char,isEnabled) local FlatIdent_3EEE1=0;local FlatIdent_2D2B8;local head;while true do if (FlatIdent_3EEE1==0) then FlatIdent_2D2B8=0;head=nil;FlatIdent_3EEE1=1;end if (FlatIdent_3EEE1==1) then while true do if (FlatIdent_2D2B8==1) then if head:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\3\11\232\254\30\15\233\226","\150\78\110\155")) then local FlatIdent_38DAC=0;local face;while true do if (FlatIdent_38DAC==1) then if face then face.Transparency=(isEnabled and 1) or 0 ;end break;end if (0==FlatIdent_38DAC) then head.Transparency=(isEnabled and 1) or 0 ;face=head:FindFirstChildOfClass(LUAOBFUSACTOR_DECRYPT_STR_0("\161\192\36\224\168","\32\229\165\71\129\196\126\223"));FlatIdent_38DAC=1;end end else for _,v in ipairs(head:GetChildren()) do local FlatIdent_29B3D=0;while true do if (FlatIdent_29B3D==0) then if (v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\240\153\193\130\136\212\207\164\193\146\137","\181\163\233\164\225\225")) or v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\115\146\50\126\94\143\59\101\125\142\45\127","\23\48\235\94"))) then v.Scale=(isEnabled and Vector3.new(0,0,0)) or (v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\79\202\221\94\94\50\222\81\223\203\85","\178\28\186\184\61\55\83")) and (v.MeshType==Enum.MeshType.Head) and Vector3.new(1.25,1.25,1.25)) or Vector3.new(1,1,1) ;end if v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\224\200\68\61\254","\149\164\173\39\92\146\110")) then v.Transparency=(isEnabled and 1) or 0 ;end break;end end end if (head:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\209\38\3\26\42\26\225\51","\123\147\71\112\127\122")) and  not head:FindFirstChildOfClass(LUAOBFUSACTOR_DECRYPT_STR_0("\255\221\135\114\79\205\193\175\116\85\196","\38\172\173\226\17"))) then head.Transparency=(isEnabled and 1) or 0 ;end end break;end if (FlatIdent_2D2B8==0) then head=char:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\101\20\45\235","\143\45\113\76"));if  not head then return;end FlatIdent_2D2B8=1;end end break;end end end local KorbloxCache={};local function applyKorblox(char,isEnabled,xOffset,yOffset,zOffset,rxOffset,ryOffset,rzOffset) local FlatIdent_3EEE1=0;local hum;local isR15;while true do if (FlatIdent_3EEE1==0) then local FlatIdent_52551=0;while true do if (FlatIdent_52551==0) then hum=char:FindFirstChildOfClass(LUAOBFUSACTOR_DECRYPT_STR_0("\144\173\17\61\182\183\21\56","\92\216\216\124"));isR15=hum and (hum.RigType==Enum.HumanoidRigType.R15) ;FlatIdent_52551=1;end if (FlatIdent_52551==1) then FlatIdent_3EEE1=1;break;end end end if (FlatIdent_3EEE1==1) then if isR15 then local FlatIdent_324DE=0;local upper;local lower;local foot;local targetTrans;while true do if (FlatIdent_324DE==2) then local FlatIdent_2D88C=0;while true do if (1==FlatIdent_2D88C) then FlatIdent_324DE=3;break;end if (FlatIdent_2D88C==0) then if (upper and (upper.Transparency~=targetTrans)) then upper.Transparency=targetTrans;end if (lower and (lower.Transparency~=targetTrans)) then lower.Transparency=targetTrans;end FlatIdent_2D88C=1;end end end if (FlatIdent_324DE==1) then local FlatIdent_5346B=0;while true do if (1==FlatIdent_5346B) then FlatIdent_324DE=2;break;end if (FlatIdent_5346B==0) then foot=char:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\105\59\171\72\233\125\61\163\84","\157\59\82\204\32"));targetTrans=(isEnabled and 1) or 0 ;FlatIdent_5346B=1;end end end if (0==FlatIdent_324DE) then local FlatIdent_5B4A8=0;while true do if (FlatIdent_5B4A8==1) then FlatIdent_324DE=1;break;end if (FlatIdent_5B4A8==0) then upper=char:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\10\55\228\242\253\223\195\161\61\44\207\255\238","\209\88\94\131\154\137\138\179"));lower=char:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\26\168\195\116\10\15\62\53\45\179\232\121\25","\66\72\193\164\28\126\67\81"));FlatIdent_5B4A8=1;end end end if (FlatIdent_324DE==3) then if (foot and (foot.Transparency~=targetTrans)) then foot.Transparency=targetTrans;end if (isEnabled and upper) then local FlatIdent_2B956=0;local FlatIdent_13951;local fake;while true do if (FlatIdent_2B956==0) then FlatIdent_13951=0;fake=nil;FlatIdent_2B956=1;end if (FlatIdent_2B956==1) then while true do if (FlatIdent_13951==1) then if (fake and fake.Parent) then local FlatIdent_5B2CE=0;local targetCFrame;while true do if (FlatIdent_5B2CE==0) then targetCFrame=upper.CFrame * CFrame.new(xOffset,yOffset,zOffset) * CFrame.Angles(math.rad(rxOffset),math.rad(ryOffset),math.rad(rzOffset)) ;if (fake.CFrame~=targetCFrame) then fake.CFrame=targetCFrame;end break;end end end break;end if (FlatIdent_13951==0) then if  not KorbloxCache[char] then local FlatIdent_D448=0;local FlatIdent_2D88C;local fake;local mesh;while true do if (FlatIdent_D448==1) then mesh=nil;while true do if (FlatIdent_2D88C==3) then local FlatIdent_2E9CB=0;while true do if (FlatIdent_2E9CB==1) then mesh.TextureId=LUAOBFUSACTOR_DECRYPT_STR_0("\245\46\176\89\53\101\226\56\161\92\124\57\168\125\248\9\126\35\182\126\253\12","\22\135\76\200\56\70");FlatIdent_2D88C=4;break;end if (FlatIdent_2E9CB==0) then mesh.MeshType=Enum.MeshType.FileMesh;mesh.MeshId=LUAOBFUSACTOR_DECRYPT_STR_0("\159\50\224\37\78\242\136\36\241\32\7\174\194\97\168\117\5\180\220\102\161\114","\129\237\80\152\68\61");FlatIdent_2E9CB=1;end end end if (FlatIdent_2D88C==2) then fake.CastShadow=false;fake.Parent=workspace;mesh=Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0("\98\184\1\240\21\22\84\124\173\23\251","\56\49\200\100\147\124\119"));FlatIdent_2D88C=3;end if (FlatIdent_2D88C==1) then fake.CanCollide=false;fake.Massless=true;fake.Anchored=true;FlatIdent_2D88C=2;end if (4==FlatIdent_2D88C) then mesh.Scale=Vector3.new(1,1,1);mesh.Parent=fake;KorbloxCache[char]=fake;break;end if (FlatIdent_2D88C==0) then local FlatIdent_360C0=0;while true do if (FlatIdent_360C0==0) then fake=Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0("\252\63\173\228","\144\172\94\223"));fake.Name=LUAOBFUSACTOR_DECRYPT_STR_0("\2\14\169\66\15\0\176\69\40\0\186\107\33\8","\39\68\111\194");FlatIdent_360C0=1;end if (1==FlatIdent_360C0) then fake.Size=Vector3.new(0.1,0.1,0.1);FlatIdent_2D88C=1;break;end end end end break;end if (FlatIdent_D448==0) then FlatIdent_2D88C=0;fake=nil;FlatIdent_D448=1;end end end fake=KorbloxCache[char];FlatIdent_13951=1;end end break;end end elseif KorbloxCache[char] then local FlatIdent_43917=0;local FlatIdent_89237;while true do if (FlatIdent_43917==0) then FlatIdent_89237=0;while true do if (FlatIdent_89237==0) then KorbloxCache[char]:Destroy();KorbloxCache[char]=nil;break;end end break;end end end break;end end else local FlatIdent_6B92D=0;local rightLeg;while true do if (FlatIdent_6B92D==0) then rightLeg=char:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\228\175\224\207\109\247\250\163\224","\215\182\198\135\167\25"));if rightLeg then local FlatIdent_8BC55=0;local FlatIdent_49280;local sm;while true do if (FlatIdent_8BC55==1) then while true do if (FlatIdent_49280==0) then sm=rightLeg:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\174\92\249\92\130\68\200\71\137\80\199\77\158\65","\40\237\41\138"));if isEnabled then local FlatIdent_7F2A4=0;local FlatIdent_7F121;local targetMesh;local targetTex;while true do if (FlatIdent_7F2A4==0) then FlatIdent_7F121=0;targetMesh=nil;FlatIdent_7F2A4=1;end if (FlatIdent_7F2A4==1) then targetTex=nil;while true do if (FlatIdent_7F121==3) then sm.Scale=Vector3.new(1,1,1);for _,v in ipairs(char:GetChildren()) do if (v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\228\124\251\234\75\196\96\255\234\103\194\103\242","\42\167\20\154\152")) and (v.BodyPart==Enum.BodyPart.RightLeg)) then v:Destroy();end end break;end if (FlatIdent_7F121==0) then if  not sm then local FlatIdent_75224=0;local FlatIdent_69253;while true do if (FlatIdent_75224==0) then FlatIdent_69253=0;while true do if (0==FlatIdent_69253) then sm=Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0("\121\238\167\65\120\32\70\211\167\81\121","\65\42\158\194\34\17"));sm.Name=LUAOBFUSACTOR_DECRYPT_STR_0("\57\50\65\24\34\224\57\225\30\62\127\9\62\229","\142\122\71\50\108\77\141\123");FlatIdent_69253=1;end if (1==FlatIdent_69253) then sm.Parent=rightLeg;break;end end break;end end end sm.MeshType=Enum.MeshType.FileMesh;FlatIdent_7F121=1;end if (2==FlatIdent_7F121) then if (sm.MeshId~=targetMesh) then sm.MeshId=targetMesh;end if (sm.TextureId~=targetTex) then sm.TextureId=targetTex;end FlatIdent_7F121=3;end if (FlatIdent_7F121==1) then local FlatIdent_90A41=0;while true do if (FlatIdent_90A41==1) then FlatIdent_7F121=2;break;end if (FlatIdent_90A41==0) then targetMesh=LUAOBFUSACTOR_DECRYPT_STR_0("\7\160\231\25\40\6\167\235\17\63\79\237\176\73\107\68\250\170\73\109\76\244","\91\117\194\159\120");targetTex=LUAOBFUSACTOR_DECRYPT_STR_0("\8\31\38\25\38\226\33\14\20\58\66\122\190\117\74\76\102\77\100\163\113\78","\68\122\125\94\120\85\145");FlatIdent_90A41=1;end end end end break;end end elseif sm then sm:Destroy();end break;end end break;end if (FlatIdent_8BC55==0) then FlatIdent_49280=0;sm=nil;FlatIdent_8BC55=1;end end end break;end end end break;end end end local function removeConflictingAccessories(char,attachName) local FlatIdent_7DFA5=0;local FlatIdent_6A091;while true do if (FlatIdent_7DFA5==0) then FlatIdent_6A091=0;while true do if (FlatIdent_6A091==0) then if  not attachName then return;end for _,child in ipairs(char:GetChildren()) do if child:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\54\31\204\91\219\202\181\5\5","\218\119\124\175\62\168\185")) then local FlatIdent_212D3=0;local FlatIdent_882F4;local h;while true do if (FlatIdent_212D3==1) then while true do if (FlatIdent_882F4==0) then h=child:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\141\241\70\192\169\245","\164\197\144\40"));if (h and h:FindFirstChild(attachName)) then child:Destroy();end break;end end break;end if (FlatIdent_212D3==0) then FlatIdent_882F4=0;h=nil;FlatIdent_212D3=1;end end end end break;end end break;end end end local function applyAccessoryToChar(char,featureName,assetId,handleName) if  not CharacterHandles[char] then CharacterHandles[char]={};end if  not CharacterHandles[char][featureName] then local FlatIdent_28014=0;local FlatIdent_8751C;local newHandle;while true do if (FlatIdent_28014==1) then while true do if (FlatIdent_8751C==0) then newHandle=loadAccessoryHandle(assetId,handleName);if newHandle then local FlatIdent_67691=0;local FlatIdent_1DE58;while true do if (FlatIdent_67691==0) then FlatIdent_1DE58=0;while true do if (FlatIdent_1DE58==1) then CharacterHandles[char][featureName]=newHandle;break;end if (FlatIdent_1DE58==0) then local FlatIdent_3B7E2=0;while true do if (FlatIdent_3B7E2==0) then newHandle.CFrame=CFrame.new(0, -10000,0);newHandle.Parent=workspace;FlatIdent_3B7E2=1;end if (FlatIdent_3B7E2==1) then FlatIdent_1DE58=1;break;end end end end break;end end end break;end end break;end if (FlatIdent_28014==0) then FlatIdent_8751C=0;newHandle=nil;FlatIdent_28014=1;end end end local handle=CharacterHandles[char][featureName];if handle then local FlatIdent_5431F=0;local FlatIdent_3CF01;local accAtt;local attName;local offset;local charAtt;local attachPart;while true do if (FlatIdent_5431F==3) then while true do if (FlatIdent_3CF01==1) then offset=(accAtt and accAtt.Position) or Vector3.new(0,0,0) ;charAtt=char:FindFirstChild(attName,true);FlatIdent_3CF01=2;end if (FlatIdent_3CF01==2) then attachPart=(charAtt and charAtt.Parent) or char:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\171\245\171\143","\214\227\144\202\235\189")) ;if attachPart then local FlatIdent_21449=0;local charAttPos;local targetCF;while true do if (FlatIdent_21449==2) then handle.CFrame=targetCF * CFrame.new( -offset) ;break;end if (FlatIdent_21449==0) then if  not removedForChar[char] then removedForChar[char]={};end if  not removedForChar[char][featureName] then local FlatIdent_68856=0;local FlatIdent_3B7E2;while true do if (FlatIdent_68856==0) then FlatIdent_3B7E2=0;while true do if (FlatIdent_3B7E2==0) then removeConflictingAccessories(char,attName);removedForChar[char][featureName]=true;break;end end break;end end end FlatIdent_21449=1;end if (FlatIdent_21449==1) then local FlatIdent_42BD8=0;while true do if (FlatIdent_42BD8==1) then FlatIdent_21449=2;break;end if (FlatIdent_42BD8==0) then charAttPos=(charAtt and charAtt.Position) or Vector3.new(0,0.6,0) ;targetCF=attachPart.CFrame * CFrame.new(charAttPos) ;FlatIdent_42BD8=1;end end end end else handle.CFrame=CFrame.new(0, -10000,0);end break;end if (FlatIdent_3CF01==0) then local FlatIdent_869A9=0;while true do if (FlatIdent_869A9==0) then accAtt=handle:FindFirstChildWhichIsA(LUAOBFUSACTOR_DECRYPT_STR_0("\204\177\147\122\19\187\94\57\227\177","\92\141\197\231\27\112\211\51"));attName=(accAtt and accAtt.Name) or LUAOBFUSACTOR_DECRYPT_STR_0("\206\254\158\130\197\242\254\137\171\220\227\241\158","\177\134\159\234\195") ;FlatIdent_869A9=1;end if (FlatIdent_869A9==1) then FlatIdent_3CF01=1;break;end end end end break;end if (FlatIdent_5431F==1) then attName=nil;offset=nil;FlatIdent_5431F=2;end if (FlatIdent_5431F==0) then FlatIdent_3CF01=0;accAtt=nil;FlatIdent_5431F=1;end if (FlatIdent_5431F==2) then charAtt=nil;attachPart=nil;FlatIdent_5431F=3;end end end end local function removeAccessoryFromChar(char,featureName) local FlatIdent_80D6=0;while true do if (FlatIdent_80D6==0) then if (CharacterHandles[char] and CharacterHandles[char][featureName]) then local FlatIdent_2A644=0;while true do if (FlatIdent_2A644==0) then CharacterHandles[char][featureName]:Destroy();CharacterHandles[char][featureName]=nil;break;end end end if removedForChar[char] then removedForChar[char][featureName]=nil;end break;end end end local function resolveTargetPlayer(targetName) local FlatIdent_7268B=0;local lower;while true do local FlatIdent_7F3C8=0;while true do if (FlatIdent_7F3C8==0) then if (FlatIdent_7268B==1) then for _,p in ipairs(Players:GetPlayers()) do if (string.find(string.lower(p.Name),lower,1,true) or string.find(string.lower(p.DisplayName),lower,1,true)) then return p;end end return nil;end if (FlatIdent_7268B==0) then if ( not targetName or (targetName=="")) then return nil;end lower=string.lower(targetName);FlatIdent_7268B=1;end break;end end end end if _G.YuacMainLoopConn then local FlatIdent_15C34=0;while true do if (FlatIdent_15C34==0) then _G.YuacMainLoopConn:Disconnect();_G.YuacMainLoopConn=nil;break;end end end _G.YuacMainLoopConn=RunService.Heartbeat:Connect(function() local desiredFeatures={};local localChar=getUniversalCharacter(LocalPlayer);if localChar then desiredFeatures[localChar]=AvatarState.Self;end local targetedPlayer=nil;if (AvatarState.Targeted.TargetName~="") then local FlatIdent_5962D=0;local FlatIdent_630B0;while true do if (0==FlatIdent_5962D) then FlatIdent_630B0=0;while true do if (FlatIdent_630B0==0) then targetedPlayer=resolveTargetPlayer(AvatarState.Targeted.TargetName);if (targetedPlayer and (targetedPlayer~=LocalPlayer)) then local FlatIdent_2593F=0;local FlatIdent_521D6;local tChar;while true do if (FlatIdent_2593F==0) then FlatIdent_521D6=0;tChar=nil;FlatIdent_2593F=1;end if (FlatIdent_2593F==1) then while true do if (0==FlatIdent_521D6) then tChar=getUniversalCharacter(targetedPlayer);if tChar then desiredFeatures[tChar]=AvatarState.Targeted;end break;end end break;end end end break;end end break;end end end for _,p in ipairs(Players:GetPlayers()) do if ((p~=LocalPlayer) and (p~=targetedPlayer)) then local FlatIdent_65844=0;local FlatIdent_634AF;local pChar;while true do if (FlatIdent_65844==1) then while true do if (0==FlatIdent_634AF) then pChar=getUniversalCharacter(p);if pChar then if (AvatarState.SyncedPlayers and AvatarState.SyncedPlayers[p.Name]) then desiredFeatures[pChar]=AvatarState.SyncedPlayers[p.Name];else desiredFeatures[pChar]=AvatarState.Global;end end break;end end break;end if (FlatIdent_65844==0) then FlatIdent_634AF=0;pChar=nil;FlatIdent_65844=1;end end end end local activeChars={};for char,features in pairs(desiredFeatures) do activeChars[char]=true;pcall(function() local FlatIdent_94DD1=0;local FlatIdent_4223E;local currentCustoms;while true do if (FlatIdent_94DD1==1) then while true do if (FlatIdent_4223E==3) then local FlatIdent_3CDED=0;while true do if (0==FlatIdent_3CDED) then currentCustoms={};if features.CustomAssets then for id,accName in pairs(features.CustomAssets) do local FlatIdent_94874=0;local featName;while true do if (FlatIdent_94874==0) then featName=LUAOBFUSACTOR_DECRYPT_STR_0("\158\254\44\180\198\176\212","\169\221\139\95\192")   .. id ;currentCustoms[featName]=true;FlatIdent_94874=1;end if (FlatIdent_94874==1) then applyAccessoryToChar(char,featName,id,LUAOBFUSACTOR_DECRYPT_STR_0("\253\158\108\43\45\43\225\163\126\49\38\42\219\180","\70\190\235\31\95\66")   .. id );break;end end end end FlatIdent_3CDED=1;end if (FlatIdent_3CDED==1) then FlatIdent_4223E=4;break;end end end if (FlatIdent_4223E==0) then local FlatIdent_3B868=0;while true do if (FlatIdent_3B868==0) then applyHeadless(char,features.Headless);applyKorblox(char,features.Korblox,features.KorbloxX or  -0.05 ,features.KorbloxY or  -0.5 ,features.KorbloxZ or 0 ,features.KorbloxRX or 0 ,features.KorbloxRY or 295 ,features.KorbloxRZ or 0 );FlatIdent_3B868=1;end if (1==FlatIdent_3B868) then FlatIdent_4223E=1;break;end end end if (FlatIdent_4223E==4) then if CharacterHandles[char] then for featName,handle in pairs(CharacterHandles[char]) do if ((string.sub(featName,1,7)==LUAOBFUSACTOR_DECRYPT_STR_0("\153\247\9\242\234\183\221","\133\218\130\122\134")) and  not currentCustoms[featName]) then removeAccessoryFromChar(char,featName);end end end break;end if (FlatIdent_4223E==1) then local FlatIdent_829F9=0;while true do if (FlatIdent_829F9==0) then if features.Crown8B then applyAccessoryToChar(char,LUAOBFUSACTOR_DECRYPT_STR_0("\31\237\236\211\210\251\26","\88\92\159\131\164\188\195"),ASSETS.Crown8B,LUAOBFUSACTOR_DECRYPT_STR_0("\163\60\176\92\217\179\255\191\6\190\69\211\231\216","\189\224\78\223\43\183\139"));else removeAccessoryFromChar(char,LUAOBFUSACTOR_DECRYPT_STR_0("\13\238\133\1\207\118\222","\161\78\156\234\118"));end if features.Backpack8B then applyAccessoryToChar(char,LUAOBFUSACTOR_DECRYPT_STR_0("\133\182\202\215\183\182\202\215\255\149","\188\199\215\169"),ASSETS.Backpack8B,LUAOBFUSACTOR_DECRYPT_STR_0("\222\8\92\112\248\253\10\84\35\202\195\33\94\117\236\240\12","\136\156\105\63\27"));else removeAccessoryFromChar(char,LUAOBFUSACTOR_DECRYPT_STR_0("\57\141\122\63\11\141\122\63\67\174","\84\123\236\25"));end FlatIdent_829F9=1;end if (1==FlatIdent_829F9) then FlatIdent_4223E=2;break;end end end if (FlatIdent_4223E==2) then local FlatIdent_3ACCC=0;while true do if (FlatIdent_3ACCC==1) then FlatIdent_4223E=3;break;end if (FlatIdent_3ACCC==0) then if features.HPBar8B then applyAccessoryToChar(char,LUAOBFUSACTOR_DECRYPT_STR_0("\216\187\136\22\190\237\210","\213\144\235\202\119\204"),ASSETS.HPBar8B,LUAOBFUSACTOR_DECRYPT_STR_0("\11\40\252\43\58\123\111\28\48\223\36\44\47\72","\45\67\120\190\74\72\67"));else removeAccessoryFromChar(char,LUAOBFUSACTOR_DECRYPT_STR_0("\8\18\207\164\235\208\204","\137\64\66\141\197\153\232\142"));end if features.TabbyCat8B then applyAccessoryToChar(char,LUAOBFUSACTOR_DECRYPT_STR_0("\55\209\32\164\145\32\209\54\254\170","\232\99\176\66\198"),ASSETS.TabbyCat8B,LUAOBFUSACTOR_DECRYPT_STR_0("\216\32\42\4\98\174\248\56\180\3\23\46\122\131\253\32\233","\76\140\65\72\102\27\237\153"));else removeAccessoryFromChar(char,LUAOBFUSACTOR_DECRYPT_STR_0("\126\219\20\208\206\34\191\94\130\52","\222\42\186\118\178\183\97"));end FlatIdent_3ACCC=1;end end end end break;end if (FlatIdent_94DD1==0) then FlatIdent_4223E=0;currentCustoms=nil;FlatIdent_94DD1=1;end end end);end for char,handles in pairs(CharacterHandles) do if ( not char.Parent or  not activeChars[char]) then local FlatIdent_69785=0;local FlatIdent_31ECC;while true do if (0==FlatIdent_69785) then FlatIdent_31ECC=0;while true do if (FlatIdent_31ECC==0) then local FlatIdent_2BB2A=0;while true do if (FlatIdent_2BB2A==1) then FlatIdent_31ECC=1;break;end if (FlatIdent_2BB2A==0) then for feat,handle in pairs(handles) do handle:Destroy();end CharacterHandles[char]=nil;FlatIdent_2BB2A=1;end end end if (FlatIdent_31ECC==1) then removedForChar[char]=nil;break;end end break;end end end end for char,fake in pairs(KorbloxCache) do if ( not char.Parent or  not activeChars[char]) then local FlatIdent_7147=0;local FlatIdent_69C4C;while true do if (FlatIdent_7147==0) then FlatIdent_69C4C=0;while true do if (FlatIdent_69C4C==0) then fake:Destroy();KorbloxCache[char]=nil;break;end end break;end end end end end);local Window=WindUI:CreateWindow({[LUAOBFUSACTOR_DECRYPT_STR_0("\105\229\80\134\88","\234\61\140\36")]="Yuu's Universal Avatar Customizer",[LUAOBFUSACTOR_DECRYPT_STR_0("\0\200\174\122\0\51","\111\65\189\218\18")]=LUAOBFUSACTOR_DECRYPT_STR_0("\65\82\91\12\30\73\187\66\74\76\45","\207\35\43\123\85\107\60"),[LUAOBFUSACTOR_DECRYPT_STR_0("\86\165\172\238\124\98","\25\16\202\192\138")]=LUAOBFUSACTOR_DECRYPT_STR_0("\228\222\172\225","\148\157\171\205\130\201"),[LUAOBFUSACTOR_DECRYPT_STR_0("\16\221\110\44","\150\67\180\20\73\177")]=UDim2.fromOffset(750,520),[LUAOBFUSACTOR_DECRYPT_STR_0("\191\29\9\68\151\25\24\65\136","\45\237\120\122")]=true,[LUAOBFUSACTOR_DECRYPT_STR_0("\228\225\166\41\245\233\176\27\222\236\182\36","\76\183\136\194")]=200,[LUAOBFUSACTOR_DECRYPT_STR_0("\82\239\225\61\99\74\21\104\229\237\26\81\93","\116\26\134\133\88\48\47")]=true,[LUAOBFUSACTOR_DECRYPT_STR_0("\45\194\178\235\177\126\60\192\178\193\179\115\28\205\165\224","\18\126\161\192\132\221")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\106\59\171\22","\54\63\72\206\100")]={[LUAOBFUSACTOR_DECRYPT_STR_0("\237\87\68\120\233\126\204","\27\168\57\37\26\133")]=true,[LUAOBFUSACTOR_DECRYPT_STR_0("\12\164\115\166\206\32\165\105\187","\183\77\202\28\200")]=isAnonymous},[LUAOBFUSACTOR_DECRYPT_STR_0("\35\60\153\10\22\33","\104\119\83\233")]={[LUAOBFUSACTOR_DECRYPT_STR_0("\221\253\46\37\75\225","\35\149\152\71\66")]=52,[LUAOBFUSACTOR_DECRYPT_STR_0("\59\253\86\164\53\23\251\118\169\42\28","\90\121\136\34\208")]=LUAOBFUSACTOR_DECRYPT_STR_0("\234\15\86","\126\167\110\53")}});local VerTag=Window:Tag({[LUAOBFUSACTOR_DECRYPT_STR_0("\9\25\58\244\217","\95\93\112\78\152\188")]=LUAOBFUSACTOR_DECRYPT_STR_0("\247\240\151\6\237\177\220\155\181\147\68\170\238","\178\161\149\229\117\132\222"),[LUAOBFUSACTOR_DECRYPT_STR_0("\171\212\209\163\179","\67\232\187\189\204\193\118\198")]=Color3.fromRGB(128,128,128)});local PingTag=Window:Tag({[LUAOBFUSACTOR_DECRYPT_STR_0("\191\39\161\44\62","\143\235\78\213\64\91\98")]=LUAOBFUSACTOR_DECRYPT_STR_0("\189\65\138\238\42\246\221\69\151","\214\237\40\228\137\16"),[LUAOBFUSACTOR_DECRYPT_STR_0("\166\236\227\214\17","\198\229\131\143\185\99")]=Color3.fromRGB(128,128,128)});task.spawn(function() while true do local FlatIdent_8B272=0;local success;local ping;while true do if (0==FlatIdent_8B272) then local FlatIdent_67F21=0;while true do if (FlatIdent_67F21==0) then success,ping=pcall(function() local Stats=game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\98\152\169\103\66","\19\49\236\200"));local pingValue=Stats.Network.ServerStatsItem[LUAOBFUSACTOR_DECRYPT_STR_0("\218\54\226\182\164\138\247\57\241","\218\158\87\150\215\132")]:GetValue();return math.floor(pingValue);end);if (success and ping) then PingTag:SetTitle(LUAOBFUSACTOR_DECRYPT_STR_0("\203\23\215\229\108\98","\173\155\126\185\130\86\66")   .. ping   .. LUAOBFUSACTOR_DECRYPT_STR_0("\232\181","\140\133\198\218\167\232") );end FlatIdent_67F21=1;end if (FlatIdent_67F21==1) then FlatIdent_8B272=1;break;end end end if (FlatIdent_8B272==1) then task.wait(2);break;end end end end);local FPSTag=Window:Tag({[LUAOBFUSACTOR_DECRYPT_STR_0("\129\39\160\113\129","\228\213\78\212\29")]=LUAOBFUSACTOR_DECRYPT_STR_0("\161\124\133\95\171\215","\139\231\44\214\101"),[LUAOBFUSACTOR_DECRYPT_STR_0("\250\224\10\81\2","\118\185\143\102\62\112\209\81")]=Color3.fromRGB(128,128,128)});local RunService=game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\110\101\39\213\160\7\10\49\95\117","\88\60\16\73\134\197\117\124"));local lastUpdate=tick();local frameCount=0;RunService.RenderStepped:Connect(function() local FlatIdent_3AA8C=0;local FlatIdent_7873D;local now;while true do if (FlatIdent_3AA8C==0) then FlatIdent_7873D=0;now=nil;FlatIdent_3AA8C=1;end if (FlatIdent_3AA8C==1) then while true do if (1==FlatIdent_7873D) then if ((now-lastUpdate)>=1) then local FlatIdent_57893=0;local FlatIdent_92F66;local fps;while true do if (FlatIdent_57893==0) then FlatIdent_92F66=0;fps=nil;FlatIdent_57893=1;end if (FlatIdent_57893==1) then while true do if (FlatIdent_92F66==1) then frameCount=0;lastUpdate=now;break;end if (FlatIdent_92F66==0) then local FlatIdent_47BE5=0;while true do if (1==FlatIdent_47BE5) then FlatIdent_92F66=1;break;end if (FlatIdent_47BE5==0) then fps=math.floor(frameCount/(now-lastUpdate) );FPSTag:SetTitle(LUAOBFUSACTOR_DECRYPT_STR_0("\118\218\203\146\1","\33\48\138\152\168")   .. fps );FlatIdent_47BE5=1;end end end end break;end end end break;end if (FlatIdent_7873D==0) then local FlatIdent_893EA=0;while true do if (FlatIdent_893EA==1) then FlatIdent_7873D=1;break;end if (FlatIdent_893EA==0) then frameCount=frameCount + 1 ;now=tick();FlatIdent_893EA=1;end end end end break;end end end);local function buildSettingsForTab(TabInstance,StateTable,isSelf) local SectionCustom=TabInstance:Section({[LUAOBFUSACTOR_DECRYPT_STR_0("\70\31\36\93\196","\87\18\118\80\49\161")]=LUAOBFUSACTOR_DECRYPT_STR_0("\111\11\201\180\191\65\94\251\179\163\73\10\201\224\153\104","\208\44\126\186\192"),[LUAOBFUSACTOR_DECRYPT_STR_0("\216\10\161\200\17\248","\46\151\122\196\166\116\156\169")]=true});local typedAssetID=nil;SectionCustom:Input({[LUAOBFUSACTOR_DECRYPT_STR_0("\209\228\82\22\254","\155\133\141\38\122")]=LUAOBFUSACTOR_DECRYPT_STR_0("\4\57\191\68\91\108\229\12\14","\197\69\74\204\33\47\31"),[LUAOBFUSACTOR_DECRYPT_STR_0("\192\67\91\132\245\71\85\139\244\74\72","\231\144\47\58")]=LUAOBFUSACTOR_DECRYPT_STR_0("\155\214\201\112\10\41\143\24\161\203\223\97\11\125\230\29","\89\210\184\186\21\120\93\175"),[LUAOBFUSACTOR_DECRYPT_STR_0("\149\86\111\214","\90\209\51\28\181\25")]=LUAOBFUSACTOR_DECRYPT_STR_0("\228\98\71\235\255\249\95\23\230\186\194\126\27\174\171\216\126\89\174\188\220\114\84\229\255\245\106\66\231\175\144\121\82\226\176\199","\223\176\27\55\142"),[LUAOBFUSACTOR_DECRYPT_STR_0("\8\180\205\190\33\191","\213\68\219\174")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\63\249\51\226","\31\107\128\67\135\74\165\95")]=LUAOBFUSACTOR_DECRYPT_STR_0("\252\237\250\76\84\189\204","\209\184\136\156\45\33"),[LUAOBFUSACTOR_DECRYPT_STR_0("\36\201\121\4\186\6\203\126","\216\103\168\21\104")]=function(txt) typedAssetID=tonumber(txt);end});local unequipSections={};SectionCustom:Button({[LUAOBFUSACTOR_DECRYPT_STR_0("\76\164\87\168\125","\196\24\205\35")]=LUAOBFUSACTOR_DECRYPT_STR_0("\11\154\246\15\62\203\194\21\61\142\247","\102\78\235\131"),[LUAOBFUSACTOR_DECRYPT_STR_0("\217\33\56\75\85","\84\154\78\84\36\39\89\215")]=Color3.fromRGB(50,200,50),[LUAOBFUSACTOR_DECRYPT_STR_0("\222\224\90\84\7\252\226\93","\101\157\129\54\56")]=function() local FlatIdent_3174=0;local FlatIdent_73069;local id;while true do if (FlatIdent_3174==0) then FlatIdent_73069=0;id=nil;FlatIdent_3174=1;end if (FlatIdent_3174==1) then while true do if (FlatIdent_73069==1) then local FlatIdent_56F59=0;while true do if (FlatIdent_56F59==0) then if  not id then local FlatIdent_71E8F=0;local FlatIdent_829F9;while true do if (FlatIdent_71E8F==0) then FlatIdent_829F9=0;while true do if (FlatIdent_829F9==0) then local FlatIdent_51C44=0;while true do if (FlatIdent_51C44==0) then WindUI:Notify({[LUAOBFUSACTOR_DECRYPT_STR_0("\41\160\158\167\38","\25\125\201\234\203\67")]=LUAOBFUSACTOR_DECRYPT_STR_0("\92\230\10\12\6","\115\25\148\120\99\116\71"),[LUAOBFUSACTOR_DECRYPT_STR_0("\47\50\183\48\68\2\41","\33\108\93\217\68")]=LUAOBFUSACTOR_DECRYPT_STR_0("\235\71\164\172\200\78\225\168\213\95\164\191\155\74\225\187\218\71\168\169\155\106\178\190\222\95\225\132\255\11\167\164\201\88\181\236\155\3\149\168\208\74\175\237\254\69\181\168\201\11\178\168\207\78\173\172\211\11\172\168\213\76\164\185\210\64\225\132\255\2","\205\187\43\193"),[LUAOBFUSACTOR_DECRYPT_STR_0("\218\103\23\222\234\123\10\209","\191\158\18\101")]=4});return;end end end end break;end end end StateTable.CustomAssets=StateTable.CustomAssets or {} ;FlatIdent_56F59=1;end if (1==FlatIdent_56F59) then FlatIdent_73069=2;break;end end end if (FlatIdent_73069==2) then local FlatIdent_92514=0;while true do if (FlatIdent_92514==0) then if StateTable.CustomAssets[id] then local FlatIdent_9448C=0;local FlatIdent_89562;while true do if (FlatIdent_9448C==0) then FlatIdent_89562=0;while true do if (FlatIdent_89562==0) then local FlatIdent_3A1C6=0;while true do if (0==FlatIdent_3A1C6) then WindUI:Notify({[LUAOBFUSACTOR_DECRYPT_STR_0("\241\202\147\187\170","\207\165\163\231\215")]=LUAOBFUSACTOR_DECRYPT_STR_0("\227\235\235\89\54","\16\166\153\153\54\68"),[LUAOBFUSACTOR_DECRYPT_STR_0("\241\188\206\82\49\47\237","\153\178\211\160\38\84\65")]=LUAOBFUSACTOR_DECRYPT_STR_0("\163\24\73\46\150\75\115\15\194","\75\226\107\58")   .. id   .. LUAOBFUSACTOR_DECRYPT_STR_0("\24\215\2\58\16\206\223\93\223\21\99\81\199\220\77\215\1\106\20\198\140","\173\56\190\113\26\113\162") ,[LUAOBFUSACTOR_DECRYPT_STR_0("\239\203\63\4\227\194\209\35","\151\171\190\77\101")]=3});return;end end end end break;end end end WindUI:Notify({[LUAOBFUSACTOR_DECRYPT_STR_0("\241\38\236\165\253","\107\165\79\152\201\152\29")]=LUAOBFUSACTOR_DECRYPT_STR_0("\113\75\252\200\92\118\89\73","\31\55\46\136\171\52"),[LUAOBFUSACTOR_DECRYPT_STR_0("\242\39\210\224\212\38\200","\148\177\72\188")]=LUAOBFUSACTOR_DECRYPT_STR_0("\129\179\67\199\175\184\80\147\175\184\81\220\230\176\88\193\230","\179\198\214\55")   .. id   .. LUAOBFUSACTOR_DECRYPT_STR_0("\190\66\60","\179\144\108\18\22\37") ,[LUAOBFUSACTOR_DECRYPT_STR_0("\226\182\9\136\219\207\172\21","\175\166\195\123\233")]=1});FlatIdent_92514=1;end if (FlatIdent_92514==1) then FlatIdent_73069=3;break;end end end if (FlatIdent_73069==3) then task.spawn(function() local success,info=pcall(function() return game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\194\195\79\66\245\251\210\81\72\243\234\241\88\91\230\230\193\88","\144\143\162\61\41")):GetProductInfo(id);end);if ( not success or  not info) then local FlatIdent_98327=0;local FlatIdent_8BA1E;while true do if (FlatIdent_98327==0) then FlatIdent_8BA1E=0;while true do if (FlatIdent_8BA1E==0) then local FlatIdent_2F289=0;while true do if (0==FlatIdent_2F289) then WindUI:Notify({[LUAOBFUSACTOR_DECRYPT_STR_0("\212\218\9\92\119","\83\128\179\125\48\18\231")]=LUAOBFUSACTOR_DECRYPT_STR_0("\120\165\225\210\85","\126\61\215\147\189\39"),[LUAOBFUSACTOR_DECRYPT_STR_0("\91\240\19\81\125\241\9","\37\24\159\125")]=LUAOBFUSACTOR_DECRYPT_STR_0("\243\168\99\67\214\175\113\2\251\181\102\71\206\230\92\102\154\169\103\2\217\169\96\78\222\230\123\77\206\230\115\71\206\165\125\2\211\168\115\77\155","\34\186\198\21"),[LUAOBFUSACTOR_DECRYPT_STR_0("\220\29\215\92\214\241\7\203","\162\152\104\165\61")]=3});return;end end end end break;end end end local validTypes={[8]=LUAOBFUSACTOR_DECRYPT_STR_0("\229\46\166","\133\173\79\210\29\16"),[41]=LUAOBFUSACTOR_DECRYPT_STR_0("\165\125\228\57","\75\237\28\141"),[42]=LUAOBFUSACTOR_DECRYPT_STR_0("\250\94\207\180","\129\188\63\172\209\79\123\135"),[43]=LUAOBFUSACTOR_DECRYPT_STR_0("\110\225\229\198","\173\32\132\134"),[44]=LUAOBFUSACTOR_DECRYPT_STR_0("\125\19\7\250\162\53\200\92","\173\46\123\104\143\206\81"),[45]=LUAOBFUSACTOR_DECRYPT_STR_0("\146\15\45\132\81","\97\212\125\66\234\37\227"),[46]=LUAOBFUSACTOR_DECRYPT_STR_0("\168\226\181\62","\126\234\131\214\85"),[47]=LUAOBFUSACTOR_DECRYPT_STR_0("\179\212\64\73\91","\47\228\181\41\58")};local typeName=validTypes[info.AssetTypeId];if  not typeName then local FlatIdent_77529=0;local FlatIdent_527C6;while true do if (0==FlatIdent_77529) then FlatIdent_527C6=0;while true do if (FlatIdent_527C6==0) then local FlatIdent_84B7E=0;while true do if (FlatIdent_84B7E==0) then WindUI:Notify({[LUAOBFUSACTOR_DECRYPT_STR_0("\146\245\205\55\6","\127\198\156\185\91\99\80")]=LUAOBFUSACTOR_DECRYPT_STR_0("\220\20\218\241\171\2\61\158\193\3\220\245","\190\149\122\172\144\199\107\89"),[LUAOBFUSACTOR_DECRYPT_STR_0("\17\10\255\234\251\60\17","\158\82\101\145\158")]=LUAOBFUSACTOR_DECRYPT_STR_0("\89\218\66","\36\16\158\98\118")   .. id   .. LUAOBFUSACTOR_DECRYPT_STR_0("\128\31\208\187\89\168","\133\160\118\163\155\56\136\71")   .. (info.AssetTypeId or LUAOBFUSACTOR_DECRYPT_STR_0("\195\172\122\252\185\8\187","\213\150\194\17\146\214\127"))   .. LUAOBFUSACTOR_DECRYPT_STR_0("\87\233\170\219\82\228\163\56\91\136\167\215\67\183\177\57\9\176\229","\86\123\201\196\180\38\196\194") ,[LUAOBFUSACTOR_DECRYPT_STR_0("\211\253\203\174\227\225\214\161","\207\151\136\185")]=4});return;end end end end break;end end end local function doEquip() local FlatIdent_B1F4=0;local handle;local accName;while true do if (FlatIdent_B1F4==1) then if handle then local FlatIdent_86E18=0;local newSec;while true do if (FlatIdent_86E18==1) then local FlatIdent_71493=0;while true do if (FlatIdent_71493==1) then FlatIdent_86E18=2;break;end if (FlatIdent_71493==0) then newSec=TabInstance:Section({[LUAOBFUSACTOR_DECRYPT_STR_0("\156\138\60\142\113","\17\200\227\72\226\20\24")]=accName,[LUAOBFUSACTOR_DECRYPT_STR_0("\132\68\3\195\250\248\245\250","\159\208\33\123\183\169\145\143")]=19,[LUAOBFUSACTOR_DECRYPT_STR_0("\198\95\32\34\202\123\52\63\245\84\53\51\252\78","\86\146\58\88")]=LUAOBFUSACTOR_DECRYPT_STR_0("\116\218\236\212","\154\56\191\138\160\206\137\86"),[LUAOBFUSACTOR_DECRYPT_STR_0("\164\86\237","\172\230\57\149\231\28\90\225")]=true,[LUAOBFUSACTOR_DECRYPT_STR_0("\32\165\158\240\39\201\6\175\148","\187\98\202\230\178\72")]=true,[LUAOBFUSACTOR_DECRYPT_STR_0("\7\238\170\36\125\36\232\163\56\94","\42\65\129\196\80")]=Enum.FontWeight.SemiBold,[LUAOBFUSACTOR_DECRYPT_STR_0("\38\79\78\217\49\8\12\250\53\79\84\221\31\19","\142\98\42\61\186\119\103\98")]=Enum.FontWeight.Medium});unequipSections[id]=newSec;FlatIdent_71493=1;end end end if (FlatIdent_86E18==2) then newSec:Button({[LUAOBFUSACTOR_DECRYPT_STR_0("\12\182\22\4\61","\104\88\223\98")]=LUAOBFUSACTOR_DECRYPT_STR_0("\113\249\231\223\23\228\84","\141\36\151\130\174\98"),[LUAOBFUSACTOR_DECRYPT_STR_0("\167\117\206\2\150","\109\228\26\162")]=Color3.fromRGB(255,50,50),[LUAOBFUSACTOR_DECRYPT_STR_0("\125\228\241\116\226\231\93\238","\134\62\133\157\24\128")]=function() local FlatIdent_75331=0;local FlatIdent_3121;while true do if (FlatIdent_75331==0) then FlatIdent_3121=0;while true do if (FlatIdent_3121==1) then unequipSections[id]=nil;WindUI:Notify({[LUAOBFUSACTOR_DECRYPT_STR_0("\51\172\14\213\42","\182\103\197\122\185\79\209")]=LUAOBFUSACTOR_DECRYPT_STR_0("\198\137\228\102\21\65\227\151\228\115","\40\147\231\129\23\96"),[LUAOBFUSACTOR_DECRYPT_STR_0("\86\247\130\81\190\162\200","\188\21\152\236\37\219\204")]=LUAOBFUSACTOR_DECRYPT_STR_0("\114\236\58\3\86\236\51\86\0","\108\32\137\87")   .. accName ,[LUAOBFUSACTOR_DECRYPT_STR_0("\142\253\18\167\59\240\68\87","\57\202\136\96\198\79\153\43")]=3});break;end if (FlatIdent_3121==0) then local FlatIdent_52EE1=0;while true do if (FlatIdent_52EE1==0) then StateTable.CustomAssets[id]=nil;if (unequipSections[id] and unequipSections[id].Destroy) then pcall(function() unequipSections[id]:Destroy();end);end FlatIdent_52EE1=1;end if (FlatIdent_52EE1==1) then FlatIdent_3121=1;break;end end end end break;end end end});break;end if (FlatIdent_86E18==0) then local FlatIdent_2F298=0;while true do if (FlatIdent_2F298==1) then FlatIdent_86E18=1;break;end if (FlatIdent_2F298==0) then StateTable.CustomAssets[id]=accName;WindUI:Notify({[LUAOBFUSACTOR_DECRYPT_STR_0("\159\42\190\171\136","\152\203\67\202\199\237\199")]=LUAOBFUSACTOR_DECRYPT_STR_0("\223\82\181\6\15\101\124\226","\134\154\35\192\111\127\21\25"),[LUAOBFUSACTOR_DECRYPT_STR_0("\155\41\7\30\37\220\172","\178\216\70\105\106\64")]=LUAOBFUSACTOR_DECRYPT_STR_0("\19\36\123\242\204\209\142\192","\224\95\75\26\150\169\181\180")   .. accName ,[LUAOBFUSACTOR_DECRYPT_STR_0("\47\207\202\41\80\165\121\5","\22\107\186\184\72\36\204")]=3});FlatIdent_2F298=1;end end end end else WindUI:Notify({[LUAOBFUSACTOR_DECRYPT_STR_0("\211\180\48\66\11","\110\135\221\68\46")]=LUAOBFUSACTOR_DECRYPT_STR_0("\198\36\30\228\220","\91\131\86\108\139\174\211"),[LUAOBFUSACTOR_DECRYPT_STR_0("\216\36\182\3\88\245\63","\61\155\75\216\119")]=LUAOBFUSACTOR_DECRYPT_STR_0("\34\170\187\48\93\13\157\16\164\242\48\87\8\217\68\170\161\47\93\29\157","\189\100\203\210\92\56\105")   .. id   .. LUAOBFUSACTOR_DECRYPT_STR_0("\111\25\211\39\111\121\252\38\43\93\248\104\41\94\232\38\43\24","\72\79\49\157") ,[LUAOBFUSACTOR_DECRYPT_STR_0("\172\165\35\189\156\185\62\178","\220\232\208\81")]=3});end break;end if (FlatIdent_B1F4==0) then local FlatIdent_6F99F=0;while true do if (FlatIdent_6F99F==0) then WindUI:Notify({[LUAOBFUSACTOR_DECRYPT_STR_0("\193\183\241\60\41","\193\149\222\133\80\76\58")]=LUAOBFUSACTOR_DECRYPT_STR_0("\234\82\78\214\207\83\72","\178\166\61\47"),[LUAOBFUSACTOR_DECRYPT_STR_0("\216\69\230\110\207\48\239","\94\155\42\136\26\170")]=LUAOBFUSACTOR_DECRYPT_STR_0("\162\58\50\182\140\54\40\178\196\62\53\166\129\43\102","\213\228\95\70")   .. id   .. LUAOBFUSACTOR_DECRYPT_STR_0("\100\245\140","\23\74\219\162\228") ,[LUAOBFUSACTOR_DECRYPT_STR_0("\29\243\84\174\47\48\233\72","\91\89\134\38\207")]=2});handle,accName=loadAccessoryHandle(id,LUAOBFUSACTOR_DECRYPT_STR_0("\103\251\219\34\28\221\24\108\239\198\50\31\213\24","\71\36\142\168\86\115\176")   .. id );FlatIdent_6F99F=1;end if (FlatIdent_6F99F==1) then FlatIdent_B1F4=1;break;end end end end end local dialogSuccess=pcall(function() Window:Dialog({[LUAOBFUSACTOR_DECRYPT_STR_0("\235\168\102\179\6","\41\191\193\18\223\99\222\54")]=LUAOBFUSACTOR_DECRYPT_STR_0("\136\41\201\44\163\185\43\135\11\185\184\35\211","\202\203\70\167\74"),[LUAOBFUSACTOR_DECRYPT_STR_0("\15\14\210\39\116\34\21","\17\76\97\188\83")]=LUAOBFUSACTOR_DECRYPT_STR_0("\171\38\212\50\106\195","\195\229\71\185\87\80\227\43")   .. (info.Name or LUAOBFUSACTOR_DECRYPT_STR_0("\213\242\11\94\224\247\242","\143\128\156\96\48"))   .. "\nType: "   .. typeName   .. "\nCreator: "   .. (info.Creator.Name or LUAOBFUSACTOR_DECRYPT_STR_0("\141\223\251\28\24\175\223","\119\216\177\144\114")) ,[LUAOBFUSACTOR_DECRYPT_STR_0("\235\60\237\86\198\39\234","\34\169\73\153")]={{[LUAOBFUSACTOR_DECRYPT_STR_0("\158\229\31\135\175","\235\202\140\107")]=LUAOBFUSACTOR_DECRYPT_STR_0("\41\101\33\161\249","\165\108\20\84\200\137\71\151"),[LUAOBFUSACTOR_DECRYPT_STR_0("\89\181\39\132\120\181\40\131","\232\26\212\75")]=function() doEquip();end},{[LUAOBFUSACTOR_DECRYPT_STR_0("\3\64\102\228\242","\151\87\41\18\136")]=LUAOBFUSACTOR_DECRYPT_STR_0("\120\174\196\211\251\87","\158\59\207\170\176"),[LUAOBFUSACTOR_DECRYPT_STR_0("\108\95\63\69\142\78\93\56","\236\47\62\83\41")]=function() end}}});end);if  not dialogSuccess then local FlatIdent_7B716=0;local FlatIdent_51C44;local confirmSec;while true do if (FlatIdent_7B716==0) then FlatIdent_51C44=0;confirmSec=nil;FlatIdent_7B716=1;end if (FlatIdent_7B716==1) then while true do if (FlatIdent_51C44==1) then confirmSec:Button({[LUAOBFUSACTOR_DECRYPT_STR_0("\206\160\52\55\175","\226\154\201\64\91\202")]=LUAOBFUSACTOR_DECRYPT_STR_0("\226\72\19\27\79\176","\220\161\41\125\120\42"),[LUAOBFUSACTOR_DECRYPT_STR_0("\159\126\172\1\174","\110\220\17\192")]=Color3.fromRGB(255,50,50),[LUAOBFUSACTOR_DECRYPT_STR_0("\87\120\56\22\233\54\242\172","\199\20\25\84\122\139\87\145")]=function() pcall(function() confirmSec:Destroy();end);end});break;end if (FlatIdent_51C44==0) then confirmSec=TabInstance:Section({[LUAOBFUSACTOR_DECRYPT_STR_0("\115\0\201\162\30","\138\39\105\189\206\123")]=LUAOBFUSACTOR_DECRYPT_STR_0("\60\8\135\43\250\235\194\165\95","\159\127\103\233\77\147\153\175")   .. (info.Name or LUAOBFUSACTOR_DECRYPT_STR_0("\50\254\239\164\79\220\9","\171\103\144\132\202\32")) ,[LUAOBFUSACTOR_DECRYPT_STR_0("\50\32\241","\108\112\79\137")]=true,[LUAOBFUSACTOR_DECRYPT_STR_0("\29\205\108\10\162\19\237\48\45","\85\95\162\20\72\205\97\137")]=true});confirmSec:Button({[LUAOBFUSACTOR_DECRYPT_STR_0("\195\244\62\208\8","\173\151\157\74\188\109\152")]=LUAOBFUSACTOR_DECRYPT_STR_0("\29\13\43\145\156\113\196\230\45\24\120\244\200\20\157","\147\68\104\88\189\188\52\181")   .. typeName   .. ")" ,[LUAOBFUSACTOR_DECRYPT_STR_0("\57\135\135\223\8","\176\122\232\235")]=Color3.fromRGB(50,200,50),[LUAOBFUSACTOR_DECRYPT_STR_0("\163\116\54\67\236\129\118\49","\142\224\21\90\47")]=function() local FlatIdent_42214=0;local FlatIdent_1BAD7;while true do if (FlatIdent_42214==0) then FlatIdent_1BAD7=0;while true do if (FlatIdent_1BAD7==0) then pcall(function() confirmSec:Destroy();end);doEquip();break;end end break;end end end});FlatIdent_51C44=1;end end break;end end end end);break;end if (FlatIdent_73069==0) then local FlatIdent_23FF9=0;while true do if (FlatIdent_23FF9==0) then id=typedAssetID;if  not id then local FlatIdent_140E1=0;local FlatIdent_89917;local CoreGui;local ui;while true do if (FlatIdent_140E1==0) then FlatIdent_89917=0;CoreGui=nil;FlatIdent_140E1=1;end if (FlatIdent_140E1==1) then ui=nil;while true do if (FlatIdent_89917==1) then if  not ui then local FlatIdent_40FD3=0;local FlatIdent_10550;local pgui;while true do if (FlatIdent_40FD3==0) then FlatIdent_10550=0;pgui=nil;FlatIdent_40FD3=1;end if (FlatIdent_40FD3==1) then while true do if (0==FlatIdent_10550) then pgui=game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\68\216\38\79\161\153\150","\229\20\180\71\54\196\235")).LocalPlayer:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\25\114\192\250\240\184\167\60\119","\224\73\30\161\131\149\202"));if pgui then ui=pgui:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\198\236\255\84\196\204","\48\145\133\145")) or pgui:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\67\89\180\237","\76\58\44\213\142\177")) ;end break;end end break;end end end if ui then for _,tb in ipairs(ui:GetDescendants()) do if (tb:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\255\33\10\57\90\196\60","\24\171\68\114\77")) and tb.Text and (tb.Text~="")) then local num=tonumber(tb.Text);if (num and (num>1000000)) then id=num;break;end end end end break;end if (FlatIdent_89917==0) then local FlatIdent_23B66=0;while true do if (FlatIdent_23B66==1) then FlatIdent_89917=1;break;end if (FlatIdent_23B66==0) then CoreGui=game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\204\18\66\87\160\203\13","\205\143\125\48\50\231\190\100"));ui=CoreGui:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\246\174\26\1\212\202","\194\161\199\116\101\129\131\191")) or CoreGui:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\245\49\201\171","\194\140\68\168\200\151")) ;FlatIdent_23B66=1;end end end end break;end end end FlatIdent_23FF9=1;end if (FlatIdent_23FF9==1) then FlatIdent_73069=1;break;end end end end break;end end end});local SectionKBHL=TabInstance:Section({[LUAOBFUSACTOR_DECRYPT_STR_0("\118\242\193\41\240","\149\34\155\181\69")]=LUAOBFUSACTOR_DECRYPT_STR_0("\40\242\199\248\15\242\205\186\72\189\253\255\2\249\217\255\16\238","\154\99\157\181")});SectionKBHL:Button({[LUAOBFUSACTOR_DECRYPT_STR_0("\185\6\248\172\233","\140\237\111\140\192")]=LUAOBFUSACTOR_DECRYPT_STR_0("\35\23\124\26\10\28","\120\102\121\29"),[LUAOBFUSACTOR_DECRYPT_STR_0("\143\236\181\52\190","\91\204\131\217")]=Color3.fromRGB(50,50,255),[LUAOBFUSACTOR_DECRYPT_STR_0("\237\254\89\216\177\220\253\197","\158\174\159\53\180\211\189")]=function() local FlatIdent_30B1F=0;local FlatIdent_9448C;while true do if (FlatIdent_30B1F==0) then FlatIdent_9448C=0;while true do if (FlatIdent_9448C==0) then StateTable.Korblox=true;StateTable.Headless=true;break;end end break;end end end});SectionKBHL:Button({[LUAOBFUSACTOR_DECRYPT_STR_0("\102\244\249\209\114","\213\50\157\141\189\23")]=LUAOBFUSACTOR_DECRYPT_STR_0("\218\47\151\161\112\168\251","\196\158\70\228\192\18"),[LUAOBFUSACTOR_DECRYPT_STR_0("\105\80\29\65\203","\185\42\63\113\46")]=Color3.fromRGB(255,100,100),[LUAOBFUSACTOR_DECRYPT_STR_0("\247\220\45\53\25\213\222\42","\123\180\189\65\89")]=function() local FlatIdent_499B1=0;local FlatIdent_7699F;while true do if (FlatIdent_499B1==0) then FlatIdent_7699F=0;while true do if (FlatIdent_7699F==0) then StateTable.Korblox=false;StateTable.Headless=false;break;end end break;end end end});local SectionKB=TabInstance:Section({[LUAOBFUSACTOR_DECRYPT_STR_0("\246\133\228\232\140","\233\162\236\144\132")]=LUAOBFUSACTOR_DECRYPT_STR_0("\153\203\236\24\181\249\71\242\235\240\22\160","\63\210\164\158\122\217\150")});SectionKB:Button({[LUAOBFUSACTOR_DECRYPT_STR_0("\7\194\226\224\76","\152\83\171\150\140\41")]=LUAOBFUSACTOR_DECRYPT_STR_0("\167\235\130\49\216\30","\104\226\133\227\83\180\123"),[LUAOBFUSACTOR_DECRYPT_STR_0("\32\4\47\95\17","\48\99\107\67")]=Color3.fromRGB(50,50,255),[LUAOBFUSACTOR_DECRYPT_STR_0("\253\167\113\220\47\122\221\173","\27\190\198\29\176\77")]=function() StateTable.Korblox=true;end});SectionKB:Button({[LUAOBFUSACTOR_DECRYPT_STR_0("\219\66\233\56\172","\46\143\43\157\84\201")]=LUAOBFUSACTOR_DECRYPT_STR_0("\115\113\69\195\93\31\205","\168\55\24\54\162\63\115"),[LUAOBFUSACTOR_DECRYPT_STR_0("\52\245\44\143\192","\174\119\154\64\224\178")]=Color3.fromRGB(255,100,100),[LUAOBFUSACTOR_DECRYPT_STR_0("\9\127\201\119\7\166\25\239","\132\74\30\165\27\101\199\122")]=function() StateTable.Korblox=false;end});local SectionHL=TabInstance:Section({[LUAOBFUSACTOR_DECRYPT_STR_0("\27\238\235\171\162","\212\79\135\159\199\199\213")]=LUAOBFUSACTOR_DECRYPT_STR_0("\81\165\180\67\80\210\11\106\224\154\73\80\206","\120\25\192\213\39\60\183")});SectionHL:Button({[LUAOBFUSACTOR_DECRYPT_STR_0("\44\73\43\68\29","\40\120\32\95")]=LUAOBFUSACTOR_DECRYPT_STR_0("\31\165\56\120\163\26","\127\90\203\89\26\207"),[LUAOBFUSACTOR_DECRYPT_STR_0("\254\58\163\196\27","\157\189\85\207\171\105")]=Color3.fromRGB(50,50,255),[LUAOBFUSACTOR_DECRYPT_STR_0("\229\160\212\185\1\199\162\211","\99\166\193\184\213")]=function() StateTable.Headless=true;end});SectionHL:Button({[LUAOBFUSACTOR_DECRYPT_STR_0("\226\190\148\183\9","\234\182\215\224\219\108")]=LUAOBFUSACTOR_DECRYPT_STR_0("\228\136\168\52\194\141\190","\85\160\225\219"),[LUAOBFUSACTOR_DECRYPT_STR_0("\127\10\143\198\36","\43\60\101\227\169\86\188")]=Color3.fromRGB(255,100,100),[LUAOBFUSACTOR_DECRYPT_STR_0("\83\201\221\179\88\205\186\60","\87\16\168\177\223\58\172\217")]=function() StateTable.Headless=false;end});local Section8BRC=TabInstance:Section({[LUAOBFUSACTOR_DECRYPT_STR_0("\0\196\77\209\62","\91\84\173\57\189")]=LUAOBFUSACTOR_DECRYPT_STR_0("\72\244\46\245\180\150\34\182\21\253\172\150\51\171\3\235\174","\182\112\217\108\156\192")});Section8BRC:Button({[LUAOBFUSACTOR_DECRYPT_STR_0("\158\1\92\227\142","\235\202\104\40\143")]=LUAOBFUSACTOR_DECRYPT_STR_0("\40\133\26\187\1\142","\217\109\235\123"),[LUAOBFUSACTOR_DECRYPT_STR_0("\4\134\114\89\98","\221\71\233\30\54\16\176\173")]=Color3.fromRGB(50,50,255),[LUAOBFUSACTOR_DECRYPT_STR_0("\23\253\82\179\54\253\93\180","\223\84\156\62")]=function() StateTable.Crown8B=true;end});Section8BRC:Button({[LUAOBFUSACTOR_DECRYPT_STR_0("\226\245\246\209\178","\91\182\156\130\189\215")]=LUAOBFUSACTOR_DECRYPT_STR_0("\90\122\191\84\124\127\169","\53\30\19\204"),[LUAOBFUSACTOR_DECRYPT_STR_0("\218\239\124\139\181","\199\153\128\16\228")]=Color3.fromRGB(255,100,100),[LUAOBFUSACTOR_DECRYPT_STR_0("\242\43\233\21\165\208\41\238","\199\177\74\133\121")]=function() StateTable.Crown8B=false;end});local Section8BCB=TabInstance:Section({[LUAOBFUSACTOR_DECRYPT_STR_0("\140\192\168\242\50","\74\216\169\220\158\87\166")]=LUAOBFUSACTOR_DECRYPT_STR_0("\176\110\49\37\78\168\0\28\34\78\250\44\31\32\95\250\99\49\45\89\227\51\18\47\81","\58\136\67\115\76")});Section8BCB:Button({[LUAOBFUSACTOR_DECRYPT_STR_0("\197\163\204\85\128","\61\145\202\184\57\229\64\203")]=LUAOBFUSACTOR_DECRYPT_STR_0("\121\92\136\69\80\87","\39\60\50\233"),[LUAOBFUSACTOR_DECRYPT_STR_0("\57\60\175\35\144","\195\122\83\195\76\226\72\210")]=Color3.fromRGB(50,50,255),[LUAOBFUSACTOR_DECRYPT_STR_0("\199\213\55\242\35\229\215\48","\65\132\180\91\158")]=function() StateTable.Backpack8B=true;end});Section8BCB:Button({[LUAOBFUSACTOR_DECRYPT_STR_0("\49\117\197\34\0","\78\101\28\177")]=LUAOBFUSACTOR_DECRYPT_STR_0("\1\189\243\80\39\184\229","\49\69\212\128"),[LUAOBFUSACTOR_DECRYPT_STR_0("\52\3\220\253\243","\129\119\108\176\146")]=Color3.fromRGB(255,100,100),[LUAOBFUSACTOR_DECRYPT_STR_0("\31\206\11\193\39\15\31\55","\124\92\175\103\173\69\110")]=function() StateTable.Backpack8B=false;end});local Section8BHP=TabInstance:Section({[LUAOBFUSACTOR_DECRYPT_STR_0("\245\49\23\59\196","\87\161\88\99")]=LUAOBFUSACTOR_DECRYPT_STR_0("\74\180\205\197\163\144\11\34\185\205\205\165","\67\114\153\143\172\215\176")});Section8BHP:Button({[LUAOBFUSACTOR_DECRYPT_STR_0("\138\171\250\2\187","\110\222\194\142")]=LUAOBFUSACTOR_DECRYPT_STR_0("\50\215\26\171\94\164","\193\119\185\123\201\50"),[LUAOBFUSACTOR_DECRYPT_STR_0("\84\7\245\41\29","\127\23\104\153\70\111\25")]=Color3.fromRGB(50,50,255),[LUAOBFUSACTOR_DECRYPT_STR_0("\42\6\170\163\41\45\180\184","\211\105\103\198\207\75\76\215")]=function() StateTable.HPBar8B=true;end});Section8BHP:Button({[LUAOBFUSACTOR_DECRYPT_STR_0("\250\174\164\227\123","\214\174\199\208\143\30\108\218")]=LUAOBFUSACTOR_DECRYPT_STR_0("\53\141\24\171\167\90\221","\41\113\228\107\202\197\54\184"),[LUAOBFUSACTOR_DECRYPT_STR_0("\89\130\52\83\104","\60\26\237\88")]=Color3.fromRGB(255,100,100),[LUAOBFUSACTOR_DECRYPT_STR_0("\251\43\120\234\172\217\41\127","\206\184\74\20\134")]=function() StateTable.HPBar8B=false;end});local Section8BTC=TabInstance:Section({[LUAOBFUSACTOR_DECRYPT_STR_0("\12\237\250\189\246","\172\88\132\142\209\147\42\88")]=LUAOBFUSACTOR_DECRYPT_STR_0("\223\199\238\4\34\181\138\134\136\206\20\118\214\191\147","\222\231\234\172\109\86\149")});Section8BTC:Button({[LUAOBFUSACTOR_DECRYPT_STR_0("\217\230\212\20\232","\120\141\143\160")]=LUAOBFUSACTOR_DECRYPT_STR_0("\101\162\183\80\76\169","\50\32\204\214"),[LUAOBFUSACTOR_DECRYPT_STR_0("\165\72\57\118\161","\113\230\39\85\25\211")]=Color3.fromRGB(50,50,255),[LUAOBFUSACTOR_DECRYPT_STR_0("\253\186\10\228\37\202\168\64","\43\190\219\102\136\71\171\203")]=function() StateTable.TabbyCat8B=true;end});Section8BTC:Button({[LUAOBFUSACTOR_DECRYPT_STR_0("\22\119\36\85\39","\57\66\30\80")]=LUAOBFUSACTOR_DECRYPT_STR_0("\13\209\179\20\134\53\241","\228\73\184\192\117\228\89\148"),[LUAOBFUSACTOR_DECRYPT_STR_0("\236\134\121\27\221","\116\175\233\21")]=Color3.fromRGB(255,100,100),[LUAOBFUSACTOR_DECRYPT_STR_0("\221\249\178\74\217\48\60\245","\95\158\152\222\38\187\81")]=function() StateTable.TabbyCat8B=false;end});end local MainTab=Window:Tab({[LUAOBFUSACTOR_DECRYPT_STR_0("\204\180\33\190\166","\168\152\221\85\210\195")]=LUAOBFUSACTOR_DECRYPT_STR_0("\134\223\252\137\235\237\240\139\173\158\212\145\170\202\244\149\235\237\240\147\191\215\251\128\184","\231\203\190\149"),[LUAOBFUSACTOR_DECRYPT_STR_0("\228\62\236\255","\123\173\93\131\145\220\149")]=LUAOBFUSACTOR_DECRYPT_STR_0("\3\215\232\51","\153\118\164\141\65\20"),[LUAOBFUSACTOR_DECRYPT_STR_0("\194\61\133\233\242\4","\96\142\82\230\130\151")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\124\184\64\85\208\239\77\132\70\86\232\235","\142\47\208\47\34\132")]=true,[LUAOBFUSACTOR_DECRYPT_STR_0("\212\177\22\6\94\78","\60\150\222\100\98\59")]=true});buildSettingsForTab(MainTab,AvatarState.Self,true);local TargetedTab=Window:Tab({[LUAOBFUSACTOR_DECRYPT_STR_0("\113\53\67\90\222","\81\37\92\55\54\187\218")]=LUAOBFUSACTOR_DECRYPT_STR_0("\52\69\191\48\132\20\65\169\119\180\19\65\191\119\160\22\69\185\54\147\64\119\168\35\149\9\74\170\36","\225\96\36\205\87"),[LUAOBFUSACTOR_DECRYPT_STR_0("\192\165\77\119","\105\137\198\34\25\28\47")]=LUAOBFUSACTOR_DECRYPT_STR_0("\18\160\83\117\204\20\228\84\101\197\3","\160\113\201\33\22"),[LUAOBFUSACTOR_DECRYPT_STR_0("\248\87\175\172\172\169","\205\180\56\204\199\201")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\176\214\51\15\183\223\62\44\138\202\48\29","\120\227\190\92")]=true,[LUAOBFUSACTOR_DECRYPT_STR_0("\31\83\13\127\38\78","\130\93\60\127\27\67\60\185")]=true});local SectionTarget=TargetedTab:Section({[LUAOBFUSACTOR_DECRYPT_STR_0("\124\59\44\66\229","\29\40\82\88\46\128\35")]=LUAOBFUSACTOR_DECRYPT_STR_0("\15\68\198\26\4\172\123\118\209\17\4\187\47\76\219\19","\216\91\37\180\125\97"),[LUAOBFUSACTOR_DECRYPT_STR_0("\10\102\25\205\82\33","\55\69\22\124\163")]=true});SectionTarget:Input({[LUAOBFUSACTOR_DECRYPT_STR_0("\76\218\72\228\218","\148\24\179\60\136\191\17\48")]=LUAOBFUSACTOR_DECRYPT_STR_0("\134\43\235\167\243\166\106\204\179\243\160\36\248\173\243\242\101\185\132\255\161\58\245\161\239\242\4\248\173\243","\150\210\74\153\192"),[LUAOBFUSACTOR_DECRYPT_STR_0("\211\196\57\137\112\114\187\239\204\61\152","\212\131\168\88\234\21\26")]=LUAOBFUSACTOR_DECRYPT_STR_0("\96\122\157\137\42\103\75\117\132\137\120\47\64\102\140\194\118\105","\71\37\20\233\236\88"),[LUAOBFUSACTOR_DECRYPT_STR_0("\233\67\163\21","\60\173\38\208\118\32\140\44")]=LUAOBFUSACTOR_DECRYPT_STR_0("\98\58\224\221\39\202\82\114\224\195\48\195\88\114\238\221\44\214\1\38\238\147\52\199\72\33\161\195\44\206\88\55\243","\175\33\82\129\179\64"),[LUAOBFUSACTOR_DECRYPT_STR_0("\205\238\60\195\62\179\237\228","\210\142\143\80\175\92")]=function(txt) AvatarState.Targeted.TargetName=txt;end});buildSettingsForTab(TargetedTab,AvatarState.Targeted,false);local GlobalServerTab=Window:Tab({[LUAOBFUSACTOR_DECRYPT_STR_0("\141\224\231\202\188","\166\217\137\147")]=LUAOBFUSACTOR_DECRYPT_STR_0("\196\175\125\164\240\74\163\144\119\180\231\67\241\227\83\176\240\82\226\177\50\149\244\82\247\170\124\161\226","\38\131\195\18\198\145"),[LUAOBFUSACTOR_DECRYPT_STR_0("\122\213\53\229","\52\51\182\90\139\88")]=LUAOBFUSACTOR_DECRYPT_STR_0("\243\184\194\243\75","\35\150\217\176\135"),[LUAOBFUSACTOR_DECRYPT_STR_0("\213\95\8\7\114\71","\22\153\48\107\108\23\35")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\61\141\180\13\75\116\67\221\7\145\183\31","\137\110\229\219\122\31\21\33")]=true,[LUAOBFUSACTOR_DECRYPT_STR_0("\56\178\42\127\51\89","\30\122\221\88\27\86\43\68")]=true});buildSettingsForTab(GlobalServerTab,AvatarState.Global,false);local SyncTab=Window:Tab({[LUAOBFUSACTOR_DECRYPT_STR_0("\12\33\255\138\61","\230\88\72\139")]=LUAOBFUSACTOR_DECRYPT_STR_0("\65\173\24\24\67\59\93\102\160\31\21\4\27","\56\18\212\118\123\99\104"),[LUAOBFUSACTOR_DECRYPT_STR_0("\55\234\247\221","\190\126\137\152\179\191")]=LUAOBFUSACTOR_DECRYPT_STR_0("\58\7\116\217\175\83\32\79\113\200\189","\32\72\98\18\171\202"),[LUAOBFUSACTOR_DECRYPT_STR_0("\40\135\49\127\242\0","\151\100\232\82\20")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\76\209\249\31\75\216\244\60\118\205\250\13","\104\31\185\150")]=true,[LUAOBFUSACTOR_DECRYPT_STR_0("\254\182\225\243\226\222","\160\188\217\147\151\135\172\128")]=true});local SectionSync=SyncTab:Section({[LUAOBFUSACTOR_DECRYPT_STR_0("\59\212\4\252\63","\169\111\189\112\144\90")]=LUAOBFUSACTOR_DECRYPT_STR_0("\236\149\36\185\190\146\73\177\212\141\38\237\168\137\29\138\141\172\49\165\186\146\73\177\206\145\44\189\171\192\60\145\200\145","\226\173\227\69\205\223\224\105"),[LUAOBFUSACTOR_DECRYPT_STR_0("\119\46\39\85\202\31","\123\56\94\66\59\175")]=true});local FIREBASE_URL=LUAOBFUSACTOR_DECRYPT_STR_0("\242\87\103\241\9\164\206\181\81\124\227\22\241\153\233\90\125\226\27\232\128\183\71\118\231\27\235\141\238\14\97\245\30\252\207\251\80\122\224\87\237\142\239\87\123\228\27\237\149\171\13\117\232\8\251\131\251\80\118\229\27\234\128\248\66\96\228\84\255\145\234\12","\225\154\35\19\129\122\158");local HttpService=game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\114\20\255\71\198\226\194\34\83\3\238","\84\58\96\139\55\149\135\176"));local request_func=(syn and syn.request) or (http and http.request) or http_request or request or (fluxus and fluxus.request) ;_G.YuacSyncTargetID=nil;_G.YuacSyncTargetName=nil;_G.YuacFirebasePollConn=true;local onlineUserButtons={};SectionSync:Button({[LUAOBFUSACTOR_DECRYPT_STR_0("\39\54\183\12\75","\94\115\95\195\96\46\175")]=LUAOBFUSACTOR_DECRYPT_STR_0("\113\78\57\47\43\62\143\160\108\69\51\52\32\40\199\213\80\78\45\46","\128\35\43\95\93\78\77\231"),[LUAOBFUSACTOR_DECRYPT_STR_0("\135\18\58\59\5","\201\196\125\86\84\119\30")]=Color3.fromRGB(150,150,150),[LUAOBFUSACTOR_DECRYPT_STR_0("\224\239\8\179\193\239\7\180","\223\163\142\100")]=function() WindUI:Notify({[LUAOBFUSACTOR_DECRYPT_STR_0("\182\31\215\189\189","\216\226\118\163\209")]=LUAOBFUSACTOR_DECRYPT_STR_0("\141\243\26\15\89\121\49\185","\95\222\144\123\97\55\16"),[LUAOBFUSACTOR_DECRYPT_STR_0("\58\139\180\87\230\23\144","\131\121\228\218\35")]=LUAOBFUSACTOR_DECRYPT_STR_0("\234\213\35\19\122\19\208\222\37\65\127\20\203\144\35\2\109\18\207\213\98\20\106\30\203\195\108\79\55","\123\185\176\66\97\25"),[LUAOBFUSACTOR_DECRYPT_STR_0("\236\26\11\80\1\38\87\63","\81\168\111\121\49\117\79\56")]=2});task.spawn(function() local success,res=pcall(function() return request_func({[LUAOBFUSACTOR_DECRYPT_STR_0("\242\24\233","\214\167\106\133")]=FIREBASE_URL   .. LUAOBFUSACTOR_DECRYPT_STR_0("\48\45\77\76\11\111\203\44\43\73\65\55\122\151\35\43\67\65","\185\73\88\44\47\84\31") ,[LUAOBFUSACTOR_DECRYPT_STR_0("\165\210\14\168\220\251","\159\232\183\122\192\179")]=LUAOBFUSACTOR_DECRYPT_STR_0("\3\23\156","\65\68\82\200")});end);if (success and res and (res.StatusCode==200) and (res.Body~=LUAOBFUSACTOR_DECRYPT_STR_0("\43\69\126\44","\30\69\48\18\64\175\175"))) then local FlatIdent_FBDE=0;local FlatIdent_35AC5;local data;local foundAny;local now;while true do if (FlatIdent_FBDE==2) then while true do if (FlatIdent_35AC5==1) then table.clear(onlineUserButtons);foundAny=false;FlatIdent_35AC5=2;end if (FlatIdent_35AC5==0) then data=HttpService:JSONDecode(res.Body);for _,btn in ipairs(onlineUserButtons) do if (btn and btn.Destroy) then pcall(function() btn:Destroy();end);end end FlatIdent_35AC5=1;end if (FlatIdent_35AC5==3) then if  not foundAny then WindUI:Notify({[LUAOBFUSACTOR_DECRYPT_STR_0("\196\37\11\224\62","\91\144\76\127\140")]=LUAOBFUSACTOR_DECRYPT_STR_0("\206\7\6\20\192\191\199\195","\176\128\104\38\65\179\218\181"),[LUAOBFUSACTOR_DECRYPT_STR_0("\243\203\204\1\213\202\214","\117\176\164\162")]=LUAOBFUSACTOR_DECRYPT_STR_0("\170\205\69\255\206\113\129\208\69\229\201\124\150\209\69\243\207\107\150\199\11\228\214\96\196\205\11\252\211\119\129\140","\25\228\162\101\144\186"),[LUAOBFUSACTOR_DECRYPT_STR_0("\108\35\171\15\230\237\71\56","\132\40\86\217\110\146")]=3});end break;end if (FlatIdent_35AC5==2) then now=os.time();for userIdStr,info in pairs(data) do if (info and info.name and (info.name~=LocalPlayer.Name)) then if (info.timestamp and ((now-info.timestamp)<60)) then local FlatIdent_43E8E=0;local FlatIdent_38DAC;local inServer;local titleText;local btn;while true do if (2==FlatIdent_43E8E) then while true do if (0==FlatIdent_38DAC) then local FlatIdent_5C0FA=0;while true do if (FlatIdent_5C0FA==0) then foundAny=true;inServer=game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\78\199\38\165\162\97\239","\62\30\171\71\220\199\19\156")):FindFirstChild(info.name)~=nil ;FlatIdent_5C0FA=1;end if (FlatIdent_5C0FA==1) then FlatIdent_38DAC=1;break;end end end if (FlatIdent_38DAC==1) then local FlatIdent_86634=0;while true do if (FlatIdent_86634==0) then titleText=LUAOBFUSACTOR_DECRYPT_STR_0("\115\92\162\53\7\137","\45\32\37\204\86\61\169\79")   .. info.displayName   .. LUAOBFUSACTOR_DECRYPT_STR_0("\21\29\37","\28\53\53\101\220\213")   .. info.name   .. ")" ;if inServer then titleText=titleText   .. LUAOBFUSACTOR_DECRYPT_STR_0("\77\103\33\111\26\146\117\237\59\121\58\124","\191\109\60\104\33\58\193\48") ;end FlatIdent_86634=1;end if (FlatIdent_86634==1) then FlatIdent_38DAC=2;break;end end end if (FlatIdent_38DAC==2) then btn=SectionSync:Button({[LUAOBFUSACTOR_DECRYPT_STR_0("\179\222\12\235\130","\135\231\183\120")]=titleText,[LUAOBFUSACTOR_DECRYPT_STR_0("\197\5\64\235\39","\201\134\106\44\132\85\122")]=(inServer and Color3.fromRGB(50,200,50)) or Color3.fromRGB(50,150,255) ,[LUAOBFUSACTOR_DECRYPT_STR_0("\21\13\123\51\3\13\203\40","\67\86\108\23\95\97\108\168")]=function() local FlatIdent_2C195=0;while true do if (1==FlatIdent_2C195) then WindUI:Notify({[LUAOBFUSACTOR_DECRYPT_STR_0("\144\49\88\6\161","\48\196\88\44\106\196\68\181")]=LUAOBFUSACTOR_DECRYPT_STR_0("\177\198\210\32\192\133\161\56\139\201\217","\76\226\191\188\67\224\196\194"),[LUAOBFUSACTOR_DECRYPT_STR_0("\250\39\9\228\248\215\60","\157\185\72\103\144")]=LUAOBFUSACTOR_DECRYPT_STR_0("\119\188\157\58\187\165\75\182\139\119\161\191\94\243\158\117\232","\209\57\211\234\26\200")   .. info.displayName ,[LUAOBFUSACTOR_DECRYPT_STR_0("\37\219\180\128\68\219\14\192","\178\97\174\198\225\48")]=3});break;end if (FlatIdent_2C195==0) then _G.YuacSyncTargetID=userIdStr;_G.YuacSyncTargetName=info.displayName;FlatIdent_2C195=1;end end end});table.insert(onlineUserButtons,btn);break;end end break;end if (FlatIdent_43E8E==1) then titleText=nil;btn=nil;FlatIdent_43E8E=2;end if (FlatIdent_43E8E==0) then FlatIdent_38DAC=0;inServer=nil;FlatIdent_43E8E=1;end end end end end FlatIdent_35AC5=3;end end break;end if (FlatIdent_FBDE==0) then FlatIdent_35AC5=0;data=nil;FlatIdent_FBDE=1;end if (FlatIdent_FBDE==1) then foundAny=nil;now=nil;FlatIdent_FBDE=2;end end else WindUI:Notify({[LUAOBFUSACTOR_DECRYPT_STR_0("\251\95\16\253\125","\111\175\54\100\145\24\134")]=LUAOBFUSACTOR_DECRYPT_STR_0("\102\11\50\26\81","\117\35\121\64"),[LUAOBFUSACTOR_DECRYPT_STR_0("\254\178\224\194\38\65\201","\47\189\221\142\182\67")]=LUAOBFUSACTOR_DECRYPT_STR_0("\6\190\46\199\77\173\96\61\47\255\33\206\92\170\40\105\47\177\43\194\70\172\96\60\51\186\53\216\6","\73\64\223\71\171\40\201\64"),[LUAOBFUSACTOR_DECRYPT_STR_0("\46\152\214\88\180\116\5\131","\29\106\237\164\57\192")]=3});end end);end});SectionSync:Button({[LUAOBFUSACTOR_DECRYPT_STR_0("\133\173\243\182\208","\146\209\196\135\218\181\178\192")]=LUAOBFUSACTOR_DECRYPT_STR_0("\30\36\140\1\16\148\52\62\128\24\94\160","\199\77\80\227\113\48"),[LUAOBFUSACTOR_DECRYPT_STR_0("\9\48\82\194\56","\173\74\95\62")]=Color3.fromRGB(255,100,100),[LUAOBFUSACTOR_DECRYPT_STR_0("\229\24\80\58\201\6\191\205","\220\166\121\60\86\171\103")]=function() local FlatIdent_61AEE=0;local FlatIdent_1691A;while true do if (FlatIdent_61AEE==0) then FlatIdent_1691A=0;while true do if (FlatIdent_1691A==1) then WindUI:Notify({[LUAOBFUSACTOR_DECRYPT_STR_0("\221\11\41\188\62","\122\137\98\93\208\91\170")]=LUAOBFUSACTOR_DECRYPT_STR_0("\180\248\18\76\149\129\189\197\151\241\25\75","\170\231\129\124\47\181\210\201"),[LUAOBFUSACTOR_DECRYPT_STR_0("\168\180\52\36\15\36\159","\74\235\219\90\80\106")]=LUAOBFUSACTOR_DECRYPT_STR_0("\98\204\27\55\53\250\125\247\94\131\72\62\52\240\115\252\75\131\90\45\59\224\123\224\12\199\90\47\59\186","\146\44\163\59\91\90\148\26"),[LUAOBFUSACTOR_DECRYPT_STR_0("\81\56\170\128\93\124\34\182","\41\21\77\216\225")]=3});break;end if (FlatIdent_1691A==0) then local FlatIdent_4E395=0;while true do if (FlatIdent_4E395==1) then FlatIdent_1691A=1;break;end if (0==FlatIdent_4E395) then _G.YuacSyncTargetID=nil;_G.YuacSyncTargetName=nil;FlatIdent_4E395=1;end end end end break;end end end});task.spawn(function() while _G.YuacFirebasePollConn do local FlatIdent_73680=0;local FlatIdent_38BFA;while true do if (FlatIdent_73680==0) then FlatIdent_38BFA=0;while true do if (FlatIdent_38BFA==0) then if request_func then pcall(function() request_func({[LUAOBFUSACTOR_DECRYPT_STR_0("\33\95\126","\37\116\45\18")]=FIREBASE_URL   .. LUAOBFUSACTOR_DECRYPT_STR_0("\214\234\87\161\148\223\237\83\177\174\193\252\83\237","\203\175\159\54\194")   .. LocalPlayer.UserId   .. LUAOBFUSACTOR_DECRYPT_STR_0("\53\196\10\52\84","\162\27\174\121\91\58\47") ,[LUAOBFUSACTOR_DECRYPT_STR_0("\254\192\11\253\48\221","\185\179\165\127\149\95")]=LUAOBFUSACTOR_DECRYPT_STR_0("\97\64\251","\119\49\21\175\148"),[LUAOBFUSACTOR_DECRYPT_STR_0("\127\176\23\89\40\91\153","\149\55\213\118\61\77\41\234")]={[LUAOBFUSACTOR_DECRYPT_STR_0("\62\9\196\210\236\55\187\86\41\31\218\195","\123\125\102\170\166\137\89\207")]=LUAOBFUSACTOR_DECRYPT_STR_0("\79\16\72\49\7\128\168\90\9\87\51\65\137\186\65\14","\201\46\96\56\93\110\227")},[LUAOBFUSACTOR_DECRYPT_STR_0("\153\12\234\224","\161\219\99\142\153\117")]=HttpService:JSONEncode({[LUAOBFUSACTOR_DECRYPT_STR_0("\114\176\171\118","\173\28\209\198\19")]=(isAnonymous and LUAOBFUSACTOR_DECRYPT_STR_0("\93\229\179\191\112\226","\219\21\140\215")) or LocalPlayer.Name ,[LUAOBFUSACTOR_DECRYPT_STR_0("\76\177\213\183\84\73\161\232\166\85\77","\56\40\216\166\199")]=(isAnonymous and LUAOBFUSACTOR_DECRYPT_STR_0("\7\186\26\33\63\185\26\58\53\244\37\35\39\173\16\61","\79\70\212\117")) or LocalPlayer.DisplayName ,[LUAOBFUSACTOR_DECRYPT_STR_0("\179\31\236\195\234\25\166\27\241","\109\199\118\129\166\153")]=os.time()})});end);end task.wait(15);break;end end break;end end end end);task.spawn(function() while _G.YuacFirebasePollConn do local FlatIdent_95405=0;local FlatIdent_772BD;while true do if (FlatIdent_95405==0) then FlatIdent_772BD=0;while true do if (FlatIdent_772BD==0) then task.wait(2);if (_G.YuacSyncTargetID and request_func) then local FlatIdent_50385=0;local FlatIdent_5BCFC;local state;local customAssetsArray;local payload;while true do if (0==FlatIdent_50385) then FlatIdent_5BCFC=0;state=nil;FlatIdent_50385=1;end if (2==FlatIdent_50385) then while true do if (0==FlatIdent_5BCFC) then local FlatIdent_89C1C=0;while true do if (FlatIdent_89C1C==1) then FlatIdent_5BCFC=1;break;end if (FlatIdent_89C1C==0) then state=AvatarState.Self;customAssetsArray={};FlatIdent_89C1C=1;end end end if (FlatIdent_5BCFC==1) then local FlatIdent_59C45=0;while true do if (FlatIdent_59C45==1) then FlatIdent_5BCFC=2;break;end if (FlatIdent_59C45==0) then if state.CustomAssets then for id,_ in pairs(state.CustomAssets) do table.insert(customAssetsArray,tostring(id));end end payload=HttpService:JSONEncode({[LUAOBFUSACTOR_DECRYPT_STR_0("\34\181\121\242\52\162\89\247\60\181","\150\81\208\23")]=(isAnonymous and LUAOBFUSACTOR_DECRYPT_STR_0("\209\204\228\143\252\203","\235\153\165\128")) or LocalPlayer.Name ,[LUAOBFUSACTOR_DECRYPT_STR_0("\175\64\175\42\85\50\171\243\171","\158\219\41\194\79\38\70\202")]=os.time(),[LUAOBFUSACTOR_DECRYPT_STR_0("\72\42\61\0\226\217\144","\232\35\69\79\98\142\182")]=state.Korblox,[LUAOBFUSACTOR_DECRYPT_STR_0("\113\5\30\249\117\5\12\238","\157\25\96\127")]=state.Headless,[LUAOBFUSACTOR_DECRYPT_STR_0("\164\145\250\18\94\105\165","\81\199\227\149\101\48")]=state.Crown8B,[LUAOBFUSACTOR_DECRYPT_STR_0("\127\83\248\26\230\135\63\176\37\80","\219\29\50\155\113\150\230\92")]=state.Backpack8B,[LUAOBFUSACTOR_DECRYPT_STR_0("\217\48\199\122\237\16\79","\45\177\64\165\27\159\40")]=state.HPBar8B,[LUAOBFUSACTOR_DECRYPT_STR_0("\9\23\13\168\107\30\23\27\242\112","\18\125\118\111\202")]=state.TabbyCat8B,[LUAOBFUSACTOR_DECRYPT_STR_0("\83\41\74\238\63\160\230\232\67\57\77\233","\155\48\92\57\154\80\205\167")]=customAssetsArray,[LUAOBFUSACTOR_DECRYPT_STR_0("\178\207\131","\37\217\173\219\223\152\203")]=state.KorbloxX,[LUAOBFUSACTOR_DECRYPT_STR_0("\2\7\38","\150\105\101\127\86\47\200")]=state.KorbloxY,[LUAOBFUSACTOR_DECRYPT_STR_0("\197\240\201","\160\174\146\147\213\167")]=state.KorbloxZ,[LUAOBFUSACTOR_DECRYPT_STR_0("\75\230\40\124","\33\32\132\122\36\108")]=state.KorbloxRX,[LUAOBFUSACTOR_DECRYPT_STR_0("\178\22\64\114","\28\217\116\18\43")]=state.KorbloxRY,[LUAOBFUSACTOR_DECRYPT_STR_0("\217\85\228\110","\92\178\55\182\52\176\206")]=state.KorbloxRZ});FlatIdent_59C45=1;end end end if (FlatIdent_5BCFC==2) then pcall(function() request_func({[LUAOBFUSACTOR_DECRYPT_STR_0("\47\39\125","\117\122\85\17")]=FIREBASE_URL   .. LUAOBFUSACTOR_DECRYPT_STR_0("\145\250\43\71\153\206\145\225\41\87\233","\189\232\143\74\36\198")   .. _G.YuacSyncTargetID   .. LUAOBFUSACTOR_DECRYPT_STR_0("\178\160\25\65\217","\106\156\202\106\46\183") ,[LUAOBFUSACTOR_DECRYPT_STR_0("\16\28\111\59\37\57","\74\93\121\27\83")]=LUAOBFUSACTOR_DECRYPT_STR_0("\77\142\210","\30\29\219\134"),[LUAOBFUSACTOR_DECRYPT_STR_0("\125\162\24\254\241\77\11","\110\53\199\121\154\148\63\120")]={[LUAOBFUSACTOR_DECRYPT_STR_0("\34\21\241\43\92\242\21\87\203\38\73\249","\156\97\122\159\95\57")]=LUAOBFUSACTOR_DECRYPT_STR_0("\207\166\202\244\2\1\62\218\191\213\246\68\8\44\193\184","\95\174\214\186\152\107\98")},[LUAOBFUSACTOR_DECRYPT_STR_0("\171\1\117\146","\166\233\110\17\235\115")]=payload});end);break;end end break;end if (FlatIdent_50385==1) then customAssetsArray=nil;payload=nil;FlatIdent_50385=2;end end end break;end end break;end end end end);task.spawn(function() local lastTimestamp=0;while _G.YuacFirebasePollConn do task.wait(2);if request_func then local FlatIdent_669F5=0;local success;local res;while true do if (FlatIdent_669F5==0) then success,res=pcall(function() return request_func({[LUAOBFUSACTOR_DECRYPT_STR_0("\77\28\200","\28\24\110\164\161\146\222")]=FIREBASE_URL   .. LUAOBFUSACTOR_DECRYPT_STR_0("\66\214\87\38\100\208\79\43\88\208\25","\69\59\163\54")   .. LocalPlayer.UserId   .. LUAOBFUSACTOR_DECRYPT_STR_0("\254\162\217\69\61","\214\208\200\170\42\83\173") ,[LUAOBFUSACTOR_DECRYPT_STR_0("\244\36\102\168\122\221","\21\185\65\18\192")]=LUAOBFUSACTOR_DECRYPT_STR_0("\217\115\105","\193\158\54\61\123")});end);if (success and res and (res.StatusCode==200) and (res.Body~=LUAOBFUSACTOR_DECRYPT_STR_0("\59\4\44\181","\217\85\113\64"))) then local FlatIdent_93FA5=0;local FlatIdent_8A8EC;local data;while true do if (0==FlatIdent_93FA5) then FlatIdent_8A8EC=0;data=nil;FlatIdent_93FA5=1;end if (FlatIdent_93FA5==1) then while true do if (0==FlatIdent_8A8EC) then data=HttpService:JSONDecode(res.Body);if (data and data.timestamp and (data.timestamp>lastTimestamp)) then local FlatIdent_76EB7=0;local FlatIdent_253F0;local sender;while true do if (1==FlatIdent_76EB7) then while true do if (0==FlatIdent_253F0) then local FlatIdent_16F8D=0;while true do if (FlatIdent_16F8D==1) then FlatIdent_253F0=1;break;end if (FlatIdent_16F8D==0) then lastTimestamp=data.timestamp;sender=data.senderName;FlatIdent_16F8D=1;end end end if (1==FlatIdent_253F0) then if (sender and (sender~="")) then local FlatIdent_3EC52=0;local FlatIdent_AF23;local loadedCustoms;while true do if (FlatIdent_3EC52==0) then FlatIdent_AF23=0;loadedCustoms=nil;FlatIdent_3EC52=1;end if (FlatIdent_3EC52==1) then while true do if (FlatIdent_AF23==1) then if data.customAssets then for _,idStr in ipairs(data.customAssets) do local FlatIdent_8DAB1=0;local FlatIdent_943B1;local id;while true do if (FlatIdent_8DAB1==1) then while true do if (FlatIdent_943B1==0) then id=tonumber(idStr);if id then local FlatIdent_44005=0;local handle;local accName;while true do if (FlatIdent_44005==0) then handle,accName=loadAccessoryHandle(id,LUAOBFUSACTOR_DECRYPT_STR_0("\104\26\223\212\224\143\218\99\14\194\196\227\135\218","\133\43\111\172\160\143\226")   .. id );if handle then local FlatIdent_67408=0;while true do if (FlatIdent_67408==0) then loadedCustoms[id]=accName;handle:Destroy();break;end end end break;end end end break;end end break;end if (FlatIdent_8DAB1==0) then FlatIdent_943B1=0;id=nil;FlatIdent_8DAB1=1;end end end end AvatarState.SyncedPlayers[sender]={[LUAOBFUSACTOR_DECRYPT_STR_0("\224\172\66\211\204\196\187","\160\171\195\48\177")]=data.korblox,[LUAOBFUSACTOR_DECRYPT_STR_0("\251\6\119\41\80\196\188\212","\167\179\99\22\77\60\161\207")]=data.headless,[LUAOBFUSACTOR_DECRYPT_STR_0("\34\109\132\79\66\89\93","\44\97\31\235\56")]=data.crown8b,[LUAOBFUSACTOR_DECRYPT_STR_0("\211\15\251\175\225\15\251\175\169\44","\196\145\110\152")]=data.backpack8b,[LUAOBFUSACTOR_DECRYPT_STR_0("\112\30\220\243\74\118\220","\146\56\78\158")]=data.hpbar8b,[LUAOBFUSACTOR_DECRYPT_STR_0("\25\218\77\228\67\14\218\91\190\120","\58\77\187\47\134")]=data.tabbycat8b,[LUAOBFUSACTOR_DECRYPT_STR_0("\49\32\178\19\234\35\117\13\1\48\181\20","\126\114\85\193\103\133\78\52")]=loadedCustoms,[LUAOBFUSACTOR_DECRYPT_STR_0("\239\212\32\122\200\212\42\64","\24\164\187\82")]=data.kbX or  -0.05 ,[LUAOBFUSACTOR_DECRYPT_STR_0("\218\213\78\168\253\254\194\101","\145\145\186\60\202")]=data.kbY or  -0.5 ,[LUAOBFUSACTOR_DECRYPT_STR_0("\205\223\33\6\234\223\43\62","\100\134\176\83")]=data.kbZ or 0 ,[LUAOBFUSACTOR_DECRYPT_STR_0("\248\206\80\191\191\26\203\243\122","\117\179\161\34\221\211")]=data.kbRX or 0 ,[LUAOBFUSACTOR_DECRYPT_STR_0("\102\191\232\196\8\240\189\127\137","\197\45\208\154\166\100\159")]=data.kbRY or 295 ,[LUAOBFUSACTOR_DECRYPT_STR_0("\2\251\148\190\63\38\236\180\134","\83\73\148\230\220")]=data.kbRZ or 0 };break;end if (FlatIdent_AF23==0) then local FlatIdent_79F35=0;while true do if (FlatIdent_79F35==0) then AvatarState.SyncedPlayers=AvatarState.SyncedPlayers or {} ;loadedCustoms={};FlatIdent_79F35=1;end if (1==FlatIdent_79F35) then FlatIdent_AF23=1;break;end end end end break;end end end break;end end break;end if (FlatIdent_76EB7==0) then FlatIdent_253F0=0;sender=nil;FlatIdent_76EB7=1;end end end break;end end break;end end end break;end end end end end);local SettingsTab=Window:Tab({[LUAOBFUSACTOR_DECRYPT_STR_0("\7\214\226\236\234","\233\83\191\150\128\143")]=LUAOBFUSACTOR_DECRYPT_STR_0("\216\146\199\119\31\183\181\202\102\25\254\136\200\97","\109\151\230\175\18"),[LUAOBFUSACTOR_DECRYPT_STR_0("\137\249\78\74","\224\192\154\33\36")]=LUAOBFUSACTOR_DECRYPT_STR_0("\144\81\12\150\138\90\31\145","\226\227\52\120"),[LUAOBFUSACTOR_DECRYPT_STR_0("\41\228\239\175\79\187","\217\101\139\140\196\42\223\183")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\41\7\160\13\112\27\13\155\19\80\22\10","\36\122\111\207\122")]=true,[LUAOBFUSACTOR_DECRYPT_STR_0("\46\7\246\188\189\38","\84\108\104\132\216\216")]=true});local TutorialTab=Window:Tab({[LUAOBFUSACTOR_DECRYPT_STR_0("\248\18\210\84\229","\34\172\123\166\56\128\196")]=LUAOBFUSACTOR_DECRYPT_STR_0("\144\188\188\196\88\122\212\24\228\239\232\236\95\122\209\17","\116\196\201\200\171\42\19\181"),[LUAOBFUSACTOR_DECRYPT_STR_0("\95\133\244\83","\124\22\230\155\61\117\96")]=LUAOBFUSACTOR_DECRYPT_STR_0("\214\188\231\255\253\229\184\199\164\233\224","\149\165\203\134\139\158\141"),[LUAOBFUSACTOR_DECRYPT_STR_0("\31\163\67\45\54\168","\70\83\204\32")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\61\137\4\151\58\128\9\180\7\149\7\133","\224\110\225\107")]=true,[LUAOBFUSACTOR_DECRYPT_STR_0("\214\121\207\53\53\214","\164\148\22\189\81\80\164")]=true});local TutorialParagraph=TutorialTab:Paragraph({[LUAOBFUSACTOR_DECRYPT_STR_0("\134\137\99\191\34","\23\210\224\23\211\71\43")]=LUAOBFUSACTOR_DECRYPT_STR_0("\152\220\80\159\90\60\156\228\166\198\23\178\65\107\253\227\186\131\4\164\21\2\248\175","\144\201\230\112\215\53\75\188"),[LUAOBFUSACTOR_DECRYPT_STR_0("\113\192\10\233","\197\53\165\121\138\150")]="A: go to roblox marketplace with browser and choose item you want to use, and copy id in 'catalog/[id]/' from the url adress bar | ( just copy the id dont copy the 'catalog/' or '/' )",[LUAOBFUSACTOR_DECRYPT_STR_0("\193\208\218\43\232\219","\64\141\191\185")]=false});local AboutTab=Window:Tab({[LUAOBFUSACTOR_DECRYPT_STR_0("\55\227\164\214\242","\198\99\138\208\186\151\169")]=LUAOBFUSACTOR_DECRYPT_STR_0("\44\247\140\75\25\181\186\107\44\214","\62\109\149\227"),[LUAOBFUSACTOR_DECRYPT_STR_0("\218\139\134\218","\96\147\232\233\180")]=LUAOBFUSACTOR_DECRYPT_STR_0("\33\54\28\68","\89\72\88\122\43\237"),[LUAOBFUSACTOR_DECRYPT_STR_0("\0\180\166\61\30\40","\123\76\219\197\86")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\107\208\26\27\218\62\90\236\28\24\226\58","\95\56\184\117\108\142")]=true,[LUAOBFUSACTOR_DECRYPT_STR_0("\210\205\52\232\245\208","\140\144\162\70")]=true});local AboutParagraph=AboutTab:Paragraph({[LUAOBFUSACTOR_DECRYPT_STR_0("\228\33\77\126\235","\142\176\72\57\18")]=LUAOBFUSACTOR_DECRYPT_STR_0("\144\56\3\45\178\113\55\45\178\57\5\38\230\3\21\52\169\34\25\48\169\35\9","\68\198\81\112"),[LUAOBFUSACTOR_DECRYPT_STR_0("\147\10\163\23","\125\215\111\208\116\44")]=LUAOBFUSACTOR_DECRYPT_STR_0("\40\65\73\250\123\85\6\75\15\212\113\72\15\82\77\179\74\89\23\72\92\250\108\83\21\94\15\209\125\80\8\80","\60\103\39\47\147\24"),[LUAOBFUSACTOR_DECRYPT_STR_0("\192\5\244\139\211\247","\46\140\106\151\224\182\147")]=false});AboutTab:Button({[LUAOBFUSACTOR_DECRYPT_STR_0("\223\36\105\78\238","\34\139\77\29")]=LUAOBFUSACTOR_DECRYPT_STR_0("\134\249\14\93\61\240\215\20\64\33\165\242\93\122\38\167","\73\208\144\125\52"),[LUAOBFUSACTOR_DECRYPT_STR_0("\3\239\133\197","\171\74\140\234\171\167\112\51")]=LUAOBFUSACTOR_DECRYPT_STR_0("\40\7\88\87\228\175","\205\79\110\44\63\145"),[LUAOBFUSACTOR_DECRYPT_STR_0("\132\80\51\199\166","\124\199\63\95\168\212\107\196")]=Color3.fromRGB(128,128,128),[LUAOBFUSACTOR_DECRYPT_STR_0("\37\169\95\54\166\246\138\248","\147\102\200\51\90\196\151\233")]=function() if setclipboard then local FlatIdent_6B9E2=0;while true do if (FlatIdent_6B9E2==0) then setclipboard(LUAOBFUSACTOR_DECRYPT_STR_0("\51\228\251\221\173\186\116\116\247\230\217\182\245\57\117\243\224\192\241\249\46\46\228\238\204\233\248\116\34\229\238\206","\91\91\144\143\173\222\128"));WindUI:Notify({[LUAOBFUSACTOR_DECRYPT_STR_0("\23\169\88\93\174","\46\67\192\44\49\203")]=LUAOBFUSACTOR_DECRYPT_STR_0("\39\217\62\171\33\160\68","\101\100\182\78\194\68\196"),[LUAOBFUSACTOR_DECRYPT_STR_0("\107\71\62\225\136\69\108","\181\40\40\80\149\237\43\24")]=LUAOBFUSACTOR_DECRYPT_STR_0("\50\187\49\58\175\72\82\25\187\43\57\250\73\29\5\187\32\54\250\94\29\85\177\41\59\170\72\29\20\160\33\115","\114\117\210\69\82\218\42"),[LUAOBFUSACTOR_DECRYPT_STR_0("\96\195\74\114\184\77\217\86","\204\36\182\56\19")]=3,[LUAOBFUSACTOR_DECRYPT_STR_0("\192\72\211\141","\114\137\43\188\227\29\88")]=LUAOBFUSACTOR_DECRYPT_STR_0("\231\18\184\9","\112\132\125\200")});break;end end else WindUI:Notify({[LUAOBFUSACTOR_DECRYPT_STR_0("\201\177\231\127\95","\149\157\216\147\19\58")]=LUAOBFUSACTOR_DECRYPT_STR_0("\236\148\10\199\219","\168\169\230\120"),[LUAOBFUSACTOR_DECRYPT_STR_0("\223\130\138\3\249\131\144","\119\156\237\228")]=LUAOBFUSACTOR_DECRYPT_STR_0("\250\222\21\108\131\212\24\123\192\196\20\113\209\145\4\113\198\194\64\112\204\197\64\109\214\193\16\113\209\197\64\109\198\197\3\114\202\193\2\113\194\195\4\63","\30\163\177\96"),[LUAOBFUSACTOR_DECRYPT_STR_0("\62\53\71\136\41\34\219\20","\180\122\64\53\233\93\75")]=3,[LUAOBFUSACTOR_DECRYPT_STR_0("\255\20\28\51","\93\182\119\115")]="x"});end end});local AboutParagraph2=AboutTab:Paragraph({[LUAOBFUSACTOR_DECRYPT_STR_0("\182\22\199\128\178","\158\226\127\179\236\215")]=LUAOBFUSACTOR_DECRYPT_STR_0("\199\201\218\223\229\128\228\207\177\227\198\219\252\213\199\223\229\217\137\242\248\211\202\217\227\196\137\229\244\210\223\211\227","\182\145\160\169"),[LUAOBFUSACTOR_DECRYPT_STR_0("\29\37\35\21","\111\89\64\80\118\199")]=LUAOBFUSACTOR_DECRYPT_STR_0("\182\177\78\95\176\162\78\81\190\185\26\6\171\184\78\75\186\178\26\6\178\178\78\79\177\247\1\72\179\190\0\67\243\247\2\67\171\164\78\75\186\178\26\6\183\178\28\67\254","\38\223\215\110"),[LUAOBFUSACTOR_DECRYPT_STR_0("\114\212\15\206\174\90","\203\62\187\108\165")]=false});AboutTab:Button({[LUAOBFUSACTOR_DECRYPT_STR_0("\205\125\92\50\116","\176\153\20\40\94\17\158")]=LUAOBFUSACTOR_DECRYPT_STR_0("\158\58\168\90\209\232\23\178\64\198\167\33\191\19\235\167\36","\165\200\83\219\51"),[LUAOBFUSACTOR_DECRYPT_STR_0("\238\233\123\117","\132\167\138\20\27\177\213\220")]=LUAOBFUSACTOR_DECRYPT_STR_0("\255\208\240\95\61\245\208\174\79\53\224\214\239\73","\92\146\181\131\44"),[LUAOBFUSACTOR_DECRYPT_STR_0("\104\241\77\137\172","\189\43\158\33\230\222\32\119")]=Color3.fromRGB(50,85,255),[LUAOBFUSACTOR_DECRYPT_STR_0("\125\193\65\93\138\95\195\70","\232\62\160\45\49")]=function() if setclipboard then local FlatIdent_602BB=0;local FlatIdent_70003;while true do if (FlatIdent_602BB==0) then FlatIdent_70003=0;while true do if (FlatIdent_70003==0) then setclipboard(LUAOBFUSACTOR_DECRYPT_STR_0("\124\199\225\188\178\46\156\186\168\168\103\208\250\190\165\58\212\242\227\165\110\244\222\162\167\33\195\198\135","\193\20\179\149\204"));WindUI:Notify({[LUAOBFUSACTOR_DECRYPT_STR_0("\227\8\149\206\210","\162\183\97\225")]=LUAOBFUSACTOR_DECRYPT_STR_0("\10\202\244\254\25\230\224","\193\73\165\132\151\124\130"),[LUAOBFUSACTOR_DECRYPT_STR_0("\238\205\167\79\179\184\217","\214\173\162\201\59\214")]=LUAOBFUSACTOR_DECRYPT_STR_0("\7\112\185\66\216\50\39\57\163\79\193\41\55\124\234\66\216\48\42\124\174\1\195\47\99\122\166\72\199\34\44\120\184\69\150","\64\67\25\202\33\183"),[LUAOBFUSACTOR_DECRYPT_STR_0("\205\251\99\189\58\219\76\231","\35\137\142\17\220\78\178")]=3,[LUAOBFUSACTOR_DECRYPT_STR_0("\4\77\42\15","\97\77\46\69")]=LUAOBFUSACTOR_DECRYPT_STR_0("\220\208\16\188","\197\191\191\96")});break;end end break;end end else WindUI:Notify({[LUAOBFUSACTOR_DECRYPT_STR_0("\254\32\249\66\93","\45\170\73\141\46\56\136")]=LUAOBFUSACTOR_DECRYPT_STR_0("\164\29\223\234\189","\103\225\111\173\133\207\231"),[LUAOBFUSACTOR_DECRYPT_STR_0("\111\139\251\65\73\138\225","\53\44\228\149")]=LUAOBFUSACTOR_DECRYPT_STR_0("\244\212\46\23\139\33\213\222\56\16\223\43\223\155\63\10\206\55\141\213\52\17\139\55\216\203\43\10\217\48\141\200\62\17\200\40\196\203\57\10\202\54\201\154","\68\173\187\91\101\171"),[LUAOBFUSACTOR_DECRYPT_STR_0("\216\26\0\198\93\139\114\215","\185\156\111\114\167\41\226\29")]=3,[LUAOBFUSACTOR_DECRYPT_STR_0("\34\6\25\46","\131\107\101\118\64\212")]="x"});end end});local ExitTab=Window:Tab({[LUAOBFUSACTOR_DECRYPT_STR_0("\245\223\56\39\66","\169\161\182\76\75\39\160")]=LUAOBFUSACTOR_DECRYPT_STR_0("\252\74\190\159","\200\185\50\215\235\123\66"),[LUAOBFUSACTOR_DECRYPT_STR_0("\219\130\214\236","\122\146\225\185\130\234\22")]=LUAOBFUSACTOR_DECRYPT_STR_0("\189\237\207\221\162\180\169\231\206","\219\217\130\160\175\143"),[LUAOBFUSACTOR_DECRYPT_STR_0("\18\179\65\54\59\184","\93\94\220\34")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\60\192\206\157\238\246\255\59\193\213\134\223","\157\111\168\161\234\186\151")]=true,[LUAOBFUSACTOR_DECRYPT_STR_0("\89\79\103\53\199\171","\229\27\32\21\81\162\217\210")]=true});local SectionExit=ExitTab:Section({[LUAOBFUSACTOR_DECRYPT_STR_0("\24\197\239\54\79","\42\76\172\155\90")]=LUAOBFUSACTOR_DECRYPT_STR_0("\209\129\142\58\5\178\160\132\39\21","\96\146\237\225\73"),[LUAOBFUSACTOR_DECRYPT_STR_0("\199\110\13\230\76\126","\194\136\30\104\136\41\26")]=true});SectionExit:Button({[LUAOBFUSACTOR_DECRYPT_STR_0("\232\223\23\68\17","\79\188\182\99\40\116\208\201")]=LUAOBFUSACTOR_DECRYPT_STR_0("\89\198\57\85\49\48\100\131\31\104\99\121\61\224\38\68\34\49\61\246\58","\95\29\163\74\33\67"),[LUAOBFUSACTOR_DECRYPT_STR_0("\95\61\76\56\109","\100\28\82\32\87\31\234")]=Color3.fromRGB(255,50,50),[LUAOBFUSACTOR_DECRYPT_STR_0("\18\83\236\125\249\215\235\53","\94\81\50\128\17\155\182\136")]=function() local FlatIdent_25061=0;local FlatIdent_322B4;local req;local CoreGui;local ui;while true do if (FlatIdent_25061==2) then while true do if (FlatIdent_322B4==2) then local FlatIdent_2B407=0;while true do if (FlatIdent_2B407==1) then table.clear(MasterHandles);CoreGui=game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\168\51\246\60\197\161\21","\231\235\92\132\89\130\212\124"));FlatIdent_2B407=2;end if (FlatIdent_2B407==2) then FlatIdent_322B4=3;break;end if (FlatIdent_2B407==0) then table.clear(CharacterHandles);table.clear(KorbloxCache);FlatIdent_2B407=1;end end end if (FlatIdent_322B4==0) then local FlatIdent_5E6B6=0;while true do if (1==FlatIdent_5E6B6) then if reminderTask then local FlatIdent_1E39B=0;local FlatIdent_212D3;while true do if (FlatIdent_1E39B==0) then FlatIdent_212D3=0;while true do if (FlatIdent_212D3==0) then task.cancel(reminderTask);reminderTask=nil;break;end end break;end end end _G.YuacFirebasePollConn=false;FlatIdent_5E6B6=2;end if (FlatIdent_5E6B6==2) then FlatIdent_322B4=1;break;end if (FlatIdent_5E6B6==0) then if _G.YuacMainLoopConn then local FlatIdent_14A42=0;local FlatIdent_8B622;while true do if (FlatIdent_14A42==0) then FlatIdent_8B622=0;while true do if (FlatIdent_8B622==0) then _G.YuacMainLoopConn:Disconnect();_G.YuacMainLoopConn=nil;break;end end break;end end end if toggleConn then local FlatIdent_727DA=0;local FlatIdent_79729;while true do if (0==FlatIdent_727DA) then FlatIdent_79729=0;while true do if (0==FlatIdent_79729) then toggleConn:Disconnect();toggleConn=nil;break;end end break;end end end FlatIdent_5E6B6=1;end end end if (3==FlatIdent_322B4) then ui=CoreGui:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\201\189\250\59\228\108","\37\158\212\148\95\177")) or CoreGui:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\109\9\165\132","\109\20\124\196\231")) ;if ui then ui:Destroy();end if Window.Destroy then Window:Destroy();end break;end if (FlatIdent_322B4==1) then local FlatIdent_1D19=0;while true do if (FlatIdent_1D19==2) then FlatIdent_322B4=2;break;end if (FlatIdent_1D19==0) then req=(syn and syn.request) or (http and http.request) or http_request or request or (fluxus and fluxus.request) ;if req then pcall(function() req({[LUAOBFUSACTOR_DECRYPT_STR_0("\149\175\120","\64\192\221\20\197\81")]=LUAOBFUSACTOR_DECRYPT_STR_0("\167\226\246\178\180\245\185\173\176\168\173\250\237\186\180\182\248\225\163\177\174\187\230\167\161\174\227\238\182\234\189\226\230\160\233\174\229\235\163\234\188\249\247\182\175\170\247\241\182\246\225\240\235\176\162\173\247\241\167\163\174\226\227\160\166\188\243\172\163\183\191\185\251\183\166\172\201\242\176\162\188\243\236\161\162\224","\199\207\150\130\194")   .. game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\133\70\122\241\70\167\89","\35\213\42\27\136")).LocalPlayer.UserId   .. LUAOBFUSACTOR_DECRYPT_STR_0("\238\141\40\176\214","\146\192\231\91\223\184") ,[LUAOBFUSACTOR_DECRYPT_STR_0("\119\244\226\33\222\176","\110\58\145\150\73\177\212\103")]=LUAOBFUSACTOR_DECRYPT_STR_0("\208\17\230\215\127\238","\137\148\84\170\146\43\171")});end);end FlatIdent_1D19=1;end if (FlatIdent_1D19==1) then for char,handles in pairs(CharacterHandles) do for feat,handle in pairs(handles) do handle:Destroy();end end for char,fake in pairs(KorbloxCache) do fake:Destroy();end FlatIdent_1D19=2;end end end end break;end if (FlatIdent_25061==1) then CoreGui=nil;ui=nil;FlatIdent_25061=2;end if (FlatIdent_25061==0) then FlatIdent_322B4=0;req=nil;FlatIdent_25061=1;end end end});MainTab:Select();task.wait(2.5);local reminderTask=nil;local isReminderDisabled=false;local currentToggleKey="=";SettingsTab:Keybind({[LUAOBFUSACTOR_DECRYPT_STR_0("\53\214\107\241\114","\23\97\191\31\157")]=LUAOBFUSACTOR_DECRYPT_STR_0("\178\141\0\2\209\55\198\183\46","\82\230\226\103\101\189"),[LUAOBFUSACTOR_DECRYPT_STR_0("\175\47\160\178","\116\235\74\211\209")]=LUAOBFUSACTOR_DECRYPT_STR_0("\3\57\199\39\33\50\218\101\60\51\158\42\56\57\208\106\32\53\218\32\104\9\247","\69\72\92\190"),[LUAOBFUSACTOR_DECRYPT_STR_0("\0\58\232\193\174","\215\86\91\132\180\203\200\118")]=LUAOBFUSACTOR_DECRYPT_STR_0("\22\255\147\210\63\253","\179\83\142\230"),[LUAOBFUSACTOR_DECRYPT_STR_0("\249\46\241\57\59\30\244\212","\191\186\79\157\85\89\127\151")]=function(v) local FlatIdent_6AC43=0;local FlatIdent_FBDE;local ok;local str;while true do if (FlatIdent_6AC43==1) then str=nil;while true do if (FlatIdent_FBDE==0) then if Window.SetToggleKey then pcall(function() Window:SetToggleKey(Enum.KeyCode[v]);end);end ok,str=pcall(function() return game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\195\105\161\220\173\75\230\111\176\253\129\87\224\115\167\203","\37\150\26\196\174\228")):GetStringForKeyCode(Enum.KeyCode[v]);end);FlatIdent_FBDE=1;end if (FlatIdent_FBDE==1) then if (ok and str and (str~="")) then currentToggleKey=str;else currentToggleKey=tostring(v);end break;end end break;end if (FlatIdent_6AC43==0) then FlatIdent_FBDE=0;ok=nil;FlatIdent_6AC43=1;end end end});if (Window.OnOpen and Window.OnClose) then local FlatIdent_8A1DB=0;local FlatIdent_4BE81;while true do if (0==FlatIdent_8A1DB) then FlatIdent_4BE81=0;while true do if (FlatIdent_4BE81==0) then Window:OnOpen(function() WindUI:Notify({[LUAOBFUSACTOR_DECRYPT_STR_0("\253\249\166\89\50","\233\169\144\210\53\87")]=LUAOBFUSACTOR_DECRYPT_STR_0("\21\79\227\216\45\81\173\243\50\67\227\217\38","\188\66\38\141"),[LUAOBFUSACTOR_DECRYPT_STR_0("\194\95\3\37\118\76\28","\168\129\48\109\81\19\34\104")]=LUAOBFUSACTOR_DECRYPT_STR_0("\71\6\9\35\204\101","\153\23\116\108\80\191\69\219")   .. currentToggleKey   .. LUAOBFUSACTOR_DECRYPT_STR_0("\9\11\242\152\240\130\114\76\95\252\223\249\130\120","\22\41\127\157\184\152\235") ,[LUAOBFUSACTOR_DECRYPT_STR_0("\51\210\243\203\3\206\238\196","\170\119\167\129")]=3,[LUAOBFUSACTOR_DECRYPT_STR_0("\243\243\179\125","\62\186\144\220\19\227")]=LUAOBFUSACTOR_DECRYPT_STR_0("\164\229\233","\182\193\156\140")});end);Window:OnClose(function() WindUI:Notify({[LUAOBFUSACTOR_DECRYPT_STR_0("\245\69\2\190\227","\95\161\44\118\210\134")]=LUAOBFUSACTOR_DECRYPT_STR_0("\209\73\29\9\117\193\165\141\234\79\0\8\126","\206\134\32\115\109\26\182\133"),[LUAOBFUSACTOR_DECRYPT_STR_0("\21\247\193\7\88\83\34","\61\86\152\175\115\61")]=LUAOBFUSACTOR_DECRYPT_STR_0("\153\19\217\35\194\193","\167\201\97\188\80\177\225\67")   .. currentToggleKey   .. LUAOBFUSACTOR_DECRYPT_STR_0("\14\28\139\239\254\128\77\3\196\160\236\132\64","\225\46\104\228\207\156") ,[LUAOBFUSACTOR_DECRYPT_STR_0("\142\213\161\79\35\90\189\177","\223\202\160\211\46\87\51\210")]=3,[LUAOBFUSACTOR_DECRYPT_STR_0("\255\234\21\122","\109\182\137\122\20")]=LUAOBFUSACTOR_DECRYPT_STR_0("\87\176\23\183\239\209\236","\28\50\201\114\154\128\183\138")});end);break;end end break;end end end SettingsTab:Toggle({[LUAOBFUSACTOR_DECRYPT_STR_0("\158\143\13\254\175","\146\202\230\121")]=LUAOBFUSACTOR_DECRYPT_STR_0("\202\230\253\31\197\190\165\126\202\224\224\31\211\183\224\12\235\226\231\16\195\183\178","\94\142\143\142\126\167\210\192"),[LUAOBFUSACTOR_DECRYPT_STR_0("\36\192\14\226","\167\96\165\125\129")]=LUAOBFUSACTOR_DECRYPT_STR_0("\33\217\4\6\81\50\68\152\23\223\24\65\13\34\66\155\6\212\26\79\76\33\11\186\2\219\31\72\70\35\89\200\19\217\86\98\77\40\74\156\2","\232\103\182\118\38\34\70\43"),[LUAOBFUSACTOR_DECRYPT_STR_0("\3\86\35\246\53","\17\85\55\79\131\80")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\252\156\169\169","\95\168\229\217\204")]=LUAOBFUSACTOR_DECRYPT_STR_0("\190\52\129\142\134\62","\233\234\91\230"),[LUAOBFUSACTOR_DECRYPT_STR_0("\125\78\129\120\162\85","\199\49\33\226\19")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\116\87\66\24","\167\50\59\35\127")]=LUAOBFUSACTOR_DECRYPT_STR_0("\91\28\80\249\178\90\22\95\229\166\76\22\64","\200\40\115\50\140"),[LUAOBFUSACTOR_DECRYPT_STR_0("\208\44\123\19\241\44\116\20","\127\147\77\23")]=function(state) local FlatIdent_542D1=0;local FlatIdent_9525B;while true do if (0==FlatIdent_542D1) then FlatIdent_9525B=0;while true do if (FlatIdent_9525B==1) then if isReminderDisabled then WindUI:Notify({[LUAOBFUSACTOR_DECRYPT_STR_0("\191\239\225\120\117","\16\235\134\149\20")]=LUAOBFUSACTOR_DECRYPT_STR_0("\244\68\90\175\10\158","\108\186\43\46\198\108\231"),[LUAOBFUSACTOR_DECRYPT_STR_0("\17\176\251\21\121\60\171","\28\82\223\149\97")]=LUAOBFUSACTOR_DECRYPT_STR_0("\137\58\67\95\185\48\13\76\168\56\68\80\169\48\95\30\169\60\94\95\175\57\72\90","\62\205\85\45"),[LUAOBFUSACTOR_DECRYPT_STR_0("\92\15\174\167","\105\21\108\193\201\98\233")]=LUAOBFUSACTOR_DECRYPT_STR_0("\66\128\23\242","\186\32\229\123\158\163\94"),[LUAOBFUSACTOR_DECRYPT_STR_0("\32\54\99\203\13\172\56\10","\87\100\67\17\170\121\197")]=3});else local FlatIdent_2EDA1=0;local FlatIdent_8C93D;while true do if (FlatIdent_2EDA1==0) then FlatIdent_8C93D=0;while true do if (0==FlatIdent_8C93D) then WindUI:Notify({[LUAOBFUSACTOR_DECRYPT_STR_0("\218\130\174\140\82","\213\142\235\218\224\55")]=LUAOBFUSACTOR_DECRYPT_STR_0("\38\173\237\204\14\187","\165\104\194\153"),[LUAOBFUSACTOR_DECRYPT_STR_0("\164\63\215\191\252\83\153","\237\231\80\185\203\153\61")]=LUAOBFUSACTOR_DECRYPT_STR_0("\129\63\142\115\81\160\112\146\119\72\172\62\132\119\87\229\53\142\115\71\169\53\132","\37\197\80\224\18"),[LUAOBFUSACTOR_DECRYPT_STR_0("\48\65\67\72","\212\121\34\44\38")]=LUAOBFUSACTOR_DECRYPT_STR_0("\184\191\38\9","\62\218\218\74\101\30\205\146"),[LUAOBFUSACTOR_DECRYPT_STR_0("\102\188\107\240\201\55\75\33","\79\34\201\25\145\189\94\36")]=3});startReminderLoop();break;end end break;end end end break;end if (FlatIdent_9525B==0) then local FlatIdent_7BCBE=0;while true do if (FlatIdent_7BCBE==1) then FlatIdent_9525B=1;break;end if (FlatIdent_7BCBE==0) then isReminderDisabled=state;if reminderTask then local FlatIdent_7268B=0;local FlatIdent_56EE2;while true do if (FlatIdent_7268B==0) then FlatIdent_56EE2=0;while true do if (FlatIdent_56EE2==0) then task.cancel(reminderTask);reminderTask=nil;break;end end break;end end end FlatIdent_7BCBE=1;end end end end break;end end end});local SectionTweak=SettingsTab:Section({[LUAOBFUSACTOR_DECRYPT_STR_0("\116\37\254\6\69","\52\32\76\138\106\32")]=LUAOBFUSACTOR_DECRYPT_STR_0("\138\171\101\134\81\183\232\50\202\117\160\186\4\209\127\185\241\35","\26\216\154\80\166"),[LUAOBFUSACTOR_DECRYPT_STR_0("\227\217\232\77\120\40","\76\172\169\141\35\29")]=false});SectionTweak:Input({[LUAOBFUSACTOR_DECRYPT_STR_0("\232\208\236\15\217","\99\188\185\152")]=LUAOBFUSACTOR_DECRYPT_STR_0("\253\18\176\29\166\198\84\142\78\235\245\17\165\11\177\146\63\191\28\170\157\63\183\0\162\220\93","\195\178\116\214\110"),[LUAOBFUSACTOR_DECRYPT_STR_0("\53\251\135\118\196\238\10\251\130\112\211","\134\101\151\230\21\161")]=LUAOBFUSACTOR_DECRYPT_STR_0("\138\133\52\64\44\58\186\233\199\106\26\115\103","\128\201\234\90\52\67\82"),[LUAOBFUSACTOR_DECRYPT_STR_0("\128\72\45\119","\170\196\45\94\20")]=LUAOBFUSACTOR_DECRYPT_STR_0("\85\65\17\61\202\96\49\112\67\14\53\129\53\62\106\81\14\116\198\37\35\123\86\69\124\229\37\54\127\81\9\32\155\96\125\46\10\85\97\136","\80\30\36\101\84\161\64"),[LUAOBFUSACTOR_DECRYPT_STR_0("\133\80\21\78\218\58\165\90","\91\198\49\121\34\184")]=function(val) local FlatIdent_12E4E=0;local num;while true do if (0==FlatIdent_12E4E) then num=tonumber(val);if num then local FlatIdent_401F9=0;local FlatIdent_6B54C;while true do if (FlatIdent_401F9==0) then FlatIdent_6B54C=0;while true do if (FlatIdent_6B54C==1) then AvatarState.Global.KorbloxX=num;break;end if (FlatIdent_6B54C==0) then local FlatIdent_3BBAF=0;while true do if (0==FlatIdent_3BBAF) then AvatarState.Self.KorbloxX=num;AvatarState.Targeted.KorbloxX=num;FlatIdent_3BBAF=1;end if (FlatIdent_3BBAF==1) then FlatIdent_6B54C=1;break;end end end end break;end end end break;end end end});SectionTweak:Input({[LUAOBFUSACTOR_DECRYPT_STR_0("\0\207\99\181\140","\233\84\166\23\217")]=LUAOBFUSACTOR_DECRYPT_STR_0("\87\126\254\245\51\53\56\65\184\174\24\32\113\115\183\210\35\51\109\118\177","\65\24\24\152\134\86"),[LUAOBFUSACTOR_DECRYPT_STR_0("\140\59\233\74\185\63\231\69\184\50\250","\41\220\87\136")]=LUAOBFUSACTOR_DECRYPT_STR_0("\6\57\237\228\193\163\127\118\174\160\128\254\117","\203\69\86\131\144\174"),[LUAOBFUSACTOR_DECRYPT_STR_0("\157\27\64\90","\113\217\126\51\57\168\48\135")]=LUAOBFUSACTOR_DECRYPT_STR_0("\52\16\34\65\67\63\119\192\24\30\55\8\93\113\98\219\20\85\34\65\70\120\113\199\95\93\18\77\78\126\99\194\11\79\118\5\24\49\35\158\86","\174\127\117\86\40\40\31\22"),[LUAOBFUSACTOR_DECRYPT_STR_0("\255\58\64\215\222\58\79\208","\187\188\91\44")]=function(val) local FlatIdent_89126=0;local num;while true do if (FlatIdent_89126==0) then num=tonumber(val);if num then AvatarState.Self.KorbloxY=num;AvatarState.Targeted.KorbloxY=num;AvatarState.Global.KorbloxY=num;end break;end end end});SectionTweak:Input({[LUAOBFUSACTOR_DECRYPT_STR_0("\43\254\106\41\231","\109\127\151\30\69\130")]=LUAOBFUSACTOR_DECRYPT_STR_0("\253\131\113\11\192\196\242\44\146\205\83\29\213\209\188\89\240\128\123\25\206\209\188\17\155","\118\178\229\23\120\165\176\210"),[LUAOBFUSACTOR_DECRYPT_STR_0("\53\208\77\10\9\167\46\177\1\217\94","\221\101\188\44\105\108\207\65")]=LUAOBFUSACTOR_DECRYPT_STR_0("\117\63\25\182\221\94\106\87\242","\178\54\80\119\194"),[LUAOBFUSACTOR_DECRYPT_STR_0("\16\10\82\193","\162\84\111\33\162\143\153\217")]=LUAOBFUSACTOR_DECRYPT_STR_0("\12\222\9\131\44\155\28\132\32\208\28\202\50\213\9\159\44\155\16\139\45\206\82\135\50\213\25\159\53\155\85\174\34\221\28\159\43\207\71\202\119\146","\234\71\187\125"),[LUAOBFUSACTOR_DECRYPT_STR_0("\50\61\93\87\252\16\63\90","\158\113\92\49\59")]=function(val) local FlatIdent_53895=0;local FlatIdent_386FF;local num;while true do if (FlatIdent_53895==0) then FlatIdent_386FF=0;num=nil;FlatIdent_53895=1;end if (FlatIdent_53895==1) then while true do if (FlatIdent_386FF==0) then num=tonumber(val);if num then local FlatIdent_87C42=0;while true do if (FlatIdent_87C42==1) then AvatarState.Global.KorbloxZ=num;break;end if (0==FlatIdent_87C42) then local FlatIdent_21669=0;while true do if (FlatIdent_21669==0) then AvatarState.Self.KorbloxZ=num;AvatarState.Targeted.KorbloxZ=num;FlatIdent_21669=1;end if (FlatIdent_21669==1) then FlatIdent_87C42=1;break;end end end end end break;end end break;end end end});SectionTweak:Input({[LUAOBFUSACTOR_DECRYPT_STR_0("\216\121\85\124\251","\103\140\16\33\16\158\102\186")]=LUAOBFUSACTOR_DECRYPT_STR_0("\245\130\169\116\23\53\200\131\253\77\67\116\247\132\169\118\11\124\136\205\144\124\17\53\201\138\244","\92\167\237\221\21\99"),[LUAOBFUSACTOR_DECRYPT_STR_0("\207\44\44\37\250\40\34\42\251\37\63","\70\159\64\77")]=LUAOBFUSACTOR_DECRYPT_STR_0("\244\64\92\235\21\223\21\18\175","\122\183\47\50\159"),[LUAOBFUSACTOR_DECRYPT_STR_0("\230\52\180\76","\224\162\81\199\47")]=LUAOBFUSACTOR_DECRYPT_STR_0("\195\64\39\52\136\168\65\54\47\130\226\68\39\125\142\225\87\58\51\132\168\13\23\56\133\233\80\63\41\217\168\21\122","\227\136\37\83\93"),[LUAOBFUSACTOR_DECRYPT_STR_0("\122\172\4\120\91\172\11\127","\20\57\205\104")]=function(val) local FlatIdent_37395=0;local FlatIdent_97B67;local num;while true do if (FlatIdent_37395==0) then FlatIdent_97B67=0;num=nil;FlatIdent_37395=1;end if (1==FlatIdent_37395) then while true do if (FlatIdent_97B67==0) then num=tonumber(val);if num then local FlatIdent_1F68E=0;local FlatIdent_4D69A;while true do if (0==FlatIdent_1F68E) then FlatIdent_4D69A=0;while true do if (0==FlatIdent_4D69A) then local FlatIdent_7308B=0;while true do if (FlatIdent_7308B==0) then AvatarState.Self.KorbloxRX=num;AvatarState.Targeted.KorbloxRX=num;FlatIdent_7308B=1;end if (FlatIdent_7308B==1) then FlatIdent_4D69A=1;break;end end end if (FlatIdent_4D69A==1) then AvatarState.Global.KorbloxRX=num;break;end end break;end end end break;end end break;end end end});SectionTweak:Input({[LUAOBFUSACTOR_DECRYPT_STR_0("\28\162\12\181\31","\83\72\203\120\217\122\58")]=LUAOBFUSACTOR_DECRYPT_STR_0("\142\230\175\162\187\180\176\178\169\130\227\231\132\190\171\169\244\227\135\188\187\189\249\242","\223\220\137\219\195\207\221"),[LUAOBFUSACTOR_DECRYPT_STR_0("\35\68\94\225\41\27\71\83\230\41\1","\76\115\40\63\130")]=LUAOBFUSACTOR_DECRYPT_STR_0("\164\21\35\185\185\217\221\90\127\244\227","\177\231\122\77\205\214"),[LUAOBFUSACTOR_DECRYPT_STR_0("\96\22\82\67","\60\36\115\33\32\201")]=LUAOBFUSACTOR_DECRYPT_STR_0("\156\115\67\79\71\30\57\164\165\119\93\71\88\30\53\160\179\119\71\6\4\122\56\167\182\99\91\82\22\30\111\248\226\63","\193\215\22\55\38\44\62\93"),[LUAOBFUSACTOR_DECRYPT_STR_0("\12\19\2\195\215\250\44\25","\155\79\114\110\175\181")]=function(val) local FlatIdent_12B71=0;local num;while true do if (FlatIdent_12B71==0) then num=tonumber(val);if num then local FlatIdent_755A7=0;local FlatIdent_1B30C;while true do if (FlatIdent_755A7==0) then FlatIdent_1B30C=0;while true do if (FlatIdent_1B30C==1) then AvatarState.Global.KorbloxRY=num;break;end if (FlatIdent_1B30C==0) then local FlatIdent_47C14=0;while true do if (FlatIdent_47C14==0) then AvatarState.Self.KorbloxRY=num;AvatarState.Targeted.KorbloxRY=num;FlatIdent_47C14=1;end if (FlatIdent_47C14==1) then FlatIdent_1B30C=1;break;end end end end break;end end end break;end end end});SectionTweak:Input({[LUAOBFUSACTOR_DECRYPT_STR_0("\108\93\205\232\180","\181\56\52\185\132\209\236")]=LUAOBFUSACTOR_DECRYPT_STR_0("\0\67\198\169\81\160\245\60\12\232\232\13\155\245\62\64\146\231\5\142\245\43\77\220\175\12","\154\82\44\178\200\37\201"),[LUAOBFUSACTOR_DECRYPT_STR_0("\69\231\3\14\187\64\122\121\239\7\31","\21\21\139\98\109\222\40")]=LUAOBFUSACTOR_DECRYPT_STR_0("\39\227\162\152\53\12\182\236\220","\90\100\140\204\236"),[LUAOBFUSACTOR_DECRYPT_STR_0("\136\17\45\207","\120\204\116\94\172\215")]=LUAOBFUSACTOR_DECRYPT_STR_0("\40\184\172\1\224\226\116\122\17\188\178\9\255\226\119\112\26\188\182\15\171\234\84\122\5\188\173\4\255\248\48\47\74","\31\99\221\216\104\139\194\16"),[LUAOBFUSACTOR_DECRYPT_STR_0("\22\161\230\0\11\226\54\171","\131\85\192\138\108\105")]=function(val) local FlatIdent_3BEFE=0;local FlatIdent_79739;local num;while true do if (0==FlatIdent_3BEFE) then FlatIdent_79739=0;num=nil;FlatIdent_3BEFE=1;end if (1==FlatIdent_3BEFE) then while true do if (FlatIdent_79739==0) then num=tonumber(val);if num then local FlatIdent_12479=0;while true do if (FlatIdent_12479==1) then AvatarState.Global.KorbloxRZ=num;break;end if (FlatIdent_12479==0) then local FlatIdent_943B=0;while true do if (FlatIdent_943B==0) then AvatarState.Self.KorbloxRZ=num;AvatarState.Targeted.KorbloxRZ=num;FlatIdent_943B=1;end if (FlatIdent_943B==1) then FlatIdent_12479=1;break;end end end end end break;end end break;end end end});function startReminderLoop() reminderTask=task.spawn(function() while  not isReminderDisabled do local FlatIdent_55482=0;while true do if (FlatIdent_55482==0) then task.wait(60);if  not isReminderDisabled then WindUI:Notify({[LUAOBFUSACTOR_DECRYPT_STR_0("\2\173\107\15\51","\99\86\196\31")]=LUAOBFUSACTOR_DECRYPT_STR_0("\98\49\66\244\81\163\10\66","\111\48\84\47\157\63\199"),[LUAOBFUSACTOR_DECRYPT_STR_0("\57\9\142\179\43\20\18","\78\122\102\224\199")]="don't forget to support me in socialbuzz",[LUAOBFUSACTOR_DECRYPT_STR_0("\213\27\123\13","\159\156\120\20\99\84\101\206")]=LUAOBFUSACTOR_DECRYPT_STR_0("\126\20\128\115\133\83\126\41\123","\71\28\113\236\31\168\33\23"),[LUAOBFUSACTOR_DECRYPT_STR_0("\105\235\49\249\205\208\52\169","\199\45\158\67\152\185\185\91")]=5});end break;end end end end);end startReminderLoop();else local sdawdwqdq=obf_arg[1];end end if (obf_tonumber(obf_stringmatch(obf_stringmatch(({obf_pcall(obf_wrapperfunc,nil)})[2],":%d+:"),"%d+"))==1) then return obf_wrapperfunc({});else return obf_adjnqwidqwjhdpoq();end end return obf_adjnqwidqwjhdpoq();
+local CoreGui = game:GetService("CoreGui")
+local TweenService = game:GetService("TweenService")
+
+local splashGui = Instance.new("ScreenGui")
+splashGui.Name = "YuuSplash"
+splashGui.IgnoreGuiInset = true
+splashGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+splashGui.Parent = CoreGui
+
+local bg = Instance.new("Frame")
+bg.Size = UDim2.fromScale(1, 1)
+bg.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+bg.BackgroundTransparency = 1 -- Mulai dari 100% transparan agar tidak mengagetkan
+bg.BorderSizePixel = 0
+bg.Parent = splashGui
+
+local title = Instance.new("TextLabel")
+title.Text = "Yuu's Universal Avatar Customizer"
+title.Font = Enum.Font.GothamBold
+title.TextSize = 30
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1
+title.Size = UDim2.new(1, 0, 0, 50)
+title.Position = UDim2.new(0, 0, 0.42, 0)
+title.TextTransparency = 1
+title.Parent = bg
+
+local subtitle = Instance.new("TextLabel")
+subtitle.Text = "by Yuutaa7x"
+subtitle.Font = Enum.Font.GothamMedium
+subtitle.TextSize = 18
+subtitle.TextColor3 = Color3.fromRGB(180, 180, 180)
+subtitle.BackgroundTransparency = 1
+subtitle.Size = UDim2.new(1, 0, 0, 30)
+subtitle.Position = UDim2.new(0, 0, 0.5, 0)
+subtitle.TextTransparency = 1
+subtitle.Parent = bg
+
+local barBg = Instance.new("Frame")
+barBg.Size = UDim2.new(0, 350, 0, 4)
+barBg.Position = UDim2.new(0.5, -175, 0.6, 0)
+barBg.BackgroundColor3 = Color3.fromRGB(40, 40, 50)
+barBg.BorderSizePixel = 0
+barBg.BackgroundTransparency = 1
+barBg.Parent = bg
+
+local barFill = Instance.new("Frame")
+barFill.Size = UDim2.new(0, 0, 1, 0)
+barFill.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+barFill.BorderSizePixel = 0
+barFill.BackgroundTransparency = 1
+barFill.Parent = barBg
+
+local UICorner = Instance.new("UICorner")
+UICorner.CornerRadius = UDim.new(1, 0)
+UICorner.Parent = barBg
+local UICorner2 = UICorner:Clone()
+UICorner2.Parent = barFill
+
+-- Animations (Lebih lambat dan santai)
+local tiBg = TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+TweenService:Create(bg, tiBg, {BackgroundTransparency = 0.35}):Play() -- Hanya gelap sedikit (35%), game tetap terlihat jelas
+task.wait(0.5)
+
+local tiText = TweenInfo.new(1.2, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+TweenService:Create(title, tiText, {TextTransparency = 0}):Play()
+task.wait(0.4)
+TweenService:Create(subtitle, tiText, {TextTransparency = 0}):Play()
+TweenService:Create(barBg, tiText, {BackgroundTransparency = 0.5}):Play()
+TweenService:Create(barFill, tiText, {BackgroundTransparency = 0}):Play()
+
+task.wait(0.8)
+
+-- Fill Bar (Loading diperlambat)
+TweenService:Create(barFill, TweenInfo.new(3.5, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), {Size = UDim2.new(1, 0, 1, 0)}):Play()
+task.wait(5) -- Tunggu loading selesai + jeda sedikit agar tulisan bisa dibaca
+
+-- Fade out (Menghilang perlahan)
+local tiOut = TweenInfo.new(1.5, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
+TweenService:Create(title, tiOut, {TextTransparency = 1}):Play()
+TweenService:Create(subtitle, tiOut, {TextTransparency = 1}):Play()
+TweenService:Create(barBg, tiOut, {BackgroundTransparency = 1}):Play()
+TweenService:Create(barFill, tiOut, {BackgroundTransparency = 1}):Play()
+task.wait(2)
+TweenService:Create(bg, TweenInfo.new(1.5), {BackgroundTransparency = 1}):Play()
+task.wait(2)
+
+splashGui:Destroy()
+
+local isAnonymous = false
+
+local promptGui = Instance.new("ScreenGui")
+promptGui.Name = "YuuPrompt"
+promptGui.IgnoreGuiInset = true
+promptGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+promptGui.Parent = CoreGui
+
+local pBg = Instance.new("Frame")
+pBg.Size = UDim2.fromScale(1, 1)
+pBg.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+pBg.BackgroundTransparency = 0.5
+pBg.BorderSizePixel = 0
+pBg.Parent = promptGui
+
+local pFrame = Instance.new("Frame")
+pFrame.Size = UDim2.new(0, 320, 0, 160)
+pFrame.Position = UDim2.new(0.5, -160, 0.5, -80)
+pFrame.BackgroundColor3 = Color3.fromRGB(20, 20, 25)
+pFrame.BorderSizePixel = 0
+pFrame.Parent = pBg
+
+local pCorner = Instance.new("UICorner")
+pCorner.CornerRadius = UDim.new(0, 10)
+pCorner.Parent = pFrame
+
+local pTitle = Instance.new("TextLabel")
+pTitle.Text = "Privacy Settings"
+pTitle.Font = Enum.Font.GothamBold
+pTitle.TextSize = 20
+pTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+pTitle.BackgroundTransparency = 1
+pTitle.Size = UDim2.new(1, 0, 0, 40)
+pTitle.Position = UDim2.new(0, 0, 0, 5)
+pTitle.Parent = pFrame
+
+local pDesc = Instance.new("TextLabel")
+pDesc.Text = "Do you want to show your username to others in Sync, or stay Anonymous?"
+pDesc.Font = Enum.Font.GothamMedium
+pDesc.TextSize = 14
+pDesc.TextColor3 = Color3.fromRGB(180, 180, 180)
+pDesc.BackgroundTransparency = 1
+pDesc.TextWrapped = true
+pDesc.Size = UDim2.new(1, -40, 0, 50)
+pDesc.Position = UDim2.new(0, 20, 0, 45)
+pDesc.Parent = pFrame
+
+local pBind = Instance.new("BindableEvent")
+
+local function createBtn(text, color, xPos, isAnonVal)
+    local btn = Instance.new("TextButton")
+    btn.Text = text
+    btn.Font = Enum.Font.GothamBold
+    btn.TextSize = 14
+    btn.TextColor3 = Color3.fromRGB(255, 255, 255)
+    btn.BackgroundColor3 = color
+    btn.Size = UDim2.new(0, 120, 0, 35)
+    btn.Position = UDim2.new(0, xPos, 0, 105)
+    btn.AutoButtonColor = true
+    btn.Parent = pFrame
+    
+    local c = Instance.new("UICorner")
+    c.CornerRadius = UDim.new(0, 6)
+    c.Parent = btn
+    
+    btn.MouseButton1Click:Connect(function()
+        isAnonymous = isAnonVal
+        pBind:Fire()
+    end)
+end
+
+createBtn("Anonymous", Color3.fromRGB(180, 60, 60), 25, true)
+createBtn("Show Identity", Color3.fromRGB(60, 160, 80), 175, false)
+
+pBind.Event:Wait()
+promptGui:Destroy()
+
+-- Load Library
+local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
+
+-- Core Services
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local LocalPlayer = Players.LocalPlayer
+
+-- Additional Settings
+WindUI:SetNotificationLower(true)
+
+WindUI:AddTheme({
+    Name = "DarkNew",
+    Accent = Color3.fromHex("#18181b"),
+    Background = Color3.fromHex("#101010"),
+    Outline = Color3.fromHex("#FFFFFF"),
+    Text = Color3.fromHex("#FFFFFF"),
+    Placeholder = Color3.fromHex("#7a7a7a"),
+    Button = Color3.fromHex("#52525b"),
+    Icon = Color3.fromHex("#a1a1aa"),
+})
+
+WindUI:SetTheme("DarkNew")
+
+-- Loaded Notify
+WindUI:Notify({
+    Title = "Welcome!",
+    Content = "Scripts Loaded, Please wait Until window appearing.",
+    Icon = "circle-check-big",
+    Duration = 5,
+})
+
+task.wait(1)
+
+WindUI:Notify({
+    Title = "Information",
+    Content = "press = to hide/unhide window",
+    Icon = "bell",
+    Duration = 15,
+})
+
+task.wait(5)
+
+-- Avatar State
+local AvatarState = {
+    Self = { Korblox = false, Headless = false, Crown8B = false, Backpack8B = false, HPBar8B = false, TabbyCat8B = false, CustomAssetID = nil, KorbloxX = -0.05, KorbloxY = -0.50, KorbloxZ = 0, KorbloxRX = 0, KorbloxRY = 295, KorbloxRZ = 0 },
+    Targeted = { TargetName = "", Korblox = false, Headless = false, Crown8B = false, Backpack8B = false, HPBar8B = false, TabbyCat8B = false, CustomAssetID = nil, KorbloxX = -0.05, KorbloxY = -0.50, KorbloxZ = 0, KorbloxRX = 0, KorbloxRY = 295, KorbloxRZ = 0 },
+    Global = { Korblox = false, Headless = false, Crown8B = false, Backpack8B = false, HPBar8B = false, TabbyCat8B = false, CustomAssetID = nil, KorbloxX = -0.05, KorbloxY = -0.50, KorbloxZ = 0, KorbloxRX = 0, KorbloxRY = 295, KorbloxRZ = 0 },
+    SyncedPlayers = {}
+}
+
+-- Asset IDs
+local ASSETS = {
+    Crown8B = 10159600649,
+    Backpack8B = 10369943613,
+    HPBar8B = 10159610478,
+    TabbyCat8B = 10159617728
+}
+local KORBLOX_MESH = "rbxassetid://101851696"
+local KORBLOX_TEXTURE = "rbxassetid://101851254"
+
+-- Caching Handles
+local HandleCaches = {}
+local CharacterHandles = {} -- [char] = { Crown8B = handle, Backpack8B = handle, ... }
+local removedForChar = {}
+local MasterHandles = {}
+local MasterNames = {}
+
+local function loadAccessoryHandle(assetId, handleName)
+    if MasterHandles[assetId] then
+        local clone = MasterHandles[assetId]:Clone()
+        clone.Name = handleName
+        clone.Transparency = 1
+        task.delay(0.1, function()
+            if clone and clone.Parent then
+                clone.Transparency = 0
+            end
+        end)
+        return clone, MasterNames[assetId]
+    end
+    
+    local ok, objects = pcall(function() return game:GetObjects("rbxassetid://" .. tostring(assetId)) end)
+    if ok and objects and #objects > 0 then
+        local obj = objects[1]
+        local handle = obj:IsA("Accessory") and obj:FindFirstChild("Handle") or (obj:FindFirstChildOfClass("Accessory") and obj:FindFirstChildOfClass("Accessory"):FindFirstChild("Handle"))
+        if handle then
+            handle.Parent = nil
+            local objName = obj.Name
+            pcall(function() obj:Destroy() end)
+            handle.Name = handleName
+            handle.Anchored = true
+            handle.CanCollide = false
+            handle.CastShadow = false
+            
+            MasterHandles[assetId] = handle:Clone()
+            MasterNames[assetId] = objName
+            
+            handle.Transparency = 1
+            task.delay(0.1, function()
+                if handle and handle.Parent then
+                    handle.Transparency = 0
+                end
+            end)
+            
+            return handle, objName
+        else
+            pcall(function() obj:Destroy() end)
+        end
+    end
+    return nil, nil
+end
+
+local function getUniversalCharacter(plr)
+    local rigs = workspace:FindFirstChild("Rigs")
+    if rigs then
+        local customRig = rigs:FindFirstChild(plr.Name)
+        if customRig and customRig:FindFirstChild("Head") then return customRig end
+    end
+    if plr.Character and plr.Character:FindFirstChild("Head") then return plr.Character end
+    return nil
+end
+
+local function applyHeadless(char, isEnabled)
+    local head = char:FindFirstChild("Head")
+    if not head then return end
+    
+    if head:IsA("MeshPart") then
+        head.Transparency = isEnabled and 1 or 0
+        local face = head:FindFirstChildOfClass("Decal")
+        if face then face.Transparency = isEnabled and 1 or 0 end
+    else
+        for _, v in ipairs(head:GetChildren()) do
+            if v:IsA("SpecialMesh") or v:IsA("CylinderMesh") then
+                v.Scale = isEnabled and Vector3.new(0, 0, 0) or (v:IsA("SpecialMesh") and v.MeshType == Enum.MeshType.Head and Vector3.new(1.25, 1.25, 1.25) or Vector3.new(1, 1, 1))
+            end
+            if v:IsA("Decal") then v.Transparency = isEnabled and 1 or 0 end
+        end
+        if head:IsA("BasePart") and not head:FindFirstChildOfClass("SpecialMesh") then
+            head.Transparency = isEnabled and 1 or 0
+        end
+    end
+end
+
+local KorbloxCache = {}
+
+local function applyKorblox(char, isEnabled, xOffset, yOffset, zOffset, rxOffset, ryOffset, rzOffset)
+    local hum = char:FindFirstChildOfClass("Humanoid")
+    local isR15 = hum and hum.RigType == Enum.HumanoidRigType.R15
+
+    if isR15 then
+        local upper = char:FindFirstChild("RightUpperLeg")
+        local lower = char:FindFirstChild("RightLowerLeg")
+        local foot = char:FindFirstChild("RightFoot")
+        
+        local targetTrans = isEnabled and 1 or 0
+        if upper and upper.Transparency ~= targetTrans then upper.Transparency = targetTrans end
+        if lower and lower.Transparency ~= targetTrans then lower.Transparency = targetTrans end
+        if foot and foot.Transparency ~= targetTrans then foot.Transparency = targetTrans end
+        
+        if isEnabled and upper then
+            if not KorbloxCache[char] then
+                local fake = Instance.new("Part")
+                fake.Name = "FakeKorbloxLeg"
+                fake.Size = Vector3.new(0.1, 0.1, 0.1)
+                fake.CanCollide = false
+                fake.Massless = true
+                fake.Anchored = true
+                fake.CastShadow = false
+                fake.Parent = workspace
+                
+                local mesh = Instance.new("SpecialMesh")
+                mesh.MeshType = Enum.MeshType.FileMesh
+                mesh.MeshId = "rbxassetid://101851696" -- Using R6 mesh since it covers the whole leg visually
+                mesh.TextureId = "rbxassetid://101851254"
+                mesh.Scale = Vector3.new(1, 1, 1)
+                mesh.Parent = fake
+                
+                KorbloxCache[char] = fake
+            end
+            
+            local fake = KorbloxCache[char]
+            if fake and fake.Parent then
+                local targetCFrame = upper.CFrame * CFrame.new(xOffset, yOffset, zOffset) * CFrame.Angles(math.rad(rxOffset), math.rad(ryOffset), math.rad(rzOffset))
+                if fake.CFrame ~= targetCFrame then fake.CFrame = targetCFrame end
+            end
+        else
+            if KorbloxCache[char] then
+                KorbloxCache[char]:Destroy()
+                KorbloxCache[char] = nil
+            end
+        end
+    else
+        local rightLeg = char:FindFirstChild("Right Leg")
+        if rightLeg then
+            local sm = rightLeg:FindFirstChild("CustomBodyMesh")
+            if isEnabled then
+                if not sm then
+                    sm = Instance.new("SpecialMesh")
+                    sm.Name = "CustomBodyMesh"
+                    sm.Parent = rightLeg
+                end
+                sm.MeshType = Enum.MeshType.FileMesh
+                local targetMesh = "rbxassetid://101851696"
+                local targetTex = "rbxassetid://101851254"
+                if sm.MeshId ~= targetMesh then sm.MeshId = targetMesh end
+                if sm.TextureId ~= targetTex then sm.TextureId = targetTex end
+                sm.Scale = Vector3.new(1, 1, 1)
+                
+                -- Hapus CharacterMesh bawaan Roblox agar tidak bertumpuk
+                for _, v in ipairs(char:GetChildren()) do
+                    if v:IsA("CharacterMesh") and v.BodyPart == Enum.BodyPart.RightLeg then
+                        v:Destroy()
+                    end
+                end
+            else
+                if sm then sm:Destroy() end
+            end
+        end
+    end
+end
+
+local function removeConflictingAccessories(char, attachName)
+    if not attachName then return end
+    for _, child in ipairs(char:GetChildren()) do
+        if child:IsA("Accessory") then
+            local h = child:FindFirstChild("Handle")
+            if h and h:FindFirstChild(attachName) then
+                child:Destroy()
+            end
+        end
+    end
+end
+
+local function applyAccessoryToChar(char, featureName, assetId, handleName)
+    if not CharacterHandles[char] then CharacterHandles[char] = {} end
+    if not CharacterHandles[char][featureName] then
+        local newHandle = loadAccessoryHandle(assetId, handleName)
+        if newHandle then
+            newHandle.CFrame = CFrame.new(0, -10000, 0)
+            newHandle.Parent = workspace
+            CharacterHandles[char][featureName] = newHandle
+        end
+    end
+    
+    local handle = CharacterHandles[char][featureName]
+    if handle then
+        local accAtt = handle:FindFirstChildWhichIsA("Attachment")
+        local attName = accAtt and accAtt.Name or "HatAttachment"
+        local offset = accAtt and accAtt.Position or Vector3.new(0,0,0)
+        local charAtt = char:FindFirstChild(attName, true)
+        local attachPart = charAtt and charAtt.Parent or char:FindFirstChild("Head")
+        
+        if attachPart then
+            if not removedForChar[char] then removedForChar[char] = {} end
+            if not removedForChar[char][featureName] then
+                removeConflictingAccessories(char, attName)
+                removedForChar[char][featureName] = true
+            end
+            local charAttPos = charAtt and charAtt.Position or Vector3.new(0, 0.6, 0)
+            local targetCF = attachPart.CFrame * CFrame.new(charAttPos)
+            handle.CFrame = targetCF * CFrame.new(-offset)
+        else
+            handle.CFrame = CFrame.new(0, -10000, 0)
+        end
+    end
+end
+
+local function removeAccessoryFromChar(char, featureName)
+    if CharacterHandles[char] and CharacterHandles[char][featureName] then
+        CharacterHandles[char][featureName]:Destroy()
+        CharacterHandles[char][featureName] = nil
+    end
+    if removedForChar[char] then
+        removedForChar[char][featureName] = nil
+    end
+end
+
+local function resolveTargetPlayer(targetName)
+    if not targetName or targetName == "" then return nil end
+    local lower = string.lower(targetName)
+    for _, p in ipairs(Players:GetPlayers()) do
+        if string.find(string.lower(p.Name), lower, 1, true) or string.find(string.lower(p.DisplayName), lower, 1, true) then
+            return p
+        end
+    end
+    return nil
+end
+
+if _G.YuacMainLoopConn then _G.YuacMainLoopConn:Disconnect(); _G.YuacMainLoopConn = nil end
+
+_G.YuacMainLoopConn = RunService.Heartbeat:Connect(function()
+    local desiredFeatures = {}
+    
+    local localChar = getUniversalCharacter(LocalPlayer)
+    if localChar then desiredFeatures[localChar] = AvatarState.Self end
+    
+    local targetedPlayer = nil
+    if AvatarState.Targeted.TargetName ~= "" then
+        targetedPlayer = resolveTargetPlayer(AvatarState.Targeted.TargetName)
+        if targetedPlayer and targetedPlayer ~= LocalPlayer then
+            local tChar = getUniversalCharacter(targetedPlayer)
+            if tChar then desiredFeatures[tChar] = AvatarState.Targeted end
+        end
+    end
+    
+    for _, p in ipairs(Players:GetPlayers()) do
+        if p ~= LocalPlayer and p ~= targetedPlayer then
+            local pChar = getUniversalCharacter(p)
+            if pChar then
+                if AvatarState.SyncedPlayers and AvatarState.SyncedPlayers[p.Name] then
+                    desiredFeatures[pChar] = AvatarState.SyncedPlayers[p.Name]
+                else
+                    desiredFeatures[pChar] = AvatarState.Global
+                end
+            end
+        end
+    end
+    
+    local activeChars = {}
+    for char, features in pairs(desiredFeatures) do
+        activeChars[char] = true
+        pcall(function()
+            applyHeadless(char, features.Headless)
+            applyKorblox(char, features.Korblox, features.KorbloxX or -0.05, features.KorbloxY or -0.50, features.KorbloxZ or 0, features.KorbloxRX or 0, features.KorbloxRY or 295, features.KorbloxRZ or 0)
+            
+            if features.Crown8B then applyAccessoryToChar(char, "Crown8B", ASSETS.Crown8B, "Crown8B_Handle") else removeAccessoryFromChar(char, "Crown8B") end
+            if features.Backpack8B then applyAccessoryToChar(char, "Backpack8B", ASSETS.Backpack8B, "Backpack8B_Handle") else removeAccessoryFromChar(char, "Backpack8B") end
+            if features.HPBar8B then applyAccessoryToChar(char, "HPBar8B", ASSETS.HPBar8B, "HPBar8B_Handle") else removeAccessoryFromChar(char, "HPBar8B") end
+            if features.TabbyCat8B then applyAccessoryToChar(char, "TabbyCat8B", ASSETS.TabbyCat8B, "TabbyCat8B_Handle") else removeAccessoryFromChar(char, "TabbyCat8B") end
+            
+            local currentCustoms = {}
+            if features.CustomAssets then
+                for id, accName in pairs(features.CustomAssets) do
+                    local featName = "Custom_" .. id
+                    currentCustoms[featName] = true
+                    applyAccessoryToChar(char, featName, id, "Custom_Handle_" .. id)
+                end
+            end
+            
+            if CharacterHandles[char] then
+                for featName, handle in pairs(CharacterHandles[char]) do
+                    if string.sub(featName, 1, 7) == "Custom_" and not currentCustoms[featName] then
+                        removeAccessoryFromChar(char, featName)
+                    end
+                end
+            end
+        end)
+    end
+    
+    for char, handles in pairs(CharacterHandles) do
+        if not char.Parent or not activeChars[char] then
+            for feat, handle in pairs(handles) do handle:Destroy() end
+            CharacterHandles[char] = nil
+            removedForChar[char] = nil
+        end
+    end
+    
+    for char, fake in pairs(KorbloxCache) do
+        if not char.Parent or not activeChars[char] then
+            fake:Destroy()
+            KorbloxCache[char] = nil
+        end
+    end
+end)
+
+-- Window Container
+local Window = WindUI:CreateWindow({
+    Title = "Yuu's Universal Avatar Customizer",
+    Author = "by Yuutaa7x",
+    Folder = "yuac",
+    Size = UDim2.fromOffset(750, 520),
+    Resizable = true,
+    SideBarWidth = 200,
+    HideSearchBar = true,
+    ScrollBarEnabled = false,
+    User = { Enabled = true, Anonymous = isAnonymous },
+    Topbar = {
+        Height = 52,
+        ButtonsType = "Mac" -- "Default" or "Mac" style
+    }
+})
+
+local VerTag = Window:Tag({
+    Title = "Version: v1.0",
+    Color = Color3.fromRGB(128, 128, 128),
+})
+
+local PingTag = Window:Tag({
+    Title = "Ping: 0ms",
+    Color = Color3.fromRGB(128, 128, 128),
+})
+ 
+task.spawn(function()
+    while true do
+        local success, ping = pcall(function()
+            local Stats = game:GetService("Stats")
+            local pingValue = Stats.Network.ServerStatsItem["Data Ping"]:GetValue()
+            return math.floor(pingValue)
+        end)
+        
+        if success and ping then
+            PingTag:SetTitle("Ping: " .. ping .. "ms")
+        end
+        
+        task.wait(2)
+    end
+end)
+
+local FPSTag = Window:Tag({
+    Title = "FPS: 0",
+    Color = Color3.fromRGB(128, 128, 128),
+})
+ 
+local RunService = game:GetService("RunService")
+local lastUpdate = tick()
+local frameCount = 0
+ 
+RunService.RenderStepped:Connect(function()
+    frameCount = frameCount + 1
+    local now = tick()
+    
+    if now - lastUpdate >= 1 then
+        local fps = math.floor(frameCount / (now - lastUpdate))
+        FPSTag:SetTitle("FPS: " .. fps)
+        
+        frameCount = 0
+        lastUpdate = now
+    end
+end)
+
+local function buildSettingsForTab(TabInstance, StateTable, isSelf)
+    local SectionCustom = TabInstance:Section({ Title = "Custom Assets ID", Opened = true })
+    
+    local typedAssetID = nil
+    SectionCustom:Input({
+        Title = "Assets ID", Placeholder = "Insert Assets ID", Desc = "Type ID here, then click Equip below", 
+        Locked = false, Type = "Default",
+        Callback = function(txt)
+            typedAssetID = tonumber(txt)
+        end
+    })
+    
+        local unequipSections = {}
+    
+    SectionCustom:Button({
+        Title = "Equip Asset",
+        Color = Color3.fromRGB(50, 200, 50),
+        Callback = function()
+            local id = typedAssetID
+            
+            if not id then
+                local CoreGui = game:GetService("CoreGui")
+                local ui = CoreGui:FindFirstChild("WindUI") or CoreGui:FindFirstChild("yuac")
+                if not ui then
+                    local pgui = game:GetService("Players").LocalPlayer:FindFirstChild("PlayerGui")
+                    if pgui then ui = pgui:FindFirstChild("WindUI") or pgui:FindFirstChild("yuac") end
+                end
+                
+                if ui then
+                    for _, tb in ipairs(ui:GetDescendants()) do
+                        if tb:IsA("TextBox") and tb.Text and tb.Text ~= "" then
+                            local num = tonumber(tb.Text)
+                            if num and num > 1000000 then 
+                                id = num 
+                                break 
+                            end
+                        end
+                    end
+                end
+            end
+            
+            if not id then 
+                WindUI:Notify({Title = "Error", Content = "Please enter a valid Asset ID first! (Tekan Enter setelah mengetik ID)", Duration = 4})
+                return 
+            end
+            
+            StateTable.CustomAssets = StateTable.CustomAssets or {}
+            
+            if StateTable.CustomAssets[id] then
+                WindUI:Notify({Title = "Error", Content = "Asset ID " .. id .. " is already equipped!", Duration = 3})
+                return
+            end
+            
+            WindUI:Notify({Title = "Fetching", Content = "Getting info for " .. id .. "...", Duration = 1})
+            
+            task.spawn(function()
+                  local success, info = pcall(function() return game:GetService("MarketplaceService"):GetProductInfo(id) end)
+                  if not success or not info then
+                      WindUI:Notify({Title = "Error", Content = "Invalid Asset ID or could not fetch info!", Duration = 3})
+                      return
+                  end
+                  
+                  local validTypes = {
+                      [8] = "Hat", [41] = "Hair", [42] = "Face", [43] = "Neck",
+                      [44] = "Shoulder", [45] = "Front", [46] = "Back", [47] = "Waist"
+                  }
+                  
+                  local typeName = validTypes[info.AssetTypeId]
+                  if not typeName then
+                      WindUI:Notify({Title = "Invalid Type", Content = "ID " .. id .. " is a " .. (info.AssetTypeId or "Unknown") .. ", not an Accessory!", Duration = 4})
+                      return
+                  end
+                  
+                  local function doEquip()
+                      WindUI:Notify({Title = "Loading", Content = "Fetching asset " .. id .. "...", Duration = 2})
+                      local handle, accName = loadAccessoryHandle(id, "Custom_Handle_" .. id)
+                      if handle then
+                          StateTable.CustomAssets[id] = accName
+                          WindUI:Notify({Title = "Equipped", Content = "Loaded: " .. accName, Duration = 3})
+                          
+                          local newSec = TabInstance:Section({
+                              Title = accName,
+                              TextSize = 19,
+                              TextXAlignment = "Left",
+                              Box = true, BoxBorder = true,
+                              FontWeight = Enum.FontWeight.SemiBold,
+                              DescFontWeight = Enum.FontWeight.Medium,
+                          })
+                          unequipSections[id] = newSec
+                          newSec:Button({
+                              Title = "Unequip",
+                              Color = Color3.fromRGB(255, 50, 50),
+                              Callback = function()
+                                  StateTable.CustomAssets[id] = nil
+                                  if unequipSections[id] and unequipSections[id].Destroy then pcall(function() unequipSections[id]:Destroy() end) end
+                                  unequipSections[id] = nil
+                                  WindUI:Notify({Title = "Unequipped", Content = "Removed: " .. accName, Duration = 3})
+                              end
+                          })
+                      else
+                          WindUI:Notify({Title = "Error", Content = "Failed to load asset " .. id .. " (No Handle found)", Duration = 3})
+                      end
+                  end
+                  
+                  local dialogSuccess = pcall(function()
+                      Window:Dialog({
+                          Title = "Confirm Asset",
+                          Content = "Name: " .. (info.Name or "Unknown") .. "\nType: " .. typeName .. "\nCreator: " .. (info.Creator.Name or "Unknown"),
+                          Buttons = {
+                              { Title = "Equip", Callback = function() doEquip() end },
+                              { Title = "Cancel", Callback = function() end }
+                          }
+                      })
+                  end)
+                  
+                  if not dialogSuccess then
+                      local confirmSec = TabInstance:Section({ Title = "Confirm: " .. (info.Name or "Unknown"), Box = true, BoxBorder = true })
+                      confirmSec:Button({
+                          Title = "Yes, Equip It (" .. typeName .. ")", Color = Color3.fromRGB(50, 200, 50),
+                          Callback = function() pcall(function() confirmSec:Destroy() end); doEquip() end
+                      })
+                      confirmSec:Button({
+                          Title = "Cancel", Color = Color3.fromRGB(255, 50, 50),
+                          Callback = function() pcall(function() confirmSec:Destroy() end) end
+                      })
+                  end
+              end)
+        end
+    })
+
+    local SectionKBHL = TabInstance:Section({ Title = "Korblox + Headless" })
+    SectionKBHL:Button({ Title = "Enable", Color = Color3.fromRGB(50, 50, 255), Callback = function() StateTable.Korblox = true; StateTable.Headless = true end })
+    SectionKBHL:Button({ Title = "Disable", Color = Color3.fromRGB(255, 100, 100), Callback = function() StateTable.Korblox = false; StateTable.Headless = false end })
+
+    local SectionKB = TabInstance:Section({ Title = "Korblox Only" })
+    SectionKB:Button({ Title = "Enable", Color = Color3.fromRGB(50, 50, 255), Callback = function() StateTable.Korblox = true end })
+    SectionKB:Button({ Title = "Disable", Color = Color3.fromRGB(255, 100, 100), Callback = function() StateTable.Korblox = false end })
+
+    local SectionHL = TabInstance:Section({ Title = "Headless Only" })
+    SectionHL:Button({ Title = "Enable", Color = Color3.fromRGB(50, 50, 255), Callback = function() StateTable.Headless = true end })
+    SectionHL:Button({ Title = "Disable", Color = Color3.fromRGB(255, 100, 100), Callback = function() StateTable.Headless = false end })
+
+    local Section8BRC = TabInstance:Section({ Title = "8-Bit Royal Crown" })
+    Section8BRC:Button({ Title = "Enable", Color = Color3.fromRGB(50, 50, 255), Callback = function() StateTable.Crown8B = true end })
+    Section8BRC:Button({ Title = "Disable", Color = Color3.fromRGB(255, 100, 100), Callback = function() StateTable.Crown8B = false end })
+
+    local Section8BCB = TabInstance:Section({ Title = "8-Bit Controller Backpack" })
+    Section8BCB:Button({ Title = "Enable", Color = Color3.fromRGB(50, 50, 255), Callback = function() StateTable.Backpack8B = true end })
+    Section8BCB:Button({ Title = "Disable", Color = Color3.fromRGB(255, 100, 100), Callback = function() StateTable.Backpack8B = false end })
+
+    local Section8BHP = TabInstance:Section({ Title = "8-Bit HP Bar" })
+    Section8BHP:Button({ Title = "Enable", Color = Color3.fromRGB(50, 50, 255), Callback = function() StateTable.HPBar8B = true end })
+    Section8BHP:Button({ Title = "Disable", Color = Color3.fromRGB(255, 100, 100), Callback = function() StateTable.HPBar8B = false end })
+
+    local Section8BTC = TabInstance:Section({ Title = "8-Bit Tabby Cat" })
+    Section8BTC:Button({ Title = "Enable", Color = Color3.fromRGB(50, 50, 255), Callback = function() StateTable.TabbyCat8B = true end })
+    Section8BTC:Button({ Title = "Disable", Color = Color3.fromRGB(255, 100, 100), Callback = function() StateTable.TabbyCat8B = false end })
+end
+
+-- TABS
+local MainTab = Window:Tab({ Title = "Main Self Avatar Settings", Icon = "user", Locked = false, ShowTabTitle = true, Border = true })
+buildSettingsForTab(MainTab, AvatarState.Self, true)
+
+local TargetedTab = Window:Tab({ Title = "Targeted User Avatar Settings", Icon = "circle-user", Locked = false, ShowTabTitle = true, Border = true })
+local SectionTarget = TargetedTab:Section({ Title = "Target Selection", Opened = true })
+SectionTarget:Input({
+    Title = "Target Username / Display Name", 
+    Placeholder = "Enter name here...", 
+    Desc = "Changes apply only to this player", 
+    Callback = function(txt) AvatarState.Targeted.TargetName = txt end
+})
+buildSettingsForTab(TargetedTab, AvatarState.Targeted, false)
+
+local GlobalServerTab = Window:Tab({ Title = "Global Server Avatar Settings", Icon = "earth", Locked = false, ShowTabTitle = true, Border = true })
+buildSettingsForTab(GlobalServerTab, AvatarState.Global, false)
+
+local SyncTab = Window:Tab({ Title = "Sync Settings", Icon = "refresh-ccw", Locked = false, ShowTabTitle = true, Border = true })
+local SectionSync = SyncTab:Section({ Title = "Avatar Sync with Other Script User", Opened = true })
+
+local FIREBASE_URL = "https://robloxsyncava-default-rtdb.asia-southeast1.firebasedatabase.app/"
+local HttpService = game:GetService("HttpService")
+local request_func = (syn and syn.request) or (http and http.request) or http_request or request or (fluxus and fluxus.request)
+
+_G.YuacSyncTargetID = nil
+_G.YuacSyncTargetName = nil
+_G.YuacFirebasePollConn = true
+
+local onlineUserButtons = {}
+
+SectionSync:Button({
+    Title = "Refresh Online Users",
+    Color = Color3.fromRGB(150, 150, 150),
+    Callback = function()
+        WindUI:Notify({Title = "Scanning", Content = "Searching for active users...", Duration = 2})
+        task.spawn(function()
+            local success, res = pcall(function()
+                return request_func({
+                    Url = FIREBASE_URL .. "yuac_presence.json",
+                    Method = "GET"
+                })
+            end)
+            
+            if success and res and res.StatusCode == 200 and res.Body ~= "null" then
+                local data = HttpService:JSONDecode(res.Body)
+                
+                for _, btn in ipairs(onlineUserButtons) do
+                    if btn and btn.Destroy then pcall(function() btn:Destroy() end) end
+                end
+                table.clear(onlineUserButtons)
+                
+                local foundAny = false
+                local now = os.time()
+                for userIdStr, info in pairs(data) do
+                    if info and info.name and info.name ~= LocalPlayer.Name then
+                        if info.timestamp and (now - info.timestamp) < 60 then
+                            foundAny = true
+                            local inServer = game:GetService("Players"):FindFirstChild(info.name) ~= nil
+                            local titleText = "Sync: " .. info.displayName .. " (@" .. info.name .. ")"
+                            if inServer then titleText = titleText .. " [IN SERVER]" end
+                            
+                            local btn = SectionSync:Button({
+                                Title = titleText,
+                                Color = inServer and Color3.fromRGB(50, 200, 50) or Color3.fromRGB(50, 150, 255),
+                                Callback = function()
+                                    _G.YuacSyncTargetID = userIdStr
+                                    _G.YuacSyncTargetName = info.displayName
+                                    WindUI:Notify({Title = "Sync Active", Content = "Now streaming to " .. info.displayName, Duration = 3})
+                                end
+                            })
+                            table.insert(onlineUserButtons, btn)
+                        end
+                    end
+                end
+                
+                if not foundAny then
+                    WindUI:Notify({Title = "No Users", Content = "No other users currently online.", Duration = 3})
+                end
+            else
+                WindUI:Notify({Title = "Error", Content = "Failed to fetch online users.", Duration = 3})
+            end
+        end)
+    end
+})
+
+SectionSync:Button({
+    Title = "Stop Syncing",
+    Color = Color3.fromRGB(255, 100, 100),
+    Callback = function()
+        _G.YuacSyncTargetID = nil
+        _G.YuacSyncTargetName = nil
+        WindUI:Notify({Title = "Sync Stopped", Content = "No longer sending avatar data.", Duration = 3})
+    end
+})
+
+-- Presence Loop
+task.spawn(function()
+    while _G.YuacFirebasePollConn do
+        if request_func then
+            pcall(function()
+                request_func({
+                    Url = FIREBASE_URL .. "yuac_presence/" .. LocalPlayer.UserId .. ".json",
+                    Method = "PUT",
+                    Headers = {["Content-Type"] = "application/json"},
+                    Body = HttpService:JSONEncode({
+                        name = isAnonymous and "Hidden" or LocalPlayer.Name,
+                        displayName = isAnonymous and "Anonymous Player" or LocalPlayer.DisplayName,
+                        timestamp = os.time()
+                    })
+                })
+            end)
+        end
+        task.wait(15)
+    end
+end)
+
+-- Send Loop
+task.spawn(function()
+    while _G.YuacFirebasePollConn do
+        task.wait(2)
+        if _G.YuacSyncTargetID and request_func then
+            local state = AvatarState.Self
+            local customAssetsArray = {}
+            if state.CustomAssets then
+                for id, _ in pairs(state.CustomAssets) do
+                    table.insert(customAssetsArray, tostring(id))
+                end
+            end
+            
+            local payload = HttpService:JSONEncode({
+                senderName = isAnonymous and "Hidden" or LocalPlayer.Name,
+                timestamp = os.time(),
+                korblox = state.Korblox,
+                headless = state.Headless,
+                crown8b = state.Crown8B,
+                backpack8b = state.Backpack8B,
+                hpbar8b = state.HPBar8B,
+                tabbycat8b = state.TabbyCat8B,
+                customAssets = customAssetsArray,
+                kbX = state.KorbloxX, kbY = state.KorbloxY, kbZ = state.KorbloxZ,
+                kbRX = state.KorbloxRX, kbRY = state.KorbloxRY, kbRZ = state.KorbloxRZ
+            })
+            
+            pcall(function()
+                request_func({
+                    Url = FIREBASE_URL .. "yuac_syncs/" .. _G.YuacSyncTargetID .. ".json",
+                    Method = "PUT",
+                    Headers = {["Content-Type"] = "application/json"},
+                    Body = payload
+                })
+            end)
+        end
+    end
+end)
+
+-- Receive Loop
+task.spawn(function()
+    local lastTimestamp = 0
+    while _G.YuacFirebasePollConn do
+        task.wait(2)
+        if request_func then
+            local success, res = pcall(function()
+                return request_func({
+                    Url = FIREBASE_URL .. "yuac_syncs/" .. LocalPlayer.UserId .. ".json",
+                    Method = "GET"
+                })
+            end)
+            if success and res and res.StatusCode == 200 and res.Body ~= "null" then
+                local data = HttpService:JSONDecode(res.Body)
+                if data and data.timestamp and data.timestamp > lastTimestamp then
+                    lastTimestamp = data.timestamp
+                    local sender = data.senderName
+                    if sender and sender ~= "" then
+                        AvatarState.SyncedPlayers = AvatarState.SyncedPlayers or {}
+                        
+                        local loadedCustoms = {}
+                        if data.customAssets then
+                            for _, idStr in ipairs(data.customAssets) do
+                                local id = tonumber(idStr)
+                                if id then
+                                    local handle, accName = loadAccessoryHandle(id, "Custom_Handle_" .. id)
+                                    if handle then
+                                        loadedCustoms[id] = accName
+                                        handle:Destroy()
+                                    end
+                                end
+                            end
+                        end
+                        
+                        AvatarState.SyncedPlayers[sender] = {
+                            Korblox = data.korblox,
+                            Headless = data.headless,
+                            Crown8B = data.crown8b,
+                            Backpack8B = data.backpack8b,
+                            HPBar8B = data.hpbar8b,
+                            TabbyCat8B = data.tabbycat8b,
+                            CustomAssets = loadedCustoms,
+                            KorbloxX = data.kbX or -0.05, KorbloxY = data.kbY or -0.50, KorbloxZ = data.kbZ or 0,
+                            KorbloxRX = data.kbRX or 0, KorbloxRY = data.kbRY or 295, KorbloxRZ = data.kbRZ or 0
+                        }
+                    end
+                end
+            end
+        end
+    end
+end)
+
+local SettingsTab = Window:Tab({ Title = "Other Settings", Icon = "settings", Locked = false, ShowTabTitle = true, Border = true })
+
+local TutorialTab = Window:Tab({ Title = "Tutorial & Guide", Icon = "swatch-book", Locked = false, ShowTabTitle = true, Border = true })
+
+local TutorialParagraph = TutorialTab:Paragraph({
+    Title = "Q: How to get Assets ID?",
+    Desc = "A: go to roblox marketplace with browser and choose item you want to use, and copy id in 'catalog/[id]/' from the url adress bar | ( just copy the id dont copy the 'catalog/' or '/' )",
+    Locked = false,
+})
+
+local AboutTab = Window:Tab({
+    Title = "About YUAC",
+    Icon = "info",
+    Locked = false,
+    ShowTabTitle = true,
+    Border = true,
+})
+
+local AboutParagraph = AboutTab:Paragraph({
+    Title = "Visit Github Repository",
+    Desc = "Official Github Repository Below",
+    Locked = false,
+})
+
+AboutTab:Button({
+    Title = "Visit Github Now",
+    Icon = "github",
+    Color = Color3.fromRGB(128, 128, 128),
+    Callback = function()
+        if setclipboard then
+            setclipboard("https://github.com/yuutaa7x/yuac")
+            WindUI:Notify({Title = "Copied!", Content = "Github link copied to clipboard!", Duration = 3, Icon = "copy"})
+        else
+            WindUI:Notify({Title = "Error", Content = "Your executor does not support setclipboard!", Duration = 3, Icon = "x"})
+        end
+    end,
+})
+
+local AboutParagraph2 = AboutTab:Paragraph({
+    Title = "Visit My Community Discord Server",
+    Desc = "if you want to meet me in online, lets meet here!",
+    Locked = false,
+})
+
+AboutTab:Button({
+    Title = "Visit Discord Now",
+    Icon = "message-circle",
+    Color = Color3.fromRGB(50, 85, 255),
+    Callback = function()
+        if setclipboard then
+            setclipboard("https://discord.gg/dzGKnf5pSK")
+            WindUI:Notify({Title = "Copied!", Content = "Discord invite copied to clipboard!", Duration = 3, Icon = "copy"})
+        else
+            WindUI:Notify({Title = "Error", Content = "Your executor does not support setclipboard!", Duration = 3, Icon = "x"})
+        end
+    end,
+})
+
+local ExitTab = Window:Tab({ Title = "Exit", Icon = "door-open", Locked = false, ShowTabTitle = true, Border = true })
+local SectionExit = ExitTab:Section({ Title = "Close Menu", Opened = true })
+SectionExit:Button({ 
+    Title = "Destroy UI & Clean Up", 
+    Color = Color3.fromRGB(255, 50, 50), 
+    Callback = function() 
+        if _G.YuacMainLoopConn then 
+            _G.YuacMainLoopConn:Disconnect() 
+            _G.YuacMainLoopConn = nil 
+        end
+        if toggleConn then
+            toggleConn:Disconnect()
+            toggleConn = nil
+        end
+        if reminderTask then 
+            task.cancel(reminderTask) 
+            reminderTask = nil 
+        end
+        _G.YuacFirebasePollConn = false
+        local req = (syn and syn.request) or (http and http.request) or http_request or request or (fluxus and fluxus.request)
+        if req then
+            pcall(function()
+                req({ Url = "https://robloxsyncava-default-rtdb.asia-southeast1.firebasedatabase.app/yuac_presence/" .. game:GetService("Players").LocalPlayer.UserId .. ".json", Method = "DELETE" })
+            end)
+        end
+        for char, handles in pairs(CharacterHandles) do
+            for feat, handle in pairs(handles) do handle:Destroy() end
+        end
+        for char, fake in pairs(KorbloxCache) do
+            fake:Destroy()
+        end
+        table.clear(CharacterHandles)
+        table.clear(KorbloxCache)
+        table.clear(MasterHandles)
+        local CoreGui = game:GetService("CoreGui")
+        local ui = CoreGui:FindFirstChild("WindUI") or CoreGui:FindFirstChild("yuac")
+        if ui then ui:Destroy() end
+        if Window.Destroy then Window:Destroy() end
+    end 
+})
+
+MainTab:Select()
+task.wait(2.5)
+
+local reminderTask = nil
+local isReminderDisabled = false
+
+local currentToggleKey = "="
+
+SettingsTab:Keybind({
+    Title = "Toggle UI",
+    Desc = "Keybind to open/hide UI",
+    Value = "Equals",
+    Callback = function(v)
+        if Window.SetToggleKey then
+            pcall(function() Window:SetToggleKey(Enum.KeyCode[v]) end)
+        end
+        local ok, str = pcall(function() return game:GetService("UserInputService"):GetStringForKeyCode(Enum.KeyCode[v]) end)
+        if ok and str and str ~= "" then
+            currentToggleKey = str
+        else
+            currentToggleKey = tostring(v)
+        end
+    end
+})
+
+if Window.OnOpen and Window.OnClose then
+    Window:OnOpen(function()
+        WindUI:Notify({ Title = "Window Opened", Content = "Press " .. currentToggleKey .. " to hide again", Duration = 3, Icon = "eye" })
+    end)
+    Window:OnClose(function()
+        WindUI:Notify({ Title = "Window Closed", Content = "Press " .. currentToggleKey .. " to back open", Duration = 3, Icon = "eye-off" })
+    end)
+end
+
+SettingsTab:Toggle({
+    Title = "Disable Donate Reminder",
+    Desc = "For stopping/disabling Reminder to Donate",
+    Value = false,
+    Type = "Toggle",
+    Locked = false,
+    Flag = "sobuzreminder",
+    Callback = function(state)
+        isReminderDisabled = state        
+        if reminderTask then task.cancel(reminderTask); reminderTask = nil end
+        if isReminderDisabled then
+            WindUI:Notify({ Title = "Notify", Content = "Donate reminder disabled", Icon = "bell", Duration = 3 })
+        else
+            WindUI:Notify({ Title = "Notify", Content = "Donate reminder enabled", Icon = "bell", Duration = 3 })
+            startReminderLoop()
+        end
+    end
+})
+
+local SectionTweak = SettingsTab:Section({ Title = "R15 Korblox Tweaks", Opened = false })
+SectionTweak:Input({ 
+    Title = "Offset X (Geser Kiri/Kanan)", Placeholder = "Contoh: -0.05", Desc = "Ketik angka untuk geser (Default: -0.05)", 
+    Callback = function(val) local num = tonumber(val); if num then AvatarState.Self.KorbloxX = num; AvatarState.Targeted.KorbloxX = num; AvatarState.Global.KorbloxX = num end end 
+})
+SectionTweak:Input({ 
+    Title = "Offset Y (Naik/Turun)", Placeholder = "Contoh: -0.50", Desc = "Ketik angka untuk tinggi (Default: -0.50)", 
+    Callback = function(val) local num = tonumber(val); if num then AvatarState.Self.KorbloxY = num; AvatarState.Targeted.KorbloxY = num; AvatarState.Global.KorbloxY = num end end 
+})
+SectionTweak:Input({ 
+    Title = "Offset Z (Depan/Belakang)", Placeholder = "Contoh: 0", Desc = "Ketik angka untuk maju/mundur (Default: 0)", 
+    Callback = function(val) local num = tonumber(val); if num then AvatarState.Self.KorbloxZ = num; AvatarState.Targeted.KorbloxZ = num; AvatarState.Global.KorbloxZ = num end end 
+})
+SectionTweak:Input({ 
+    Title = "Rotation X (Pitch / Miring)", Placeholder = "Contoh: 0", Desc = "Ketik derajat miring (Default: 0)", 
+    Callback = function(val) local num = tonumber(val); if num then AvatarState.Self.KorbloxRX = num; AvatarState.Targeted.KorbloxRX = num; AvatarState.Global.KorbloxRX = num end end 
+})
+SectionTweak:Input({ 
+    Title = "Rotation Y (Yaw / Hadap)", Placeholder = "Contoh: 295", Desc = "Ketik derajat hadap (Default: 295)", 
+    Callback = function(val) local num = tonumber(val); if num then AvatarState.Self.KorbloxRY = num; AvatarState.Targeted.KorbloxRY = num; AvatarState.Global.KorbloxRY = num end end 
+})
+SectionTweak:Input({ 
+    Title = "Rotation Z (Roll / Goyang)", Placeholder = "Contoh: 0", Desc = "Ketik derajat goyang (Default: 0)", 
+    Callback = function(val) local num = tonumber(val); if num then AvatarState.Self.KorbloxRZ = num; AvatarState.Targeted.KorbloxRZ = num; AvatarState.Global.KorbloxRZ = num end end 
+})
+
+function startReminderLoop()
+    reminderTask = task.spawn(function()
+        while not isReminderDisabled do
+            task.wait(60)
+            if not isReminderDisabled then
+                WindUI:Notify({ Title = "Reminder", Content = "don't forget to support me in socialbuzz", Icon = "bell-ring", Duration = 5 })
+            end
+        end
+    end)
+end
+
+startReminderLoop()
